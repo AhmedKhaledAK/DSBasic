@@ -17,7 +17,5 @@ public class Main {
         for(int i = 1; i < hp.length; i++){
             System.out.print(hp[i] + " ");
         }
-
-
     }
 }
