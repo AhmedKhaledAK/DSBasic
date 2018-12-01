@@ -1,6 +1,8 @@
 package akopensource;
 
+import akopensource.maindir.BinarySearchTree;
 import akopensource.maindir.Heap;
+import akopensource.maindir.Node;
 import akopensource.sorting.Sortings;
 
 public class Main {
@@ -22,13 +24,23 @@ public class Main {
 
         /*Quicksort Test */
 
-        int [] array = {2,8,7,1,3,5,6,4};
+        /*int [] array = {2,8,7,1,3,5,6,4};
         Sortings sortings = new Sortings();
         sortings.quickSort(array, 0, 7);
         array = sortings.getSortedArray();
         for (int i : array){
             System.out.print(i + " ");
         }
+*/
+        BinarySearchTree bst = new BinarySearchTree();
+        bst.addToTree(50);
+        bst.addToTree(30);
+        bst.addToTree(20);
+        bst.addToTree(40);
+        bst.addToTree(70);
+        bst.addToTree(60);
+        bst.addToTree(80);
 
+        bst.traverseInorder(bst.getRootNode());
     }
 }
