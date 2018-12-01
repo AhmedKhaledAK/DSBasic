@@ -42,5 +42,9 @@ public class Main {
         bst.addToTree(80);
 
         bst.traverseInorder(bst.getRootNode());
+
+        System.out.println("------------");
+        Node n = bst.search(30);
+        System.out.println(n.getLeft().getKey());
     }
 }

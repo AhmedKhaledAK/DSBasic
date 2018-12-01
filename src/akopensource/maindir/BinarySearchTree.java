@@ -26,6 +26,20 @@ public class BinarySearchTree {
         return rootNode;
     }
 
+    public Node search(int key){
+        return search(key, rootNode);
+    }
+
+    //we can rewrite this procedure in an iterative fashion by "unrolling" the recursion into a while loop
+    //On most computers, the iterative version is more efficient
+    private Node search(int key, Node rootNode){
+        if(rootNode == null || key == rootNode.getKey())
+            return rootNode;
+        if(key < rootNode.getKey())
+            return search(key, rootNode.left);
+        return search(key, rootNode.right);
+    }
+
     public void traverseInorder (Node rootNode){
         if(rootNode != null){
             traverseInorder(rootNode.getLeft());
