@@ -44,7 +44,7 @@ public class Main {
         bst.traverseInorder(bst.getRootNode());
 
         System.out.println("------------");
-        Node n = bst.search(30);
-        System.out.println(n.getLeft().getKey());
+        Node n = bst.findMaximum();
+        System.out.println(n.getKey());
     }
 }

@@ -31,13 +31,33 @@ public class BinarySearchTree {
     }
 
     //we can rewrite this procedure in an iterative fashion by "unrolling" the recursion into a while loop
-    //On most computers, the iterative version is more efficient
+    //on most computers, the iterative version is more efficient
     private Node search(int key, Node rootNode){
         if(rootNode == null || key == rootNode.getKey())
             return rootNode;
         if(key < rootNode.getKey())
             return search(key, rootNode.left);
         return search(key, rootNode.right);
+    }
+
+    public Node findMinimum(){
+        return findMinimum(rootNode);
+    }
+
+    private Node findMinimum(Node rootNode){
+        while (rootNode.getLeft() != null)
+            rootNode = rootNode.getLeft();
+        return rootNode;
+    }
+
+    public Node findMaximum(){
+        return findMaximum(rootNode);
+    }
+
+    private Node findMaximum(Node rootNode){
+        while(rootNode.getRight() != null)
+            rootNode = rootNode.getRight();
+        return rootNode;
     }
 
     public void traverseInorder (Node rootNode){
