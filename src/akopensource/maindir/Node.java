@@ -1,7 +1,7 @@
 package akopensource.maindir;
 
 public class Node {
-    int key;
+    private int key;
     Node left;
     Node right;
     Node parent;
@@ -13,6 +13,8 @@ public class Node {
         right = null;
     }
 
+
+    //still not used
     public Node  addRight(int key, Node node){
         node.right = new Node(key);
         return node.right;
@@ -22,6 +24,7 @@ public class Node {
         node.left = new Node(key);
         return node.left;
     }
+    //
 
     public int getKey() {
         return key;

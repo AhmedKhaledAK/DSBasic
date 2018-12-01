@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/akopensource/maindir/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/akopensource/maindir/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,13 +37,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="2384" />
-          <entry key="txt" value="92" />
+          <entry key="txt" value="174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2384" />
-          <entry key="PLAIN_TEXT" value="92" />
+          <entry key="PLAIN_TEXT" value="174" />
         </counts>
       </usages-collector>
     </session>
@@ -68,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/maindir/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="260">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#121#122#0" expanded="true" />
                 <element signature="e#151#152#0" expanded="true" />
@@ -187,7 +184,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543672230771" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543673727838" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -234,7 +231,7 @@
       <workItem from="1543424205321" duration="18000" />
       <workItem from="1543508729145" duration="2903000" />
       <workItem from="1543588647473" duration="4770000" />
-      <workItem from="1543668056001" duration="4292000" />
+      <workItem from="1543668056001" duration="5192000" />
     </task>
     <task id="LOCAL-00001" summary="Heap added">
       <created>1543509893427</created>
@@ -278,11 +275,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543595155954</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Binary Search Tree implemented (not all functions)">
+      <created>1543672443390</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543672443390</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14753000" />
+    <option name="totallyTimeSpent" value="15653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -338,7 +342,8 @@
     <MESSAGE value="Heap added" />
     <MESSAGE value="Heap data structure and heap sort algorithm added" />
     <MESSAGE value="Quicksort algorithm implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quicksort algorithm implemented" />
+    <MESSAGE value="Binary Search Tree implemented (not all functions)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Binary Search Tree implemented (not all functions)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -393,8 +398,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/maindir/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="260">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#121#122#0" expanded="true" />
             <element signature="e#151#152#0" expanded="true" />
