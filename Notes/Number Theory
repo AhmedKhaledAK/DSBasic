@@ -1,0 +1,40 @@
+### Number Theory v1.0
+
+Note: The information in this file is written by the help of "Introduction to Algorithms" book by
+"Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein". I will constantly make sure
+that I don't write wrong stuff, so if you want to make sure of what is written, check the Number Theory
+chapter in the book.
+
+--------------------------------------------------------------------------------------------------------
+
+* Division Theorem:
+For any integer "a" and any positive integer "n", there exist unique positive integer "q" and "r"
+such that 0 <= r < n and (a = qn + r). Where q = floor(a/n) and r = a mod n.
+
+* Common divisors and greatest common divisors:
+  -- d | a and d | b implies that d | (a+b) and d | (a-b)
+  -- d | a and d | b implies that d | (a*x + b*y) for any integers x and y.
+  -- gcd(a,b) = gcd(b,a)
+  -- gcd(a,0) = a
+  -- gcd(a,ak) = a
+  -- gcd(-a, b) = gcd(a,b)
+
+* Theorem 31.2:
+If any integers "a" and "b", not both zero then gcd(a,b) is the smallest positive element of the set
+{a*x + b*y : x,y ∈ Z}
+
+* Corollary 31.3:
+For any integers "a" and "b", if d | a and d | b, then d | gcd(a,b).
+
+* Corollary 31.4:
+For all integers "a" and "b" and any non-negative integer n: gcd(a*n, b*n) = n*gcd(a,b).
+
+* Corollary 31.5:
+For all positive integers n, a, and b, if n | a*b and gcd(a,n) = 1, then n | b.
+
+* Relatively Prime Integer (Theorem 31.6):
+For any integers a, b, and p if gcd(a,p) = 1 and gcd(b,p) = 1, then gcd(a*b,p) = 1.
+
+* Theorem 31.7:
+For all primes "p" and all integers "a" and "b", if p | ab, then p | a or p | b (or both).
+
