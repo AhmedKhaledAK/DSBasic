@@ -18,6 +18,8 @@ such that 0 <= r < n and (a = qn + r). Where q = floor(a/n) and r = a mod n.
   -- gcd(a,0) = a
   -- gcd(a,ak) = a
   -- gcd(-a, b) = gcd(a,b)
+  -- gcd(a,b) | a mod b
+  -- gcd(a,b) = gcd(b, a mod b)
 
 * Theorem 31.2:
 If any integers "a" and "b", not both zero then gcd(a,b) is the smallest positive element of the set
