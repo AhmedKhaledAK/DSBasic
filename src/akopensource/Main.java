@@ -3,6 +3,7 @@ package akopensource;
 import akopensource.maindir.BinarySearchTree;
 import akopensource.maindir.Heap;
 import akopensource.maindir.Node;
+import akopensource.maindir.Numbers;
 import akopensource.sorting.Sortings;
 
 public class Main {
@@ -32,7 +33,10 @@ public class Main {
             System.out.print(i + " ");
         }
 */
-        BinarySearchTree bst = new BinarySearchTree();
+
+        //TEST BST
+
+        /*BinarySearchTree bst = new BinarySearchTree();
         bst.addToTree(50);
         bst.addToTree(30);
         bst.addToTree(20);
@@ -45,6 +49,8 @@ public class Main {
 
         System.out.println("------------");
         Node n = bst.findMaximum();
-        System.out.println(n.getKey());
+        System.out.println(n.getKey());*/
+
+        System.out.println(Numbers.gcd(21, 30));
     }
 }
