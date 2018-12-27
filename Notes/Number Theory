@@ -40,3 +40,6 @@ For any integers a, b, and p if gcd(a,p) = 1 and gcd(b,p) = 1, then gcd(a*b,p) =
 * Theorem 31.7:
 For all primes "p" and all integers "a" and "b", if p | ab, then p | a or p | b (or both).
 
+* Euclid Algorithm: It is based on the following recursive theory:
+For any non-negative integer "a" and any positive integer "b" --> gcd(a,b) = gcd(b, a mod b).
+
