@@ -51,6 +51,6 @@ public class Main {
         Node n = bst.findMaximum();
         System.out.println(n.getKey());*/
 
-        System.out.println(Numbers.gcd(21, 30));
+        System.out.println(Numbers.bgcd(21, 30));
     }
 }
