@@ -32,6 +32,15 @@ public class Numbers {
 
         // a and b are odd, a < b
         return bgcd(a, (b-a) >> 1);
+    }
 
+    public static Triplet extendedEuclid(Integer a, Integer b){
+        if(b == 0)
+            return new Triplet(a,1,0);
+        else {
+            Triplet triplet = extendedEuclid(b, a % b);
+            return new Triplet(triplet.getFirstElem(), triplet.getThirdElem(),
+                    (Integer) triplet.getSecondElem() - (a/b) * (Integer) triplet.getThirdElem());
+        }
     }
 }

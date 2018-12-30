@@ -1,9 +1,6 @@
 package akopensource;
 
-import akopensource.maindir.BinarySearchTree;
-import akopensource.maindir.Heap;
-import akopensource.maindir.Node;
-import akopensource.maindir.Numbers;
+import akopensource.maindir.*;
 import akopensource.sorting.Sortings;
 
 public class Main {
@@ -51,6 +48,11 @@ public class Main {
         Node n = bst.findMaximum();
         System.out.println(n.getKey());*/
 
-        System.out.println(Numbers.bgcd(21, 30));
+        //System.out.println(Numbers.bgcd(99, 78));
+        Triplet triplet = Numbers.extendedEuclid(99,78);
+        System.out.println(triplet.getFirstElem());
+        System.out.println(triplet.getSecondElem());
+        System.out.println(triplet.getThirdElem());
+
     }
 }
