@@ -8,7 +8,8 @@ following properties hold:
        e ⊕ a = a ⊕ e = a for all a ∈ S.
     3) Associativity: For all a, b, c ∈ S, we have (a ⊕ b) ⊕ c = a ⊕ (b ⊕ c).
     4) Inverses: For each a ∈ S, there exists a unique element b ∈ S, called the inverse of a, such that
-       a ⊕ b = b ⊕ a = e
+       a ⊕ b = b ⊕ a = e.
 
 * If (S, ⊕) is a finite group and (S`, ⊕) is a subgroup of (S, ⊕), then |S`| is a divisor of |S|.
     - A subgroup S` of a group S is a proper group if S` ≠ S.
+    - If S` is a proper group of a finite group S, then |S`| <= |S| / 2.
