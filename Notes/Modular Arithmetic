@@ -11,3 +11,4 @@ following properties hold:
        a ⊕ b = b ⊕ a = e
 
 * If (S, ⊕) is a finite group and (S`, ⊕) is a subgroup of (S, ⊕), then |S`| is a divisor of |S|.
+    - A subgroup S` of a group S is a proper group if S` ≠ S.
