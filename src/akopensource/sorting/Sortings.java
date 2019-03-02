@@ -34,4 +34,22 @@ public class Sortings implements Sortable {
     public int[] getSortedArray() {
         return sortedArray;
     }
+
+    @Override
+    public void selectionSortIterative(Integer[] array) {
+        int length = array.length;
+        for (int i = 0; i < length - 1; i++){
+            int min = Integer.MAX_VALUE;
+            int mini = -1;
+            for(int j = i; j < length; j++){
+                if(array[j] < min){
+                    min = array[j];
+                    mini = j;
+                }
+            }
+            int temp = array[i];
+            array[i] = array[mini];
+            array[mini] = temp;
+        }
+    }
 }

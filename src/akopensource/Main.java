@@ -8,6 +8,14 @@ public class Main {
     public static void main(String[] args) {
         //TESTING
 
+
+        Sortings sortings = new Sortings();
+        Integer [] array = {65, 25, 12, 22, 11};
+        sortings.selectionSortIterative(array);
+        for (int e: array) {
+            System.out.print(e+" ");
+        }
+
         /* HEAP TEST */
 
         /*Integer [] hp = {0,6,5,20,12,30,1,5,5,2,3,4};
@@ -49,10 +57,11 @@ public class Main {
         System.out.println(n.getKey());*/
 
         //System.out.println(Numbers.bgcd(99, 78));
-        Triplet triplet = Numbers.extendedEuclid(99,78);
+
+        /*Triplet triplet = Numbers.extendedEuclid(99,78);
         System.out.println(triplet.getFirstElem());
         System.out.println(triplet.getSecondElem());
         System.out.println(triplet.getThirdElem());
-
+*/
     }
 }
