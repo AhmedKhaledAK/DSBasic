@@ -8,19 +8,16 @@ import java.util.LinkedList;
 
 public class Sortings implements Sortable {
 
-    private int[] sortedArray;
-
     @Override
-    public void quickSort(int[] array, int p, int r) {
+    public void quickSort(Integer [] array, int p, int r) {
         if (p < r) {
             int q = partition(array, p, r);
             quickSort(array, p, q - 1);
             quickSort(array, q + 1, r);
         }
-        this.sortedArray = array;
     }
 
-    private int partition(int[] array, int p, int r) {
+    private int partition(Integer[] array, int p, int r) {
         int pivot = array[r];
         int i = p - 1;
         for (int j = p; j <= r - 1; j++) {
@@ -35,10 +32,6 @@ public class Sortings implements Sortable {
         array[i + 1] = array[r];
         array[r] = temp;
         return i + 1;
-    }
-
-    public int[] getSortedArray() {
-        return sortedArray;
     }
 
     @Override
@@ -103,6 +96,23 @@ public class Sortings implements Sortable {
             }
             n.getNext().setKey(key);
             head = head.getNext();
+        }
+    }
+
+    @Override
+    public void bubbleSort(Integer[] array) {
+        int length = array.length;
+        for(int i= 0; i < length; i++){
+            boolean isSorted = true;
+            for(int j = 0; j < length-1; j++){
+                if(array[j] > array[j+1]){
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                    isSorted=false;
+                }
+            }
+            if (isSorted) break;
         }
     }
 }

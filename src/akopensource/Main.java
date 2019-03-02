@@ -19,7 +19,7 @@ public class Main {
 */
 
 
-        MyLinkedList linkedList = new MyLinkedList();
+       /* MyLinkedList linkedList = new MyLinkedList();
         linkedList.insertTail(65);
         linkedList.insertTail(25);
         linkedList.insertTail(12);
@@ -30,8 +30,16 @@ public class Main {
         System.out.println();
         Sortings sortings = new Sortings();
         sortings.insertionSortLinkedList(linkedList);
-        linkedList.printLinkedList();
+        linkedList.printLinkedList();*/
 
+
+        Sortings sortings = new Sortings();
+        Integer[] array = {65, 25, 12, 22, 11};
+        sortings.bubbleSort(array);
+
+        for (int e : array) {
+            System.out.print(e + " ");
+        }
 
         /* HEAP TEST */
 
