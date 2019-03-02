@@ -8,6 +8,9 @@ public class MyLinkedList {
         tail = null;
     }
 
+    //These methods can actually be minimized to one method only. I'm splitting insertion into
+    // three methods just for educational purposes.
+
     public Node insertInMiddle(Node n, int key){
         if(head == null || tail == null)
             return initializeLinkedList(key);
