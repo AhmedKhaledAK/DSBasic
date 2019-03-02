@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/akopensource/maindir/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" afterDir="false" />
@@ -39,12 +39,12 @@
         <counts>
           <entry key="Modular Arithmetic" value="1" />
           <entry key="Number Theory" value="1" />
-          <entry key="java" value="20" />
+          <entry key="java" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
+          <entry key="JAVA" value="25" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -52,14 +52,14 @@
         <counts>
           <entry key="Modular Arithmetic" value="1012" />
           <entry key="Number Theory" value="2249" />
-          <entry key="java" value="5277" />
-          <entry key="txt" value="643" />
+          <entry key="java" value="5540" />
+          <entry key="txt" value="653" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5277" />
-          <entry key="PLAIN_TEXT" value="3904" />
+          <entry key="JAVA" value="5540" />
+          <entry key="PLAIN_TEXT" value="3914" />
         </counts>
       </usages-collector>
     </session>
@@ -69,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="294">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,17 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/maindir/Utilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+            <state relative-caret-position="470">
+              <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -99,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+            <state relative-caret-position="126">
+              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -129,8 +120,8 @@
         <option value="$PROJECT_DIR$/src/akopensource/maindir/Numbers.java" />
         <option value="$PROJECT_DIR$/Notes/Number Theory" />
         <option value="$PROJECT_DIR$/Notes/Modular Arithmetic" />
-        <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" />
         <option value="$PROJECT_DIR$/src/akopensource/maindir/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" />
         <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
       </list>
@@ -201,7 +192,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551536301187" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551540411640" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -259,7 +250,7 @@
       <workItem from="1546209395695" duration="2504000" />
       <workItem from="1547727147956" duration="4577000" />
       <workItem from="1548421190918" duration="578000" />
-      <workItem from="1551533396830" duration="2637000" />
+      <workItem from="1551533396830" duration="3991000" />
     </task>
     <task id="LOCAL-00001" summary="Heap added">
       <created>1543509893427</created>
@@ -408,11 +399,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551535798724</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Selection sort (recursive approach)">
+      <created>1551536403394</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1551536403394</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42906000" />
+    <option name="totallyTimeSpent" value="44260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -479,7 +477,8 @@
     <MESSAGE value="Added the extended form of Euclid's algorithm" />
     <MESSAGE value="Modular arithmetic notes" />
     <MESSAGE value="Selection sort (iterative approach)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Selection sort (iterative approach)" />
+    <MESSAGE value="Selection sort (recursive approach)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Selection sort (recursive approach)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -529,15 +528,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/maindir/Numbers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="546">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        <state relative-caret-position="126">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -548,17 +554,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="294">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

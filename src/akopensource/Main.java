@@ -12,7 +12,7 @@ public class Main {
         Sortings sortings = new Sortings();
         Integer [] array = {65, 25, 12, 22, 11};
         //sortings.selectionSortIterative(array);
-        sortings.selectionSortRecursive(array, 0);
+        sortings.insertionSortIterative(array);
         for (int e: array) {
             System.out.print(e+" ");
         }

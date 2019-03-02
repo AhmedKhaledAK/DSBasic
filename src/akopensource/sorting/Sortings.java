@@ -64,4 +64,21 @@ public class Sortings implements Sortable {
         array[mini] = temp;
         selectionSortRecursive(array, index+1);
     }
+
+    @Override
+    public void insertionSortIterative(Integer[] array) {
+        int length = array.length;
+        for(int i = 1; i < length; i++){
+            int k = array[i];
+            int j;
+            for(j = i-1; j >= 0; j--){
+                if(k < array[j]){
+                    array[j+1] = array[j];
+                } else {
+                    break;
+                }
+            }
+            array[j+1] = k;
+        }
+    }
 }
