@@ -27,6 +27,10 @@ public class Main {
         linkedList.insertTail(11);
 
         linkedList.printLinkedList();
+        System.out.println();
+        Sortings sortings = new Sortings();
+        sortings.insertionSortLinkedList(linkedList);
+        linkedList.printLinkedList();
 
 
         /* HEAP TEST */

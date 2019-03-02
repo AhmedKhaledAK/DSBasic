@@ -1,6 +1,7 @@
 package akopensource.sorting;
 
 import akopensource.linkedlist.MyLinkedList;
+import akopensource.linkedlist.Node;
 import akopensource.maindir.Utilities;
 
 import java.util.LinkedList;
@@ -82,6 +83,26 @@ public class Sortings implements Sortable {
                 }
             }
             array[j+1] = k;
+        }
+    }
+
+    @Override
+    public void insertionSortLinkedList(MyLinkedList linkedList) {
+        Node head = linkedList.getHead().getNext();
+
+        while(head != linkedList.getTailNode()){
+            int key = head.getKey();
+            Node n = head.getPrevious();
+            while (n != linkedList.getHeadNode()){
+                if(key < n.getKey()){
+                    n.getNext().setKey(n.getKey());
+                }else {
+                    break;
+                }
+                n = n.getPrevious();
+            }
+            n.getNext().setKey(key);
+            head = head.getNext();
         }
     }
 }

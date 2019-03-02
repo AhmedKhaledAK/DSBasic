@@ -45,7 +45,7 @@ public class MyLinkedList {
     public void printLinkedList(){
         Node n = head.next;
         while(n != tail){
-            System.out.println(n.key);
+            System.out.print(n.key+" ");
             n = n.next;
         }
     }
@@ -54,7 +54,15 @@ public class MyLinkedList {
         return head.next;
     }
 
+    public Node getHeadNode(){
+        return head;
+    }
+
     public Node getTail(){
         return tail.previous;
+    }
+
+    public Node getTailNode(){
+        return tail;
     }
 }
