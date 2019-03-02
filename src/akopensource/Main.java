@@ -1,5 +1,6 @@
 package akopensource;
 
+import akopensource.linkedlist.MyLinkedList;
 import akopensource.maindir.*;
 import akopensource.sorting.Sortings;
 
@@ -8,14 +9,25 @@ public class Main {
     public static void main(String[] args) {
         //TESTING
 
-
-        Sortings sortings = new Sortings();
+        /*Sortings sortings = new Sortings();
         Integer [] array = {65, 25, 12, 22, 11};
         //sortings.selectionSortIterative(array);
         sortings.insertionSortIterative(array);
         for (int e: array) {
             System.out.print(e+" ");
         }
+*/
+
+
+        MyLinkedList linkedList = new MyLinkedList();
+        linkedList.insertTail(65);
+        linkedList.insertTail(25);
+        linkedList.insertTail(12);
+        linkedList.insertTail(22);
+        linkedList.insertTail(11);
+
+        linkedList.printLinkedList();
+
 
         /* HEAP TEST */
 

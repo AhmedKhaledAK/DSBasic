@@ -1,6 +1,9 @@
 package akopensource.sorting;
 
+import akopensource.linkedlist.MyLinkedList;
 import akopensource.maindir.Utilities;
+
+import java.util.LinkedList;
 
 public class Sortings implements Sortable {
 
