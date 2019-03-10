@@ -125,38 +125,26 @@ public class Sortings implements Sortable {
     }
 
     private void merge(Integer[] array, int s, int m, int e) {
-        int[] aLow = new int[m - s + 1];
-        int[] aHigh = new int[e - m];
+        int[] aLow = new int[m - s + 1], aHigh = new int[e - m];
         int k = s;
-        for (int i = 0; i < aLow.length; i++) {
-            aLow[i] = array[k];
-            k++;
-        }
+        for (int i = 0; i < aLow.length; i++)
+            aLow[i] = array[k++];
         k = m + 1;
-        for (int i = 0; i < aHigh.length; i++) {
-            aHigh[i] = array[k];
-            k++;
-        }
+        for (int i = 0; i < aHigh.length; i++)
+            aHigh[i] = array[k++];
         k = s;
         int i = 0, j = 0;
         while (i < aLow.length && j < aHigh.length) {
-            if (aLow[i] <= aHigh[j]) {
-                array[k] = aLow[i];
-                i++;
-            } else {
-                array[k] = aHigh[j];
-                j++;
-            }
-            k++;
+            if (aLow[i] <= aHigh[j])
+                array[k++] = aLow[i++];
+            else
+                array[k++] = aHigh[j++];
         }
-        if (i < aLow.length) {
-            for (int r = i; r < aLow.length; r++) {
-                array[k] = aLow[r];
-            }
-        } else if (j < aHigh.length) {
-            for (int r = j; r < aHigh.length; r++) {
-                array[k] = aHigh[r];
-            }
-        }
+
+        while (i < aLow.length)
+            array[k++] = aLow[i++];
+
+        while (j < aHigh.length)
+            array[k++] = aHigh[j++];
     }
 }
