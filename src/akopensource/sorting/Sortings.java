@@ -6,6 +6,8 @@ import akopensource.maindir.Utilities;
 
 public class Sortings implements Sortable {
 
+    /* TODO: quicksort iterative and mergesort iterative*/
+
     @Override
     public void quickSort(Integer[] array, int p, int r) {
         if (p < r) {
