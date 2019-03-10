@@ -34,8 +34,8 @@ public class Main {
 
 
         Sortings sortings = new Sortings();
-        Integer[] array = {65, 25, 12, 22, 11};
-        sortings.bubbleSort(array);
+        Integer[] array = {5,2,4,7,1,3,2,6};
+        sortings.mergeSortRecursively(array,0,7);
 
         for (int e : array) {
             System.out.print(e + " ");

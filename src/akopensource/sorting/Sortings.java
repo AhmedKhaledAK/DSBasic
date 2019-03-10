@@ -4,8 +4,6 @@ import akopensource.linkedlist.MyLinkedList;
 import akopensource.linkedlist.Node;
 import akopensource.maindir.Utilities;
 
-import java.util.LinkedList;
-
 public class Sortings implements Sortable {
 
     @Override
@@ -113,6 +111,56 @@ public class Sortings implements Sortable {
                 }
             }
             if (isSorted) break;
+        }
+    }
+
+    @Override
+    public void mergeSortRecursively(Integer[] array, int s, int e) {
+        if(s < e) {
+            int m = (s+e)/2;
+            mergeSortRecursively(array, s, m);
+            mergeSortRecursively(array, m+1, e);
+            merge(array, s, m, e);
+        }
+    }
+
+    private void merge(Integer[] array, int s, int m, int e) {
+        int [] aLow = new int[m-s+1];
+        int [] aHigh = new int[e-m];
+        int k = s;
+        for(int i= 0; i<aLow.length; i++){
+            if(k <= m){
+                aLow[i] = array[k];
+            }
+            k++;
+        }
+        k = m+1;
+        for(int i= 0; i<aHigh.length; i++){
+            if(k <= e){
+                aHigh[i] = array[k];
+            }
+            k++;
+        }
+        k = s;
+        int i = 0, j = 0;
+        while (i < aLow.length && j < aHigh.length && k <= e){
+            if(aLow[i] <= aHigh[j]){
+                array[k] = aLow[i];
+                i++;
+            }else {
+                array[k] = aHigh[j];
+                j++;
+            }
+            k++;
+        }
+        if(i < aLow.length){
+            for(int r = i; r<aLow.length; r++){
+                array[k] = aLow[r];
+            }
+        }else if(j < aHigh.length){
+            for (int r = j; r < aHigh.length; r++){
+                array[k] = aHigh[r];
+            }
         }
     }
 }

@@ -9,4 +9,5 @@ public interface Sortable {
     void insertionSortIterative(Integer [] array);
     void insertionSortLinkedList(MyLinkedList linkedList);
     void bubbleSort(Integer [] array);
+    void mergeSortRecursively(Integer [] array, int s, int e);
 }
