@@ -7,7 +7,7 @@ import akopensource.maindir.Utilities;
 public class Sortings implements Sortable {
 
     @Override
-    public void quickSort(Integer [] array, int p, int r) {
+    public void quickSort(Integer[] array, int p, int r) {
         if (p < r) {
             int q = partition(array, p, r);
             quickSort(array, p, q - 1);
@@ -57,23 +57,23 @@ public class Sortings implements Sortable {
         Integer temp = array[index];
         array[index] = array[mini];
         array[mini] = temp;
-        selectionSortRecursive(array, index+1);
+        selectionSortRecursive(array, index + 1);
     }
 
     @Override
     public void insertionSortIterative(Integer[] array) {
         int length = array.length;
-        for(int i = 1; i < length; i++){
+        for (int i = 1; i < length; i++) {
             int k = array[i];
             int j;
-            for(j = i-1; j >= 0; j--){
-                if(k < array[j]){
-                    array[j+1] = array[j];
+            for (j = i - 1; j >= 0; j--) {
+                if (k < array[j]) {
+                    array[j + 1] = array[j];
                 } else {
                     break;
                 }
             }
-            array[j+1] = k;
+            array[j + 1] = k;
         }
     }
 
@@ -81,13 +81,13 @@ public class Sortings implements Sortable {
     public void insertionSortLinkedList(MyLinkedList linkedList) {
         Node head = linkedList.getHead().getNext();
 
-        while(head != linkedList.getTailNode()){
+        while (head != linkedList.getTailNode()) {
             int key = head.getKey();
             Node n = head.getPrevious();
-            while (n != linkedList.getHeadNode()){
-                if(key < n.getKey()){
+            while (n != linkedList.getHeadNode()) {
+                if (key < n.getKey()) {
                     n.getNext().setKey(n.getKey());
-                }else {
+                } else {
                     break;
                 }
                 n = n.getPrevious();
@@ -100,14 +100,14 @@ public class Sortings implements Sortable {
     @Override
     public void bubbleSort(Integer[] array) {
         int length = array.length;
-        for(int i= 0; i < length; i++){
+        for (int i = 0; i < length; i++) {
             boolean isSorted = true;
-            for(int j = 0; j < length-1; j++){
-                if(array[j] > array[j+1]){
+            for (int j = 0; j < length - 1; j++) {
+                if (array[j] > array[j + 1]) {
                     int temp = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = temp;
-                    isSorted=false;
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                    isSorted = false;
                 }
             }
             if (isSorted) break;
@@ -116,49 +116,45 @@ public class Sortings implements Sortable {
 
     @Override
     public void mergeSortRecursively(Integer[] array, int s, int e) {
-        if(s < e) {
-            int m = (s+e)/2;
+        if (s < e) {
+            int m = (s + e) / 2;
             mergeSortRecursively(array, s, m);
-            mergeSortRecursively(array, m+1, e);
+            mergeSortRecursively(array, m + 1, e);
             merge(array, s, m, e);
         }
     }
 
     private void merge(Integer[] array, int s, int m, int e) {
-        int [] aLow = new int[m-s+1];
-        int [] aHigh = new int[e-m];
+        int[] aLow = new int[m - s + 1];
+        int[] aHigh = new int[e - m];
         int k = s;
-        for(int i= 0; i<aLow.length; i++){
-            if(k <= m){
-                aLow[i] = array[k];
-            }
+        for (int i = 0; i < aLow.length; i++) {
+            aLow[i] = array[k];
             k++;
         }
-        k = m+1;
-        for(int i= 0; i<aHigh.length; i++){
-            if(k <= e){
-                aHigh[i] = array[k];
-            }
+        k = m + 1;
+        for (int i = 0; i < aHigh.length; i++) {
+            aHigh[i] = array[k];
             k++;
         }
         k = s;
         int i = 0, j = 0;
-        while (i < aLow.length && j < aHigh.length && k <= e){
-            if(aLow[i] <= aHigh[j]){
+        while (i < aLow.length && j < aHigh.length) {
+            if (aLow[i] <= aHigh[j]) {
                 array[k] = aLow[i];
                 i++;
-            }else {
+            } else {
                 array[k] = aHigh[j];
                 j++;
             }
             k++;
         }
-        if(i < aLow.length){
-            for(int r = i; r<aLow.length; r++){
+        if (i < aLow.length) {
+            for (int r = i; r < aLow.length; r++) {
                 array[k] = aLow[r];
             }
-        }else if(j < aHigh.length){
-            for (int r = j; r < aHigh.length; r++){
+        } else if (j < aHigh.length) {
+            for (int r = j; r < aHigh.length; r++) {
                 array[k] = aHigh[r];
             }
         }
