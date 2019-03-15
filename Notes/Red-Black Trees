@@ -15,3 +15,15 @@ balanced.
 
 *We call the number of any simple path from, but not including, a node x down to a leaf the
 black-height of the node, denoted bh(x).
+
+*There are two types of rotation, left-rotation and right-rotation.
+
+*Left-rotation: when we do a left-rotation on a node x, we assume its right child y is not null. The
+left rotation pivots around the link from x to y. It makes y the new root of the subtree, x becomes
+the left child of y, and the left child of y becomes the right child of x. The left child of x
+remains as is.
+
+*Right-rotation: It makes when we do right-rotation on node y, we assume its left child x is not null.
+The right rotation pivots around the link from x to y. It makes x the new root of the subtree, y
+becomes the right child of x, and the right child of x becomes the left child of y. The right child
+of y remains as is.
