@@ -1,0 +1,17 @@
+*Red-Black Trees are one of many search-tree schemes that are "balanced" in order to guarantee that
+basic dynamic-set of operation take O(lgn) in the worst case time.
+
+*By constraining the node colors on any simple path from the root to a leaf, red-black trees ensure
+that no single path is more than twice as long as the other. So that the tree is approximately
+balanced.
+
+*Its properties:
+    - The nodes are either red or black.
+    - The root is black.
+    - The leaves are black.
+    - If a node is red, then both its children are black.
+    - From each node, all simple paths from the node to the descendant leaves contain the same number
+    of black nodes.
+
+*We call the number of any simple path from, but not including, a node x down to a leaf the
+black-height of the node, denoted bh(x).
