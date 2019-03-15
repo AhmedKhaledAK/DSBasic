@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +15,7 @@
     <session id="89741045">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
@@ -53,13 +52,13 @@
           <entry key="Number Theory" value="2249" />
           <entry key="dummy" value="1" />
           <entry key="java" value="9070" />
-          <entry key="txt" value="833" />
+          <entry key="txt" value="875" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="9070" />
-          <entry key="PLAIN_TEXT" value="4095" />
+          <entry key="PLAIN_TEXT" value="4137" />
         </counts>
       </usages-collector>
     </session>
@@ -81,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+            <state relative-caret-position="189">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -263,7 +262,7 @@
       <workItem from="1547727147956" duration="4577000" />
       <workItem from="1548421190918" duration="578000" />
       <workItem from="1551533396830" duration="12817000" />
-      <workItem from="1552240112347" duration="9557000" />
+      <workItem from="1552240112347" duration="10839000" />
     </task>
     <task id="LOCAL-00001" summary="Heap added">
       <created>1543509893427</created>
@@ -475,15 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552253502055</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added TODO in Sortings class">
+      <created>1552258078792</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1552258078792</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62643000" />
+    <option name="totallyTimeSpent" value="63925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3167785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -556,7 +561,8 @@
     <MESSAGE value="Bubble sort" />
     <MESSAGE value="Mergesort recursively" />
     <MESSAGE value="enhancements" />
-    <option name="LAST_COMMIT_MESSAGE" value="enhancements" />
+    <MESSAGE value="added TODO in Sortings class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added TODO in Sortings class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -651,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        <state relative-caret-position="189">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

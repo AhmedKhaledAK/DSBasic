@@ -1,4 +1,4 @@
-package akopensource.maindir;
+package akopensource.bst;
 
 public class BinarySearchTree {
 
