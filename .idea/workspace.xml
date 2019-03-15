@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/akopensource/rbtrees/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes/Red-Black Trees" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/Red-Black Trees" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,12 +41,12 @@
           <entry key="Modular Arithmetic" value="1" />
           <entry key="Number Theory" value="1" />
           <entry key="Red-Black Trees" value="1" />
-          <entry key="java" value="40" />
+          <entry key="java" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="40" />
+          <entry key="JAVA" value="42" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -55,13 +56,13 @@
           <entry key="Number Theory" value="2249" />
           <entry key="Red-Black Trees" value="1714" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="9070" />
+          <entry key="java" value="9798" />
           <entry key="txt" value="913" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9070" />
+          <entry key="JAVA" value="9798" />
           <entry key="PLAIN_TEXT" value="5889" />
         </counts>
       </usages-collector>
@@ -81,11 +82,54 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Notes/Red-Black Trees">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="588">
               <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+              <folding>
+                <element signature="e#110#111#0" expanded="true" />
+                <element signature="e#142#143#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,6 +165,8 @@
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
         <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" />
         <option value="$PROJECT_DIR$/Notes/Red-Black Trees" />
+        <option value="$PROJECT_DIR$/src/akopensource/rbtrees/Node.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" />
       </list>
     </option>
   </component>
@@ -192,6 +238,13 @@
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="akopensource" type="462c0819:PsiDirectoryNode" />
+              <item name="rbtrees" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="akopensource" type="462c0819:PsiDirectoryNode" />
               <item name="sorting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -203,7 +256,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552665295628" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552681796146" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -263,7 +316,7 @@
       <workItem from="1548421190918" duration="578000" />
       <workItem from="1551533396830" duration="12817000" />
       <workItem from="1552240112347" duration="10839000" />
-      <workItem from="1552653055973" duration="3446000" />
+      <workItem from="1552653055973" duration="6212000" />
     </task>
     <task id="LOCAL-00001" summary="Heap added">
       <created>1543509893427</created>
@@ -496,11 +549,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552660287844</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="red-black trees notes">
+      <created>1552678826048</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1552678826048</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67371000" />
+    <option name="totallyTimeSpent" value="70137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -685,6 +745,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+          <folding>
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
