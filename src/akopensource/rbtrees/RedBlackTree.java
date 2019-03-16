@@ -7,7 +7,33 @@ public class RedBlackTree {
         this.root = root;
     }
 
-    public RedBlackTree() {
+    public RedBlackTree(int data) {
+        root = new Node(data);
+    }
+
+    public void insert(int data){
+        Node z = new Node(data);
+        Node node = this.root, n = null;
+        while (node != null){
+            n = node; // get leaf node
+            if(z.getData() < node.getData())
+                node = node.getLeft();
+            else
+                node = node.getRight();
+        }
+        z.setParent(n);
+        if(n==null)
+            this.root = z;
+        else if(z.getData() < n.getData())
+            n.setLeft(z);
+        else
+            n.setRight(z);
+        // No need for setting the color or left and right child to null because they're already
+        // set when creating the node
+        insertFixup();
+    }
+
+    private void insertFixup() {
     }
 
     public void rotateLeft(Node x){
