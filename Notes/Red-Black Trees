@@ -23,6 +23,9 @@ left rotation pivots around the link from x to y. It makes y the new root of the
 the left child of y, and the left child of y becomes the right child of x. The left child of x
 remains as is.
 
+*If z.p is the root, then z.p is black. Since we enter a loop iteration only if z.p is red, we know
+that z.p cannot be the root. Hence, z.p.p exists.
+
 *Right-rotation: It makes when we do right-rotation on node y, we assume its left child x is not null.
 The right rotation pivots around the link from x to y. It makes x the new root of the subtree, y
 becomes the right child of x, and the right child of x becomes the left child of y. The right child
@@ -30,3 +33,7 @@ of y remains as is.
 
 *Insert node z as if it were an ordinary binary search tree, then color it red. To guarantee that
 the red-black tree properties are preserved, fix-up the tree by recoloring and rotating.
+
+*If the tree violates any of the properties, then it violates at most one of them, and the
+violation is of either property 2 or property 4. If the tree violates property 2, it is because
+z is the root and is red. If the tree violates property 4, it is because z and its parent are reds.

@@ -49,6 +49,10 @@ public class RedBlackTree {
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);
                     rotateRight(z.getParent().getParent());
+                } else if (z == z.getParent().getLeft()){
+                    z.getParent().setColor(1);
+                    z.getParent().getParent().setColor(0);
+                    rotateRight(z.getParent().getParent());
                 }
             }
             else{
@@ -61,6 +65,10 @@ public class RedBlackTree {
                 } else if (z == z.getParent().getLeft()){
                     z = z.getParent();
                     rotateRight(z);
+                    z.getParent().setColor(1);
+                    z.getParent().getParent().setColor(0);
+                    rotateLeft(z.getParent().getParent());
+                } else if (z == z.getParent().getRight()){
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);
                     rotateLeft(z.getParent().getParent());

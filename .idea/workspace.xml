@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/rbtrees/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/rbtrees/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes/Red-Black Trees" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/Red-Black Trees" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,16 +55,16 @@
         <counts>
           <entry key="Modular Arithmetic" value="1012" />
           <entry key="Number Theory" value="2249" />
-          <entry key="Red-Black Trees" value="1916" />
+          <entry key="Red-Black Trees" value="2450" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="10983" />
-          <entry key="txt" value="1059" />
+          <entry key="java" value="11064" />
+          <entry key="txt" value="1106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10983" />
-          <entry key="PLAIN_TEXT" value="6237" />
+          <entry key="JAVA" value="11064" />
+          <entry key="PLAIN_TEXT" value="6818" />
         </counts>
       </usages-collector>
     </session>
@@ -87,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Notes/Red-Black Trees">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
+            <state relative-caret-position="407">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -126,13 +125,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="122" column="54" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
+            <state relative-caret-position="378">
+              <caret line="73" column="58" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
               <folding>
-                <element signature="e#2238#2239#0" expanded="true" />
-                <element signature="e#2265#2266#0" expanded="true" />
-                <element signature="e#2303#2304#0" expanded="true" />
-                <element signature="e#2335#2336#0" expanded="true" />
+                <element signature="e#3498#3499#0" expanded="true" />
+                <element signature="e#3525#3526#0" expanded="true" />
+                <element signature="e#3563#3564#0" expanded="true" />
+                <element signature="e#3595#3596#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,9 +166,9 @@
         <option value="$PROJECT_DIR$/src/akopensource/linkedlist/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" />
         <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" />
-        <option value="$PROJECT_DIR$/Notes/Red-Black Trees" />
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/Node.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/Notes/Red-Black Trees" />
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" />
       </list>
     </option>
@@ -321,7 +320,7 @@
       <workItem from="1551533396830" duration="12817000" />
       <workItem from="1552240112347" duration="10839000" />
       <workItem from="1552653055973" duration="6858000" />
-      <workItem from="1552736065282" duration="6847000" />
+      <workItem from="1552736065282" duration="9798000" />
     </task>
     <task id="LOCAL-00001" summary="Heap added">
       <created>1543509893427</created>
@@ -589,11 +588,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552739571504</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fixing-up red-black trees after insertion">
+      <created>1552749924836</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1552749924836</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77630000" />
+    <option name="totallyTimeSpent" value="80581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -646,7 +652,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minimum and maximum in BST implemented" />
     <MESSAGE value="Notes about Number Theory" />
     <MESSAGE value="Added GCD recursion theorem in Notes directory" />
     <MESSAGE value="Added Euclid's recursive algorithm for calculating the greatest common divisor." />
@@ -671,7 +676,8 @@
     <MESSAGE value="notes rb tree" />
     <MESSAGE value="edited class node in rbtrees package" />
     <MESSAGE value="inserting in a red-black tree (without fixing-up)" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserting in a red-black tree (without fixing-up)" />
+    <MESSAGE value="fixing-up red-black trees after insertion" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing-up red-black trees after insertion" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -750,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Notes/Red-Black Trees">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/bst/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -809,15 +808,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/Red-Black Trees">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="122" column="54" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
+        <state relative-caret-position="378">
+          <caret line="73" column="58" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
           <folding>
-            <element signature="e#2238#2239#0" expanded="true" />
-            <element signature="e#2265#2266#0" expanded="true" />
-            <element signature="e#2303#2304#0" expanded="true" />
-            <element signature="e#2335#2336#0" expanded="true" />
+            <element signature="e#3498#3499#0" expanded="true" />
+            <element signature="e#3525#3526#0" expanded="true" />
+            <element signature="e#3563#3564#0" expanded="true" />
+            <element signature="e#3595#3596#0" expanded="true" />
           </folding>
         </state>
       </provider>
