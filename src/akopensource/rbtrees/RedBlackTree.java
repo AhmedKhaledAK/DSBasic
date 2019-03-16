@@ -38,7 +38,7 @@ public class RedBlackTree {
         while (z.getParent() != null && z.getParent().getColor() == 0){
             if(z.getParent() == z.getParent().getParent().getLeft()){
                 Node uncle = z.getParent().getParent().getRight();
-                if (uncle.getColor() == 0){ // case 1
+                if (uncle != null && uncle.getColor() == 0){ // case 1
                     uncle.setColor(1);
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);
@@ -57,7 +57,7 @@ public class RedBlackTree {
             }
             else{
                 Node uncle = z.getParent().getParent().getLeft();
-                if(uncle.getColor() == 0){
+                if(uncle != null && uncle.getColor() == 0){
                     uncle.setColor(1);
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);

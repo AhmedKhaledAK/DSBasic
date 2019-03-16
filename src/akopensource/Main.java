@@ -34,15 +34,12 @@ public class Main {
         linkedList.printLinkedList();*/
 
 
-        RedBlackTree redBlackTree = new RedBlackTree(11);
-        redBlackTree.insert(2);
-        redBlackTree.insert(14);
-        redBlackTree.insert(1);
-        redBlackTree.insert(7);
-        redBlackTree.insert(15);
-        redBlackTree.insert(5);
+        RedBlackTree redBlackTree = new RedBlackTree(41);
+        redBlackTree.insert(38);
+        redBlackTree.insert(31);
+        redBlackTree.insert(12);
+        redBlackTree.insert(19);
         redBlackTree.insert(8);
-        redBlackTree.insert(4);
 
         redBlackTree.traverseInorder(redBlackTree.getRoot());
 
