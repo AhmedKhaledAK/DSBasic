@@ -2,12 +2,13 @@ package akopensource.rbtrees;
 
 public class Node {
 
-    private int data;
+    private int data, color; //0 - red, 1 - black
     private Node left, right, parent;
 
     public Node(int data) {
         this.data = data;
         left = right = parent = null;
+        color = 0;
     }
 
     public int getData() {
