@@ -37,3 +37,11 @@ the red-black tree properties are preserved, fix-up the tree by recoloring and r
 *If the tree violates any of the properties, then it violates at most one of them, and the
 violation is of either property 2 or property 4. If the tree violates property 2, it is because
 z is the root and is red. If the tree violates property 4, it is because z and its parent are reds.
+
+*Cases (inserting node z - initially red):
+   1) z's uncle is red.
+   2) z's uncle is black and z is a right child.
+   3) z's uncle is black and z is a left child.
+
+*The insertion never performs more than two rotations since, since the loop terminates if case 2 or
+case 3 is executed.
