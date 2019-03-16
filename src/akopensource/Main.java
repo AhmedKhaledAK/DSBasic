@@ -2,6 +2,7 @@ package akopensource;
 
 import akopensource.linkedlist.MyLinkedList;
 import akopensource.maindir.*;
+import akopensource.rbtrees.RedBlackTree;
 import akopensource.sorting.Sortings;
 
 public class Main {
@@ -33,13 +34,26 @@ public class Main {
         linkedList.printLinkedList();*/
 
 
-        Sortings sortings = new Sortings();
+        RedBlackTree redBlackTree = new RedBlackTree(11);
+        redBlackTree.insert(2);
+        redBlackTree.insert(14);
+        redBlackTree.insert(1);
+        redBlackTree.insert(7);
+        redBlackTree.insert(15);
+        redBlackTree.insert(5);
+        redBlackTree.insert(8);
+        redBlackTree.insert(4);
+
+        redBlackTree.traverseInorder(redBlackTree.getRoot());
+
+
+       /* Sortings sortings = new Sortings();
         Integer[] array = {5,2,4,7,1,3,2,6};
         sortings.mergeSortRecursively(array,0,7);
 
         for (int e : array) {
             System.out.print(e + " ");
-        }
+        }*/
 
         /* HEAP TEST */
 

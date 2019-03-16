@@ -42,4 +42,12 @@ public class Node {
     public void setParent(Node parent) {
         this.parent = parent;
     }
+
+    public int getColor() {
+        return color;
+    }
+
+    public void setColor(int color) {
+        this.color = color;
+    }
 }
