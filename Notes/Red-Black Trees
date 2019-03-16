@@ -27,3 +27,6 @@ remains as is.
 The right rotation pivots around the link from x to y. It makes x the new root of the subtree, y
 becomes the right child of x, and the right child of x becomes the left child of y. The right child
 of y remains as is.
+
+*Insert node z as if it were an ordinary binary search tree, then color it red. To guarantee that
+the red-black tree properties are preserved, fix-up the tree by recoloring and rotating.
