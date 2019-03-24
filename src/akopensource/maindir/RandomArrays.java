@@ -16,4 +16,15 @@ public class RandomArrays {
         return intStream.toArray();
     }
 
+    // can be done with shuffle method in collections
+    public static void shuffleArray(int [] array){
+        int len = array.length;
+        for(int i = 0; i < len; i++){
+            int j = new Random().nextInt(len);
+            int temp = array[j];
+            array[j] = array[i];
+            array[i] = temp;
+        }
+    }
+
 }

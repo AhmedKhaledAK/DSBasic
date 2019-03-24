@@ -4,10 +4,7 @@
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/maindir/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/maindir/Heap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/maindir/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/maindir/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/maindir/RandomArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/maindir/RandomArrays.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,25 +57,25 @@
           <entry key="Number Theory" value="2249" />
           <entry key="Red-Black Trees" value="2767" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="12388" />
-          <entry key="txt" value="1225" />
+          <entry key="java" value="12706" />
+          <entry key="txt" value="1242" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12388" />
-          <entry key="PLAIN_TEXT" value="7254" />
+          <entry key="JAVA" value="12706" />
+          <entry key="PLAIN_TEXT" value="7271" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+            <state relative-caret-position="231">
+              <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/maindir/RandomArrays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="462">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#176#177#0" expanded="true" />
@@ -158,12 +155,12 @@
         <option value="$PROJECT_DIR$/Notes/Red-Black Trees" />
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/Node.java" />
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/maindir/RandomArrays.java" />
         <option value="$PROJECT_DIR$/src/akopensource/maindir/Utilities.java" />
         <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" />
         <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" />
         <option value="$PROJECT_DIR$/src/akopensource/maindir/Heap.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/maindir/RandomArrays.java" />
       </list>
     </option>
   </component>
@@ -253,7 +250,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553463636817" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553464945209" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -315,7 +312,7 @@
       <workItem from="1552240112347" duration="10839000" />
       <workItem from="1552653055973" duration="6858000" />
       <workItem from="1552736065282" duration="14598000" />
-      <workItem from="1553459370295" duration="4178000" />
+      <workItem from="1553459370295" duration="5340000" />
     </task>
     <task id="LOCAL-00001" summary="Heap added">
       <created>1543509893427</created>
@@ -625,11 +622,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553461351714</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="heap fixations">
+      <created>1553463785842</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1553463785842</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89559000" />
+    <option name="totallyTimeSpent" value="90721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -644,7 +648,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -682,7 +686,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modular arithmetic notes" />
     <MESSAGE value="Selection sort (iterative approach)" />
     <MESSAGE value="Selection sort (recursive approach)" />
     <MESSAGE value="Insertion sort (iterative approach)" />
@@ -707,7 +710,8 @@
     <MESSAGE value="rb trees insertion fixation" />
     <MESSAGE value="heap sort fixations" />
     <MESSAGE value="generating random arrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="generating random arrays" />
+    <MESSAGE value="heap fixations" />
+    <option name="LAST_COMMIT_MESSAGE" value="heap fixations" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -802,18 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/maindir/RandomArrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/maindir/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -847,10 +839,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        <state relative-caret-position="231">
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/maindir/RandomArrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -19,22 +19,35 @@ public class Main {
         }*/
 
 
-        /*Sortings sortings = new Sortings();
+        Sortings sortings = new Sortings();
 
-        for(int i = 10; i < 15; i++){
-            System.out.printf("PASS %d ---------", i);
+        for(int i = 10; i < 11; i++){
+            System.out.printf("PASS %d ---------\n", i);
             int [] array = RandomArrays.generateRandomArray(i);
             System.out.println("QUICK SORT --");
             sortings.quickSort(array, 0, array.length-1);
-            System.out.println("INSERTION SORT --");
+
+            System.out.println("ARRAY---");
+            for (int e : array) {
+                System.out.print(e + " ");
+            }
+            RandomArrays.shuffleArray(array);
+            System.out.println();
+            System.out.println("TEMP---");
+            for (int e : array) {
+                System.out.print(e + " ");
+            }
+
+
+            /*System.out.println("INSERTION SORT --");
             sortings.insertionSortIterative(array);
             System.out.println("SELECTION SORT --");
             sortings.selectionSortIterative(array);
             System.out.println("MERGE SORT --");
             sortings.mergeSortRecursively(array, 0, array.length-1);
             System.out.println("HEAP SORT");
-            sortings.heapSort(array);
-        }*/
+            sortings.heapSort(array);*/
+        }
 
        /* MyLinkedList linkedList = new MyLinkedList();
         linkedList.insertTail(65);
