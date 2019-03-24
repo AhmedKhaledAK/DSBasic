@@ -34,14 +34,14 @@ public class Main {
         linkedList.printLinkedList();*/
 
 
-        RedBlackTree redBlackTree = new RedBlackTree(41);
+        /*RedBlackTree redBlackTree = new RedBlackTree(41);
         redBlackTree.insert(38);
         redBlackTree.insert(31);
         redBlackTree.insert(12);
         redBlackTree.insert(19);
         redBlackTree.insert(8);
 
-        redBlackTree.traverseInorder(redBlackTree.getRoot());
+        redBlackTree.traverseInorder(redBlackTree.getRoot());*/
 
 
        /* Sortings sortings = new Sortings();
@@ -54,7 +54,7 @@ public class Main {
 
         /* HEAP TEST */
 
-        /*Integer [] hp = {0,6,5,20,12,30,1,5,5,2,3,4};
+        Integer [] hp = {0,6,5,20,12,30,1,5,5,2,3,4};
 
         Heap heap = new Heap(hp);
 
@@ -62,7 +62,7 @@ public class Main {
 
         for(int i = 1; i < hp.length; i++){
             System.out.print(hp[i] + " ");
-        }*/
+        }
 
         /*Quicksort Test */
 

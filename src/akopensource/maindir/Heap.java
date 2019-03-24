@@ -12,18 +12,18 @@ public class Heap {
 
     public void sort() {
         buildMax();
-        for(int i = heap.length - 1; i >= 2; i--){
-            int temp = heap[1];
-            heap[1] = heap[i];
+        for(int i = heap.length - 1; i >= 1; i--){
+            int temp = heap[0];
+            heap[0] = heap[i];
             heap[i] = temp;
             size -= 1;
-            maxHeapify(1);
+            maxHeapify(0);
         }
     }
 
     public void buildMax() {
         size = heap.length-1;
-        for (int i = heap.length/ 2; i > 1; i--){
+        for (int i = heap.length/ 2; i >= 1; i--){
             maxHeapify(i-1);
         }
     }
@@ -49,11 +49,11 @@ public class Heap {
 
 
     public int right(int i) {
-        return 2*i+1;
+        return 2*i+2;
     }
 
     public int left(int i) {
-        return 2*i;
+        return 2*i+1;
     }
 
 }
