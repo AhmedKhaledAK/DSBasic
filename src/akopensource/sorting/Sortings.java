@@ -2,6 +2,7 @@ package akopensource.sorting;
 
 import akopensource.linkedlist.MyLinkedList;
 import akopensource.linkedlist.Node;
+import akopensource.maindir.Heap;
 import akopensource.maindir.Utilities;
 
 public class Sortings implements Sortable {
@@ -9,7 +10,7 @@ public class Sortings implements Sortable {
     /* TODO: quicksort iterative and mergesort iterative*/
 
     @Override
-    public void quickSort(Integer[] array, int p, int r) {
+    public void quickSort(int[] array, int p, int r) {
         if (p < r) {
             int q = partition(array, p, r);
             quickSort(array, p, q - 1);
@@ -17,7 +18,7 @@ public class Sortings implements Sortable {
         }
     }
 
-    private int partition(Integer[] array, int p, int r) {
+    private int partition(int[] array, int p, int r) {
         int pivot = array[r];
         int i = p - 1;
         for (int j = p; j <= r - 1; j++) {
@@ -35,7 +36,7 @@ public class Sortings implements Sortable {
     }
 
     @Override
-    public void selectionSortIterative(Integer[] array) {
+    public void selectionSortIterative(int[] array) {
         int length = array.length;
         for (int i = 0; i < length - 1; i++) {
             int min = Integer.MAX_VALUE;
@@ -53,7 +54,7 @@ public class Sortings implements Sortable {
     }
 
     @Override
-    public void selectionSortRecursive(Integer[] array, int index) {
+    public void selectionSortRecursive(int[] array, int index) {
         if (index == array.length - 1) return;
         int mini = Utilities.findMinimumRecursive(array, index, Integer.MAX_VALUE, -1);
         Integer temp = array[index];
@@ -63,7 +64,7 @@ public class Sortings implements Sortable {
     }
 
     @Override
-    public void insertionSortIterative(Integer[] array) {
+    public void insertionSortIterative(int[] array) {
         int length = array.length;
         for (int i = 1; i < length; i++) {
             int k = array[i];
@@ -100,7 +101,7 @@ public class Sortings implements Sortable {
     }
 
     @Override
-    public void bubbleSort(Integer[] array) {
+    public void bubbleSort(int[] array) {
         int length = array.length;
         for (int i = 0; i < length; i++) {
             boolean isSorted = true;
@@ -117,7 +118,7 @@ public class Sortings implements Sortable {
     }
 
     @Override
-    public void mergeSortRecursively(Integer[] array, int s, int e) {
+    public void mergeSortRecursively(int[] array, int s, int e) {
         if (s < e) {
             int m = (s + e) / 2;
             mergeSortRecursively(array, s, m);
@@ -126,7 +127,13 @@ public class Sortings implements Sortable {
         }
     }
 
-    private void merge(Integer[] array, int s, int m, int e) {
+    @Override
+    public void heapSort(int[] array) {
+        Heap heap = new Heap(array);
+        heap.sort();
+    }
+
+    private void merge(int[] array, int s, int m, int e) {
         int[] aLow = new int[m - s + 1], aHigh = new int[e - m];
         int k = s;
         for (int i = 0; i < aLow.length; i++)

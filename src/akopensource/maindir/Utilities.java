@@ -1,7 +1,7 @@
 package akopensource.maindir;
 
 public class Utilities {
-    public static int findMinimumRecursive(Integer [] array, int index, int min, int mini){
+    public static int findMinimumRecursive(int [] array, int index, int min, int mini){
         if(index == array.length) return mini;
         if(array[index] < min){
             min = array[index];

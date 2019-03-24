@@ -11,14 +11,30 @@ public class Main {
         //TESTING
 
         /*Sortings sortings = new Sortings();
-        Integer [] array = {65, 25, 12, 22, 11};
+        int [] array = {65, 25, 12, 22, 11};
         //sortings.selectionSortIterative(array);
         sortings.insertionSortIterative(array);
         for (int e: array) {
             System.out.print(e+" ");
-        }
-*/
+        }*/
 
+
+        /*Sortings sortings = new Sortings();
+
+        for(int i = 10; i < 15; i++){
+            System.out.printf("PASS %d ---------", i);
+            int [] array = RandomArrays.generateRandomArray(i);
+            System.out.println("QUICK SORT --");
+            sortings.quickSort(array, 0, array.length-1);
+            System.out.println("INSERTION SORT --");
+            sortings.insertionSortIterative(array);
+            System.out.println("SELECTION SORT --");
+            sortings.selectionSortIterative(array);
+            System.out.println("MERGE SORT --");
+            sortings.mergeSortRecursively(array, 0, array.length-1);
+            System.out.println("HEAP SORT");
+            sortings.heapSort(array);
+        }*/
 
        /* MyLinkedList linkedList = new MyLinkedList();
         linkedList.insertTail(65);
@@ -44,36 +60,35 @@ public class Main {
         redBlackTree.traverseInorder(redBlackTree.getRoot());*/
 
 
-       /* Sortings sortings = new Sortings();
-        Integer[] array = {5,2,4,7,1,3,2,6};
+        /*Sortings sortings = new Sortings();
+        int[] array = {5,2,4,7,1,3,2,6};
         sortings.mergeSortRecursively(array,0,7);
 
         for (int e : array) {
             System.out.print(e + " ");
-        }*/
-
-        /* HEAP TEST */
-
-        /*Integer [] hp = {0,6,5,20,12,30,1,5,5,2,3,4};
-
-        Heap heap = new Heap(hp);
-
-        heap.sort();
-
-        for(int i = 1; i < hp.length; i++){
-            System.out.print(hp[i] + " ");
         }
 */
+        /* HEAP TEST */
+
+        /*int [] hp = {0,0,6,5,20,30,1,5,2,3,4};
+
+        //Heap heap = new Heap(hp);
+
+        Sortings sortings = new Sortings();
+        sortings.heapSort(hp);
+
+        for(int i = 0; i < hp.length; i++){
+            System.out.print(hp[i] + " ");
+        }*/
+
         /*Quicksort Test */
 
         /*int [] array = {2,8,7,1,3,5,6,4};
         Sortings sortings = new Sortings();
         sortings.quickSort(array, 0, 7);
-        array = sortings.getSortedArray();
         for (int i : array){
             System.out.print(i + " ");
-        }
-*/
+        }*/
 
         //TEST BST
 

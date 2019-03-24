@@ -2,17 +2,17 @@ package akopensource.maindir;
 
 public class Heap {
 
-    private Integer [] heap;
+    private int [] heap;
     private int size;
 
-    public Heap(Integer[] heap) {
+    public Heap(int[] heap) {
         this.heap = heap;
         this.size = heap.length-1;
     }
 
     public void sort() {
         buildMax();
-        for(int i = heap.length - 1; i >= 1; i--){
+        for(int i = heap.length - 1; i > 0; i--){
             int temp = heap[0];
             heap[0] = heap[i];
             heap[i] = temp;
@@ -23,8 +23,8 @@ public class Heap {
 
     public void buildMax() {
         size = heap.length-1;
-        for (int i = heap.length/ 2; i >= 1; i--){
-            maxHeapify(i-1);
+        for (int i = size/ 2; i >= 0; i--){
+            maxHeapify(i);
         }
     }
 
@@ -48,11 +48,11 @@ public class Heap {
 
 
 
-    public int right(int i) {
+    private int right(int i) {
         return 2*i+2;
     }
 
-    public int left(int i) {
+    private int left(int i) {
         return 2*i+1;
     }
 
