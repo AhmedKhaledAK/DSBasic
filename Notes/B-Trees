@@ -20,3 +20,14 @@ of main-memory does not limit the size of B-trees that can be handled.
 *Since in most systems the running time of a B-tree algorithm depends primarily on the number of
 DISK-READ and DISK-WRITE operations it performs, we typically want each of these operations to read
 or write as much information as possible.
+
+*All leaves have the same depth, which is the tree's height h.
+
+*Nodes have a lower and upper bounds on the number of keys they can contain. We express these
+bounds in terms of a fixed integer t >= 2 called the minimum degree of the B-tree.
+
+*Every internal node in a B-tree must be at least half full.
+
+*B-trees grows and shrinks from the root.
+
+*Much larger values of the minimum degree yield B-trees of smaller height.
