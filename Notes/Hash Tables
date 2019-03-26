@@ -12,3 +12,14 @@ average time of searching in a hash table is O(1).
   We shall assume that no two elements have the same key. We use an array or a direct address
   table denoted as T[0...m-1] where each position or slot corresponds to a key in the set of keys.
   - Each of the operations take O(1) time.
+
+*Hash Tables:
+  - With direct addressing, an element with key k is stored in slot k. With hashing, the element is
+  stored in slot h(k), where h is a hashing function.
+  - The size of the hash table is typically much less than the set of keys.
+  - The hash function reduces the range of the array indices and hence, the size of the array.
+  Instead of a size of the set of keys, the array can have size m.
+  - Two keys may hash to the same slot. We call this situation a collision.
+  - Because the set of keys is larger than the size of the array, it is impossible to avoid
+  collisions. Thus, while a well designed, "random"-looking hash function can minimize the number
+  of collisions.
