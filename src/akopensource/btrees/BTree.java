@@ -8,7 +8,7 @@ public class BTree {
     private BTreeNode root;
 
     public BTree(int t) {
-        this.root = null;
+        this.root = new BTreeNode(true, t);
         this.t = t;
     }
 
