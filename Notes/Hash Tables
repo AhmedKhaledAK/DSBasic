@@ -8,9 +8,10 @@ average time of searching in a hash table is O(1).
 *Instead of using the data as an array index directly, the array index is computed from the data.
 
 *Direct Addressing:
-  - Direct addressing is a simple technique that works well when the set of data is reasonably small.
-  We shall assume that no two elements have the same data. We use an array or a direct address
-  table denoted as T[0...m-1] where each position or slot corresponds to a data in the set of keys.
+  - Direct addressing is a simple technique that works well when the set of data is reasonably
+  small. We shall assume that no two elements have the same data. We use an array or a direct
+  address table denoted as T[0...m-1] where each position or slot corresponds to a data in the
+  set of keys.
   - Each of the operations take O(1) time.
 
 *Hash Tables:
@@ -30,3 +31,22 @@ average time of searching in a hash table is O(1).
     - The worst case running time of "insertion" is O(1).
     - The worst case running time of "searching" is proportional to the length of the list.
     - If the linked list is a doubly linked list, "deletion" can be done on O(1) time.
+    - The worst-case of hashing with chaining is terrible: all n keys hash to the same slot,
+    creating a list of length n.
+
+*Hash Functions:
+A good approach derives the hash values in a way that we expect to be independent of any patterns
+that might exist in the data.
+
+- The division method:
+  When using the division method, we usually avoid certain values of m. For example, m should not be
+  a power of 2, since if m = 2 ^ p, then h(k) is just the p lowest-order bits of k.
+
+- The multiplication method:
+  It operates in two steps. First we multiply the key k by a constant A in the range 0 < A < 1
+  and extract the fraction part of kA. Then, we multiply this value by m and take the floor of the
+  result.
+  h(k) = floor(m(kA mod 1)), where kA mod 1 is the fractional part of kA, that is,
+  kA - floor(kA).
+  We choose the value of m to be a power of 2 since we can easily implement the function on most
+  computers.
