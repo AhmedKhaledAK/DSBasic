@@ -4,3 +4,19 @@ secondary storage devices.
 *B-trees differ from red-black trees in that B-trees nodes may have many children, from a few to
 thousands. That is, the branching factor of B-trees can be quite large. B-trees are similar to
 red-black trees in that every n-node B-tree has height O(lgn).
+
+*If an internal B-tree node x contains x.n keys, then x has x.n + 1 children.
+
+*When searching for an element in a B-tree, we make (x.n + 1)-way decision based on comparisons
+with the x.n keys stored at node x.
+
+*In a typical B-tree application, the amount of data handled is so large that all the data do not
+fit into main memory at once. The B-tree algorithms copy selected pages from disk into main memory
+as needed and write back onto disk the pages that have changed.
+
+*B-tree algorithms keep only a constant number of pages in main-memory at any time; thus, the size
+of main-memory does not limit the size of B-trees that can be handled.
+
+*Since in most systems the running time of a B-tree algorithm depends primarily on the number of
+DISK-READ and DISK-WRITE operations it performs, we typically want each of these operations to read
+or write as much information as possible.
