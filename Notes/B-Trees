@@ -1,0 +1,6 @@
+*B-trees are "balanced" search trees designed to work well on disks and other direct-access
+secondary storage devices.
+
+*B-trees differ from red-black trees in that B-trees nodes may have many children, from a few to
+thousands. That is, the branching factor of B-trees can be quite large. B-trees are similar to
+red-black trees in that every n-node B-tree has height O(lgn).
