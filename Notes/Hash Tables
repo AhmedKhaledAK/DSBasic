@@ -1,0 +1,6 @@
+*Hash Tables is good at implementing a dynamic set that support only dictionary operations INSERT,
+SEARCH and DELETE.
+
+*Although the running time of searching in a hash table can be like that of a linked list -
+Big-Theta(n), but in practice hash tables performs very well. Under reasonable assumptions the
+average time of searching in a hash table is O(1).
