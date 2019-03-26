@@ -4,3 +4,11 @@ SEARCH and DELETE.
 *Although the running time of searching in a hash table can be like that of a linked list -
 Big-Theta(n), but in practice hash tables performs very well. Under reasonable assumptions the
 average time of searching in a hash table is O(1).
+
+*Instead of using the key as an array index directly, the array index is computed from the key.
+
+*Direct Addressing:
+  - Direct addressing is a simple technique that works well when the set of key is reasonably small.
+  We shall assume that no two elements have the same key. We use an array or a direct address
+  table denoted as T[0...m-1] where each position or slot corresponds to a key in the set of keys.
+  - Each of the operations take O(1) time.
