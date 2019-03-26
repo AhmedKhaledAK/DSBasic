@@ -1,5 +1,7 @@
 package akopensource.maindir;
 
+import akopensource.tuples.Triplet;
+
 public class Numbers {
     public static int gcd(int a, int b){
         if(b == 0)

@@ -1,4 +1,4 @@
-package akopensource.maindir;
+package akopensource.tuples;
 
 public class Triplet {
 

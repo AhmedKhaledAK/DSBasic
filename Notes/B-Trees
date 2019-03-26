@@ -31,3 +31,7 @@ bounds in terms of a fixed integer t >= 2 called the minimum degree of the B-tre
 *B-trees grows and shrinks from the root.
 
 *Much larger values of the minimum degree yield B-trees of smaller height.
+
+*Searching a B-tree is much like searching a binary search tree, except that instead of making
+a two-way branching decision at each node, we make a multiway branching decision according to
+the number of the node's children.
