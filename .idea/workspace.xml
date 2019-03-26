@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes/B-Trees" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/B-Trees" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/btrees/BTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/btrees/BTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/btrees/BTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/btrees/BTreeNode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,20 +58,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="B-Trees" value="2128" />
+          <entry key="B-Trees" value="2573" />
           <entry key="Hash Tables" value="3539" />
           <entry key="Modular Arithmetic" value="1012" />
           <entry key="Number Theory" value="2249" />
           <entry key="Red-Black Trees" value="2767" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="14328" />
+          <entry key="java" value="14917" />
           <entry key="txt" value="1455" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14328" />
-          <entry key="PLAIN_TEXT" value="13151" />
+          <entry key="JAVA" value="14917" />
+          <entry key="PLAIN_TEXT" value="13596" />
         </counts>
       </usages-collector>
     </session>
@@ -79,17 +81,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Notes/B-Trees">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+            <state relative-caret-position="640">
+              <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/btrees/BTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="449">
+              <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
               <folding>
                 <element signature="e#387#388#0" expanded="true" />
                 <element signature="e#411#412#0" expanded="true" />
@@ -116,41 +118,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/btrees/BTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            <state relative-caret-position="470">
+              <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="28" />
               <folding>
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1172#1173#0" expanded="true" />
+                <element signature="e#1198#1199#0" expanded="true" />
+                <element signature="e#1232#1233#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1302#1303#0" expanded="true" />
+                <element signature="e#1334#1335#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/tuples/Triplet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/tuples/Pair.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -191,9 +175,9 @@
         <option value="$PROJECT_DIR$/src/akopensource/linkedlist/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/akopensource/hashtables/HashTable.java" />
         <option value="$PROJECT_DIR$/Notes/Hash Tables" />
-        <option value="$PROJECT_DIR$/Notes/B-Trees" />
         <option value="$PROJECT_DIR$/src/akopensource/tuples/Triplet.java" />
         <option value="$PROJECT_DIR$/src/akopensource/tuples/Pair.java" />
+        <option value="$PROJECT_DIR$/Notes/B-Trees" />
         <option value="$PROJECT_DIR$/src/akopensource/btrees/BTreeNode.java" />
         <option value="$PROJECT_DIR$/src/akopensource/btrees/BTree.java" />
       </list>
@@ -299,7 +283,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553631915094" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553637916389" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -363,14 +347,7 @@
       <workItem from="1552736065282" duration="14598000" />
       <workItem from="1553459370295" duration="7437000" />
       <workItem from="1553551812073" duration="2223000" />
-      <workItem from="1553601599688" duration="20621000" />
-    </task>
-    <task id="LOCAL-00010" summary="Minimum and maximum in BST implemented">
-      <created>1543679704351</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1543679704351</updated>
+      <workItem from="1553601599688" duration="25490000" />
     </task>
     <task id="LOCAL-00011" summary="Notes about Number Theory">
       <created>1545917376678</created>
@@ -708,11 +685,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553630362631</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="B-trees">
+      <created>1553632348680</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1553632348680</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115662000" />
+    <option name="totallyTimeSpent" value="120531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -765,7 +749,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="clarification in MyLinkedList class" />
     <MESSAGE value="Bubble sort" />
     <MESSAGE value="Mergesort recursively" />
     <MESSAGE value="enhancements" />
@@ -790,7 +773,8 @@
     <MESSAGE value="notes on hash tables" />
     <MESSAGE value="notes on B-trees" />
     <MESSAGE value="B-trees (search only)" />
-    <option name="LAST_COMMIT_MESSAGE" value="B-trees (search only)" />
+    <MESSAGE value="B-trees" />
+    <option name="LAST_COMMIT_MESSAGE" value="B-trees" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -955,13 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Notes/B-Trees">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/tuples/Triplet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -976,10 +953,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Notes/B-Trees">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/btrees/BTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="28" />
+          <folding>
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1302#1303#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/btrees/BTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="449">
+          <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
           <folding>
             <element signature="e#387#388#0" expanded="true" />
             <element signature="e#411#412#0" expanded="true" />
@@ -1001,25 +1004,6 @@
             <element signature="e#820#821#0" expanded="true" />
             <element signature="e#861#862#0" expanded="true" />
             <element signature="e#890#891#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/btrees/BTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
           </folding>
         </state>
       </provider>

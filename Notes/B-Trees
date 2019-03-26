@@ -35,3 +35,8 @@ bounds in terms of a fixed integer t >= 2 called the minimum degree of the B-tre
 *Searching a B-tree is much like searching a binary search tree, except that instead of making
 a two-way branching decision at each node, we make a multiway branching decision according to
 the number of the node's children.
+
+*We cannot simply create a new leaf node and insert it,as the resulting tree would fail to be a
+valid B-Tree (as the height will not be lgn). Instead, we insert the new key into an existing leaf
+node. Since we cannot insert a key into leaf that is full, we split the node around its median into
+two nodes having only t-1 keys (the minimum number of keys a node can have).
