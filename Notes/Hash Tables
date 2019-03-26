@@ -27,3 +27,6 @@ average time of searching in a hash table is O(1).
 *Collision resolution:
  1) Chaining
     - We place all the elements that hash to the same slot into the same linked list.
+    - The worst case running time of "insertion" is O(1).
+    - The worst case running time of "searching" is proportional to the length of the list.
+    - If the linked list is a doubly linked list, "deletion" can be done on O(1) time.
