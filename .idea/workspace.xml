@@ -55,19 +55,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Hash Tables" value="3259" />
+          <entry key="Hash Tables" value="3539" />
           <entry key="Modular Arithmetic" value="1012" />
           <entry key="Number Theory" value="2249" />
           <entry key="Red-Black Trees" value="2767" />
           <entry key="dummy" value="1" />
           <entry key="java" value="13641" />
-          <entry key="txt" value="1396" />
+          <entry key="txt" value="1422" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="13641" />
-          <entry key="PLAIN_TEXT" value="10684" />
+          <entry key="PLAIN_TEXT" value="10990" />
         </counts>
       </usages-collector>
     </session>
@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Notes/Hash Tables">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+            <state relative-caret-position="556">
+              <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -237,7 +237,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553610640997" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553615222695" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -301,14 +301,7 @@
       <workItem from="1552736065282" duration="14598000" />
       <workItem from="1553459370295" duration="7437000" />
       <workItem from="1553551812073" duration="2223000" />
-      <workItem from="1553601599688" duration="8259000" />
-    </task>
-    <task id="LOCAL-00004" summary="Heap data structure and heap sort algorithm added">
-      <created>1543510393395</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1543510393395</updated>
+      <workItem from="1553601599688" duration="9671000" />
     </task>
     <task id="LOCAL-00005" summary="Heap data structure and heap sort algorithm added">
       <created>1543510653676</created>
@@ -646,11 +639,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553609495811</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="notes on hash tables">
+      <created>1553613030710</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1553613030710</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103300000" />
+    <option name="totallyTimeSpent" value="104712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -703,7 +703,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Doubly Linkedlist" />
     <MESSAGE value="Insertion sort using Linked List" />
     <MESSAGE value="Insertion sort implemented with LinkedList" />
     <MESSAGE value="clarification in MyLinkedList class" />
@@ -728,7 +727,8 @@
     <MESSAGE value="sorting shuffled arrays using all sorting techniques" />
     <MESSAGE value="Notes on Hash Tables" />
     <MESSAGE value="Hashtable with chaining collision resolving" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hashtable with chaining collision resolving" />
+    <MESSAGE value="notes on hash tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="notes on hash tables" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -895,8 +895,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes/Hash Tables">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+        <state relative-caret-position="556">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
         </state>
       </provider>
     </entry>

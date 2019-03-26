@@ -33,6 +33,11 @@ average time of searching in a hash table is O(1).
     - If the linked list is a doubly linked list, "deletion" can be done on O(1) time.
     - The worst-case of hashing with chaining is terrible: all n keys hash to the same slot,
     creating a list of length n.
+2) Open Addressing
+    - All elements occupy the hash table itself. No lists and no elements are stored outside the
+    table.
+    - The hash table can fill up until no further insertions can be made; one consequence is
+    that the load factor can never exceed 1. (n <= m)
 
 *Hash Functions:
 A good approach derives the hash values in a way that we expect to be independent of any patterns
