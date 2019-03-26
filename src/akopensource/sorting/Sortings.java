@@ -85,17 +85,17 @@ public class Sortings implements Sortable {
         Node head = linkedList.getHead().getNext();
 
         while (head != linkedList.getTailNode()) {
-            int key = head.getKey();
+            int key = head.getData();
             Node n = head.getPrevious();
             while (n != linkedList.getHeadNode()) {
-                if (key < n.getKey()) {
-                    n.getNext().setKey(n.getKey());
+                if (key < n.getData()) {
+                    n.getNext().setData(n.getData());
                 } else {
                     break;
                 }
                 n = n.getPrevious();
             }
-            n.getNext().setKey(key);
+            n.getNext().setData(key);
             head = head.getNext();
         }
     }

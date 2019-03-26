@@ -1,5 +1,6 @@
 package akopensource;
 
+import akopensource.hashtables.HashTable;
 import akopensource.linkedlist.MyLinkedList;
 import akopensource.maindir.*;
 import akopensource.rbtrees.RedBlackTree;
@@ -10,6 +11,17 @@ public class Main {
     public static void main(String[] args) {
         //TESTING
 
+
+        HashTable hashTable = new HashTable(10);
+        hashTable.chainedHashInsert(25);
+        hashTable.chainedHashInsert(23);
+        hashTable.chainedHashInsert(9);
+        hashTable.chainedHashInsert(25);
+        hashTable.chainedHashInsert(25);
+        hashTable.chainedHashInsert(9);
+
+        hashTable.printHashTable();
+
         /*Sortings sortings = new Sortings();
         int [] array = {65, 25, 12, 22, 11};
         //sortings.selectionSortIterative(array);
@@ -19,7 +31,7 @@ public class Main {
         }*/
 
 
-        Sortings sortings = new Sortings();
+        /*Sortings sortings = new Sortings();
 
         for(int i = 10; i < 15; i++){
             System.out.printf("SIZE %d ---------\n", i);
@@ -69,7 +81,7 @@ public class Main {
             RandomArrays.shuffleArray(array);
             System.out.println();
         }
-
+*/
        /* MyLinkedList linkedList = new MyLinkedList();
         linkedList.insertTail(65);
         linkedList.insertTail(25);
@@ -139,7 +151,7 @@ public class Main {
 
         System.out.println("------------");
         Node n = bst.findMaximum();
-        System.out.println(n.getKey());*/
+        System.out.println(n.getData());*/
 
         //System.out.println(Numbers.bgcd(99, 78));
 

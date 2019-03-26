@@ -5,16 +5,16 @@ SEARCH and DELETE.
 Big-Theta(n), but in practice hash tables performs very well. Under reasonable assumptions the
 average time of searching in a hash table is O(1).
 
-*Instead of using the key as an array index directly, the array index is computed from the key.
+*Instead of using the data as an array index directly, the array index is computed from the data.
 
 *Direct Addressing:
-  - Direct addressing is a simple technique that works well when the set of key is reasonably small.
-  We shall assume that no two elements have the same key. We use an array or a direct address
-  table denoted as T[0...m-1] where each position or slot corresponds to a key in the set of keys.
+  - Direct addressing is a simple technique that works well when the set of data is reasonably small.
+  We shall assume that no two elements have the same data. We use an array or a direct address
+  table denoted as T[0...m-1] where each position or slot corresponds to a data in the set of keys.
   - Each of the operations take O(1) time.
 
 *Hash Tables:
-  - With direct addressing, an element with key k is stored in slot k. With hashing, the element is
+  - With direct addressing, an element with data k is stored in slot k. With hashing, the element is
   stored in slot h(k), where h is a hashing function.
   - The size of the hash table is typically much less than the set of keys.
   - The hash function reduces the range of the array indices and hence, the size of the array.
@@ -23,3 +23,7 @@ average time of searching in a hash table is O(1).
   - Because the set of keys is larger than the size of the array, it is impossible to avoid
   collisions. Thus, while a well designed, "random"-looking hash function can minimize the number
   of collisions.
+
+*Collision resolution:
+ 1) Chaining
+    - We place all the elements that hash to the same slot into the same linked list.

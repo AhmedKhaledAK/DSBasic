@@ -1,19 +1,17 @@
 package akopensource.linkedlist;
 
-import java.util.LinkedList;
-
 public class Node {
-    int key;
+    int data;
     Node next;
     Node previous;
 
-    public Node(int key) {
-        this.key = key;
+    public Node(int data) {
+        this.data = data;
         next = null;
         previous = null;
     }
-    public Node(int key, Node next, Node previous){
-        this.key = key;
+    public Node(int data, Node next, Node previous){
+        this.data = data;
         this.next = next;
         this.previous=previous;
     }
@@ -23,8 +21,8 @@ public class Node {
         previous = null;
     }
 
-    public int getKey() {
-        return key;
+    public int getData() {
+        return data;
     }
 
     public Node getNext() {
@@ -35,8 +33,8 @@ public class Node {
         return previous;
     }
 
-    public void setKey(int key) {
-        this.key = key;
+    public void setData(int data) {
+        this.data = data;
     }
 
     public void setNext(Node next) {
