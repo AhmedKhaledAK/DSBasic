@@ -10,7 +10,8 @@ public class BTree {
     public BTree(int t, int k) {
         this.root = new BTreeNode(true, t);
         this.t = t;
-        this.root.getKeys().add(0, k);
+        this.root.setKey(0, k);
+        this.root.setN(1);
     }
 
     public Pair search(int k) {
@@ -21,9 +22,9 @@ public class BTree {
         if (node == null)
             return null;
         int i = 0;
-        while (i <= node.getN() && k > node.getKey(i))
+        while (i < node.getN() && k > node.getKey(i))
             i++;
-        if (i <= node.getN() && k == node.getKey(i))
+        if (i < node.getN() && k == node.getKey(i))
             return new Pair(node, i);
         else
             return search(node.getChild(i), k);
@@ -31,54 +32,57 @@ public class BTree {
     }
 
     public void splitChild(BTreeNode node, int i) {
-        BTreeNode n = new BTreeNode(node.getChild(i).isLeaf(), this.t);
-        n.setN(t - 2);
-        BTreeNode child = node.getChild(i);
-        for (int j = 0; j < t - 2; j++)
-            n.getKeys().add(child.getKey(j + t));
-        if (!child.isLeaf()) {
+        BTreeNode c = node.getChild(i);
+        BTreeNode n = new BTreeNode(c.isLeaf(), this.t);
+        n.setN(t - 1);
+        for (int j = 0; j < t - 1; j++)
+            n.setKey(j, c.getKey(j + t));
+
+        if (!c.isLeaf()) {
             for (int j = 0; j < t; j++)
-                n.getChildren().add(child.getChild(j + t));
+                n.setChild(j, c.getChild(j + t));
         }
-        child.setN(t - 2);
-        node.getKeys().add(i, child.getKey(t - 1));
-        //node.getChildren().add(i,child.getChild(t-1));
-        //node.getChildren().add(i+1,child.getChild(t));
+        c.setN(t - 1);
 
-        node.setChild(i, child);
+        for (int j = node.getN(); j > i + 1; j--)
+            node.setChild(j + 1, node.getChild(j));
+
         node.setChild(i + 1, n);
+        for (int j = n.getN() - 1; j >= i; j--)
+            node.setKey(j + 1, node.getKey(j));
 
+        node.setKey(i, c.getKey(t - 1));
         node.setN(node.getN() + 1);
     }
 
     public void insert(int k) {
         BTreeNode r = this.root;
-        if (r.getN() == 2 * t - 2) {
+        if (r.getN() == 2 * t - 1) {
             BTreeNode newRoot = new BTreeNode(false, this.t);
-            this.root = newRoot;
-            newRoot.getChildren().add(0, r);
+            newRoot.setChild(0, this.root);
             splitChild(newRoot, 0);
             insertNonFull(newRoot, k);
+            this.root = newRoot;
         } else
             insertNonFull(r, k);
     }
 
     private void insertNonFull(BTreeNode n, int k) {
-        int i = n.getN();
-        if (n.isLeaf()){
-            while (i>=0 && k < n.getKey(i)){
+        int i = n.getN() - 1;
+        if (n.isLeaf()) {
+            while (i >= 0 && k < n.getKey(i)) {
+                n.setKey(i + 1, n.getKey(i));
                 i--;
             }
-            n.getKeys().add(i+1,k);
+            n.setKey(i+1, k);
             n.setN(n.getN() + 1);
         } else {
-            while (i >= 0 && k < n.getKey(i)){
+            while (i >= 0 && k < n.getKey(i))
                 i--;
-            }
-            i+=1;
-            if(n.getChild(i).getN() == 2 * t - 2){
-                splitChild(n,i);
-                if(k > n.getKey(i))
+            i += 1;
+            if (n.getChild(i).getN() == 2 * t - 1) {
+                splitChild(n, i);
+                if (k > n.getKey(i))
                     i = i + 1;
             }
             insertNonFull(n.getChild(i), k);

@@ -14,7 +14,6 @@ public class Main {
 
 
         BTree bTree = new BTree(3,10);
-        bTree.insert(10);
         bTree.insert(20);
         bTree.insert(5);
         bTree.insert(6);
@@ -23,7 +22,7 @@ public class Main {
         bTree.insert(7);
         bTree.insert(17);
 
-        bTree.getRoot().traverseBTree();
+        bTree.getRoot().traverse();
 
 
         /*HashTable hashTable = new HashTable(10);

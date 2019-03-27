@@ -5,17 +5,17 @@ import java.util.ArrayList;
 public class BTreeNode {
 
     private int n;
-    private ArrayList<Integer> keys;
-    private ArrayList<BTreeNode> children;
+    private int[] keys;
+    private BTreeNode[] children;
     //int t; // minimum degree
     private boolean isLeaf;
 
     public BTreeNode(boolean isLeaf, int t) {
         this.isLeaf = isLeaf;
-        keys = new ArrayList<>(2 * t -1);
-        children = new ArrayList<>(2 * t);
+        keys = new int[2 * t -1];
+        children = new BTreeNode[2 * t];
 
-        n=-1;
+        n=0;
     }
 
     public int getN() {
@@ -26,33 +26,36 @@ public class BTreeNode {
         this.n = n;
     }
 
-    public ArrayList<Integer> getKeys() {
+    public int[] getKeys() {
         return keys;
     }
 
-    public void setKeys(ArrayList<Integer> keys) {
+    public void setKeys(int[] keys) {
         this.keys = keys;
     }
 
     public int getKey(int i){
-        return keys.get(i);
+        return keys[i];
     }
 
-    public ArrayList<BTreeNode> getChildren() {
+    public void setKey(int i, int k) {
+        this.keys[i] = k;
+    }
+
+    public BTreeNode[] getChildren() {
         return children;
     }
 
-    public void setChildren(ArrayList<BTreeNode> children) {
+    public void setChildren(BTreeNode[] children) {
         this.children = children;
     }
 
-    public void setChild(int i, BTreeNode n){
-//        this.getChildren().remove(i);
-        this.getChildren().add(i, n);
+    public BTreeNode getChild(int i){
+        return children[i];
     }
 
-    public BTreeNode getChild(int i){
-        return children.get(i);
+    public void setChild(int i, BTreeNode child) {
+        this.children[i] = child;
     }
 
     public boolean isLeaf() {
@@ -63,18 +66,15 @@ public class BTreeNode {
         isLeaf = leaf;
     }
 
-    public void traverseBTree(){
+    public void traverse(){
         int i;
-        for (i = 0; i <= this.n; i++) {
-            if(!isLeaf){
-                this.getChildren().get(i).traverseBTree();
-            }
-            System.out.print(this.getKeys().get(i) + " ");
-            System.out.println();
+        for (i = 0; i < this.getN(); i++) {
+            if(!this.isLeaf)
+                this.getChild(i).traverse();
+            System.out.println(this.getKey(i));
         }
-        if(!isLeaf){
-            this.getChildren().get(i).traverseBTree();
-        }
+        // last traverse.
+        if (!this.isLeaf)
+            this.getChild(i).traverse();
     }
-
 }
