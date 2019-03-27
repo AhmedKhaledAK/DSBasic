@@ -1,11 +1,13 @@
 package akopensource;
 
 import akopensource.btrees.BTree;
+import akopensource.btrees.BTreeNode;
 import akopensource.hashtables.HashTable;
 import akopensource.linkedlist.MyLinkedList;
 import akopensource.maindir.*;
 import akopensource.rbtrees.RedBlackTree;
 import akopensource.sorting.Sortings;
+import akopensource.tuples.Pair;
 
 public class Main {
 
@@ -23,6 +25,14 @@ public class Main {
         bTree.insert(17);
 
         bTree.getRoot().traverse();
+
+        Pair pair = bTree.search(7);
+        BTreeNode node =(BTreeNode) pair.getFirstElem();
+
+        System.out.println(pair.getFirstElem() + " " + pair.getSecondElem());
+        for (int i = 0; i < node.getN(); i++){
+            System.out.println(node.getKey(i));
+        }
 
 
         /*HashTable hashTable = new HashTable(10);
