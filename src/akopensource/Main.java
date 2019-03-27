@@ -34,7 +34,6 @@ public class Main {
             System.out.println(node.getKey(i));
         }
 
-
         /*HashTable hashTable = new HashTable(10);
         hashTable.chainedHashInsert(25);
         hashTable.chainedHashInsert(23);
