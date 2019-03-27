@@ -14,6 +14,7 @@ public class BTreeNode {
         this.isLeaf = isLeaf;
         keys = new ArrayList<>(2 * t -1);
         children = new ArrayList<>(2 * t);
+
         n=-1;
     }
 
@@ -46,7 +47,7 @@ public class BTreeNode {
     }
 
     public void setChild(int i, BTreeNode n){
-        this.getChildren().remove(i);
+//        this.getChildren().remove(i);
         this.getChildren().add(i, n);
     }
 
@@ -62,5 +63,18 @@ public class BTreeNode {
         isLeaf = leaf;
     }
 
+    public void traverseBTree(){
+        int i;
+        for (i = 0; i <= this.n; i++) {
+            if(!isLeaf){
+                this.getChildren().get(i).traverseBTree();
+            }
+            System.out.print(this.getKeys().get(i) + " ");
+            System.out.println();
+        }
+        if(!isLeaf){
+            this.getChildren().get(i).traverseBTree();
+        }
+    }
 
 }

@@ -1,5 +1,6 @@
 package akopensource;
 
+import akopensource.btrees.BTree;
 import akopensource.hashtables.HashTable;
 import akopensource.linkedlist.MyLinkedList;
 import akopensource.maindir.*;
@@ -12,7 +13,20 @@ public class Main {
         //TESTING
 
 
-        HashTable hashTable = new HashTable(10);
+        BTree bTree = new BTree(3,10);
+        bTree.insert(10);
+        bTree.insert(20);
+        bTree.insert(5);
+        bTree.insert(6);
+        bTree.insert(12);
+        bTree.insert(30);
+        bTree.insert(7);
+        bTree.insert(17);
+
+        bTree.getRoot().traverseBTree();
+
+
+        /*HashTable hashTable = new HashTable(10);
         hashTable.chainedHashInsert(25);
         hashTable.chainedHashInsert(23);
         hashTable.chainedHashInsert(9);
@@ -20,7 +34,7 @@ public class Main {
         hashTable.chainedHashInsert(25);
         hashTable.chainedHashInsert(9);
 
-        hashTable.printHashTable();
+        hashTable.printHashTable();*/
 
         /*Sortings sortings = new Sortings();
         int [] array = {65, 25, 12, 22, 11};

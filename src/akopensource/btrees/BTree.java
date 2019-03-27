@@ -7,9 +7,10 @@ public class BTree {
     private int t;
     private BTreeNode root;
 
-    public BTree(int t) {
+    public BTree(int t, int k) {
         this.root = new BTreeNode(true, t);
         this.t = t;
+        this.root.getKeys().add(0, k);
     }
 
     public Pair search(int k) {
@@ -37,17 +38,51 @@ public class BTree {
             n.getKeys().add(child.getKey(j + t));
         if (!child.isLeaf()) {
             for (int j = 0; j < t; j++)
-                n.getChildren().add(child.getChild(j + 1));
+                n.getChildren().add(child.getChild(j + t));
         }
-        child.setN(t-2);
-        node.getKeys().add(i,child.getKey(t-1));
+        child.setN(t - 2);
+        node.getKeys().add(i, child.getKey(t - 1));
         //node.getChildren().add(i,child.getChild(t-1));
         //node.getChildren().add(i+1,child.getChild(t));
 
         node.setChild(i, child);
-        node.setChild(i+1, n);
+        node.setChild(i + 1, n);
 
         node.setN(node.getN() + 1);
+    }
+
+    public void insert(int k) {
+        BTreeNode r = this.root;
+        if (r.getN() == 2 * t - 2) {
+            BTreeNode newRoot = new BTreeNode(false, this.t);
+            this.root = newRoot;
+            newRoot.getChildren().add(0, r);
+            splitChild(newRoot, 0);
+            insertNonFull(newRoot, k);
+        } else
+            insertNonFull(r, k);
+    }
+
+    private void insertNonFull(BTreeNode n, int k) {
+        int i = n.getN();
+        if (n.isLeaf()){
+            while (i>=0 && k < n.getKey(i)){
+                i--;
+            }
+            n.getKeys().add(i+1,k);
+            n.setN(n.getN() + 1);
+        } else {
+            while (i >= 0 && k < n.getKey(i)){
+                i--;
+            }
+            i+=1;
+            if(n.getChild(i).getN() == 2 * t - 2){
+                splitChild(n,i);
+                if(k > n.getKey(i))
+                    i = i + 1;
+            }
+            insertNonFull(n.getChild(i), k);
+        }
     }
 
     public int getT() {
