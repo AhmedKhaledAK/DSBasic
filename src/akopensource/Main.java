@@ -15,13 +15,19 @@ public class Main {
         //TESTING
 
 
-
         Sortings sortings = new Sortings();
+        int [] array = {2,8,7,1,3,5,6,4};
+        sortings.bubbleSortRecursive(array, 0);
+        for (int i : array){
+            System.out.print(i + " ");
+        }
+
+        /*Sortings sortings = new Sortings();
         int [] array = {2,8,7,1,3,5,6,4};
         sortings.quickSortIterative(array, 0, 7);
         for (int i : array){
             System.out.print(i + " ");
-        }
+        }*/
 
 
         /*BTree bTree = new BTree(3,10);

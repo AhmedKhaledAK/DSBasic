@@ -146,6 +146,21 @@ public class Sortings implements Sortable {
     }
 
 
+    public void bubbleSortRecursive(int [] array, int index){
+        if(index == array.length) return;
+        bubbleSortRec(array, 0);
+        bubbleSortRecursive(array, index + 1);
+    }
+
+    private void bubbleSortRec(int[] array, int index) {
+        if(index == array.length - 1) return;
+        if(array[index] > array[index + 1]){
+            int temp = array[index];
+            array[index] = array[index + 1];
+            array[index + 1] = temp;
+        }
+        bubbleSortRec(array, index + 1);
+    }
 
     @Override
     public void heapSort(int[] array) {
