@@ -10,7 +10,7 @@ public class BTreeNode {
     //int t; // minimum degree
     private boolean isLeaf;
 
-    public BTreeNode(boolean isLeaf, int t) {
+    BTreeNode(boolean isLeaf, int t) {
         this.isLeaf = isLeaf;
         keys = new int[2 * t -1];
         children = new BTreeNode[2 * t];
@@ -18,11 +18,11 @@ public class BTreeNode {
         n=0;
     }
 
-    public int getN() {
+    int getN() {
         return n;
     }
 
-    public void setN(int n) {
+    void setN(int n) {
         this.n = n;
     }
 
@@ -34,11 +34,11 @@ public class BTreeNode {
         this.keys = keys;
     }
 
-    public int getKey(int i){
+    int getKey(int i){
         return keys[i];
     }
 
-    public void setKey(int i, int k) {
+    void setKey(int i, int k) {
         this.keys[i] = k;
     }
 
@@ -50,15 +50,15 @@ public class BTreeNode {
         this.children = children;
     }
 
-    public BTreeNode getChild(int i){
+    BTreeNode getChild(int i){
         return children[i];
     }
 
-    public void setChild(int i, BTreeNode child) {
+    void setChild(int i, BTreeNode child) {
         this.children[i] = child;
     }
 
-    public boolean isLeaf() {
+    boolean isLeaf() {
         return isLeaf;
     }
 
