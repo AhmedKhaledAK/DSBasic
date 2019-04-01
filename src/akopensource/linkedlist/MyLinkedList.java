@@ -1,7 +1,7 @@
 package akopensource.linkedlist;
 
 public class MyLinkedList {
-    Node head, tail;
+    private Node head, tail;
 
     public MyLinkedList() {
         head = null;

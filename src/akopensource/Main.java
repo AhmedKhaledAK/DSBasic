@@ -15,12 +15,12 @@ public class Main {
         //TESTING
 
 
-        Sortings sortings = new Sortings();
+        /*Sortings sortings = new Sortings();
         int [] array = {2,8,7,1,3,5,6,4};
         sortings.bubbleSortRecursive(array, 0);
         for (int i : array){
             System.out.print(i + " ");
-        }
+        }*/
 
         /*Sortings sortings = new Sortings();
         int [] array = {2,8,7,1,3,5,6,4};
@@ -119,7 +119,7 @@ public class Main {
             System.out.println();
         }
 */
-       /* MyLinkedList linkedList = new MyLinkedList();
+        MyLinkedList linkedList = new MyLinkedList();
         linkedList.insertTail(65);
         linkedList.insertTail(25);
         linkedList.insertTail(12);
@@ -129,8 +129,8 @@ public class Main {
         linkedList.printLinkedList();
         System.out.println();
         Sortings sortings = new Sortings();
-        sortings.insertionSortLinkedList(linkedList);
-        linkedList.printLinkedList();*/
+        sortings.bubbleSortLinkedList(linkedList);
+        linkedList.printLinkedList();
 
 
         /*RedBlackTree redBlackTree = new RedBlackTree(41);

@@ -128,6 +128,26 @@ public class Sortings implements Sortable {
         }
     }
 
+    public void bubbleSortLinkedList(MyLinkedList linkedList){
+        Node head = linkedList.getHead();
+        // first while loop is done because we don't have linked list size
+        // we can calculate the size by making a function that loops on the linked list elements
+        // or by making a variable "size" in MyLinkedList class that tracks the number of elements
+        while (head != linkedList.getTailNode()){
+            Node n = linkedList.getHead();
+            while (n != linkedList.getTailNode().getPrevious().getPrevious()){
+                Node next = n.getNext();
+                if(n.getData() > next.getData()){
+                    int temp = n.getData();
+                    n.setData(next.getData());
+                    next.setData(temp);
+                }
+                n = n.getNext();
+            }
+            head = head.getNext();
+        }
+    }
+
     @Override
     public void bubbleSort(int[] array) {
         int length = array.length;
