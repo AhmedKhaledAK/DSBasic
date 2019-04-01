@@ -128,6 +128,7 @@ public class Sortings implements Sortable {
         }
     }
 
+    @Override
     public void bubbleSortLinkedList(MyLinkedList linkedList){
         Node head = linkedList.getHead();
         // first while loop is done because we don't have linked list size

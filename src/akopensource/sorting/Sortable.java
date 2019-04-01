@@ -11,6 +11,7 @@ public interface Sortable {
     void insertionSortLinkedList(MyLinkedList linkedList);
     void bubbleSort(int [] array);
     void bubbleSortRecursive(int [] array, int index);
+    void bubbleSortLinkedList(MyLinkedList linkedList);
     void mergeSortRecursively(int [] array, int s, int e);
     void heapSort(int [] array);
 }
