@@ -78,7 +78,7 @@ public class RedBlackTree {
         root.setColor(1);
     }
 
-    public void rotateLeft(Node x){
+    private void rotateLeft(Node x){
         Node y = null;
         if(x.getRight() != null)
             y = x.getRight();
@@ -98,7 +98,7 @@ public class RedBlackTree {
         x.setParent(y);
     }
 
-    public void rotateRight(Node x){
+    private void rotateRight(Node x){
         Node y = null;
         if (x.getLeft() != null)
             y = x.getLeft();
