@@ -5,9 +5,11 @@ import akopensource.linkedlist.Node;
 import akopensource.maindir.Heap;
 import akopensource.maindir.Utilities;
 
+import java.util.Stack;
+
 public class Sortings implements Sortable {
 
-    /* TODO: quicksort iterative and mergesort iterative*/
+    /* TODO: mergesort iterative*/
 
     @Override
     public void quickSort(int[] array, int p, int r) {
@@ -15,6 +17,31 @@ public class Sortings implements Sortable {
             int q = partition(array, p, r);
             quickSort(array, p, q - 1);
             quickSort(array, q + 1, r);
+        }
+    }
+
+
+    public void quickSortIterative(int [] array, int p, int r){
+        if(p >= r) return;
+        int q = partition(array, p, r);
+        Stack<Integer> stack = new Stack<>();
+        stack.push(p);
+        stack.push(q-1);
+        stack.push(q+1);
+        stack.push(r);
+
+        while (!stack.isEmpty()){
+            int e = stack.pop();
+            int s = stack.pop();
+            q = partition(array, s, e);
+            if(s < q-1){
+                stack.push(s);
+                stack.push(q-1);
+            }
+            if(q+1 < e){
+                stack.push(q+1);
+                stack.push(e);
+            }
         }
     }
 

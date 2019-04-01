@@ -15,7 +15,16 @@ public class Main {
         //TESTING
 
 
-        BTree bTree = new BTree(3,10);
+
+        Sortings sortings = new Sortings();
+        int [] array = {2,8,7,1,3,5,6,4};
+        sortings.quickSortIterative(array, 0, 7);
+        for (int i : array){
+            System.out.print(i + " ");
+        }
+
+
+        /*BTree bTree = new BTree(3,10);
         bTree.insert(20);
         bTree.insert(5);
         bTree.insert(6);
@@ -32,7 +41,7 @@ public class Main {
         System.out.println(pair.getFirstElem() + " " + pair.getSecondElem());
         for (int i = 0; i < node.getN(); i++){
             System.out.println(node.getKey(i));
-        }
+        }*/
 
         /*HashTable hashTable = new HashTable(10);
         hashTable.chainedHashInsert(25);
