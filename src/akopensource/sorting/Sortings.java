@@ -21,6 +21,7 @@ public class Sortings implements Sortable {
     }
 
 
+    @Override
     public void quickSortIterative(int [] array, int p, int r){
         if(p >= r) return;
         int q = partition(array, p, r);
@@ -143,6 +144,8 @@ public class Sortings implements Sortable {
             if (isSorted) break;
         }
     }
+
+
 
     @Override
     public void heapSort(int[] array) {
