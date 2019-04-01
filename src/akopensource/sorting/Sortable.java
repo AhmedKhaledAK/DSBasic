@@ -8,6 +8,7 @@ public interface Sortable {
     void selectionSortIterative(int [] array);
     void selectionSortRecursive(int [] array, int index);
     void insertionSortIterative(int [] array);
+    void insertionSortRecursive(int [] array, int index);
     void insertionSortLinkedList(MyLinkedList linkedList);
     void bubbleSort(int [] array);
     void bubbleSortRecursive(int [] array, int index);

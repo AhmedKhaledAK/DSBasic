@@ -4,7 +4,6 @@
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/linkedlist/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/linkedlist/MyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,38 +64,25 @@
           <entry key="Number Theory" value="2249" />
           <entry key="Red-Black Trees" value="2767" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="17779" />
-          <entry key="txt" value="1699" />
+          <entry key="java" value="18152" />
+          <entry key="txt" value="1734" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="17779" />
-          <entry key="PLAIN_TEXT" value="13840" />
+          <entry key="JAVA" value="18152" />
+          <entry key="PLAIN_TEXT" value="13875" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/linkedlist/MyLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-              <folding>
-                <element signature="e#1675#1676#0" expanded="true" />
-                <element signature="e#1702#1703#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="524">
+              <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -104,17 +90,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+            <state relative-caret-position="273">
+              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="123" column="34" lean-forward="true" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
+            <state relative-caret-position="146">
+              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,10 +145,10 @@
         <option value="$PROJECT_DIR$/Notes/B-Trees" />
         <option value="$PROJECT_DIR$/src/akopensource/btrees/BTreeNode.java" />
         <option value="$PROJECT_DIR$/src/akopensource/btrees/BTree.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" />
         <option value="$PROJECT_DIR$/src/akopensource/linkedlist/MyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortings.java" />
       </list>
     </option>
   </component>
@@ -231,7 +217,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554151570362" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554153720424" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -297,21 +283,7 @@
       <workItem from="1553551812073" duration="2223000" />
       <workItem from="1553601599688" duration="30408000" />
       <workItem from="1553697163648" duration="6784000" />
-      <workItem from="1554144563722" duration="5160000" />
-    </task>
-    <task id="LOCAL-00021" summary="Selection sort (iterative approach)">
-      <created>1551535798724</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1551535798724</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Selection sort (recursive approach)">
-      <created>1551536403394</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1551536403394</updated>
+      <workItem from="1554144563722" duration="6781000" />
     </task>
     <task id="LOCAL-00023" summary="Insertion sort (iterative approach)">
       <created>1551540516718</created>
@@ -642,11 +614,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554150936970</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="bubble sort (using doubly linked list) implemented">
+      <created>1554151540007</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1554151540007</updated>
+    </task>
+    <task id="LOCAL-00071" summary="bubble sort (using doubly linked list) implemented">
+      <created>1554151697874</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1554151697874</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137393000" />
+    <option name="totallyTimeSpent" value="139014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -699,7 +685,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="notes rb tree" />
     <MESSAGE value="edited class node in rbtrees package" />
     <MESSAGE value="inserting in a red-black tree (without fixing-up)" />
     <MESSAGE value="fixing-up red-black trees after insertion" />
@@ -724,7 +709,8 @@
     <MESSAGE value="B-trees testing (insertion and search)" />
     <MESSAGE value="quicksort (iterative method) implemented" />
     <MESSAGE value="bubble sort (recursive method) implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="bubble sort (recursive method) implemented" />
+    <MESSAGE value="bubble sort (using doubly linked list) implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="bubble sort (using doubly linked list) implemented" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -879,20 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/linkedlist/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -904,13 +876,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="123" column="34" lean-forward="true" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
+        <state relative-caret-position="146">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/sorting/Sortings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
         </state>
       </provider>
     </entry>

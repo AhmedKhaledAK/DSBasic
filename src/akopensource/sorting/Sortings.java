@@ -22,25 +22,25 @@ public class Sortings implements Sortable {
 
 
     @Override
-    public void quickSortIterative(int [] array, int p, int r){
-        if(p >= r) return;
+    public void quickSortIterative(int[] array, int p, int r) {
+        if (p >= r) return;
         int q = partition(array, p, r);
         Stack<Integer> stack = new Stack<>();
         stack.push(p);
-        stack.push(q-1);
-        stack.push(q+1);
+        stack.push(q - 1);
+        stack.push(q + 1);
         stack.push(r);
 
-        while (!stack.isEmpty()){
+        while (!stack.isEmpty()) {
             int e = stack.pop();
             int s = stack.pop();
             q = partition(array, s, e);
-            if(s < q-1){
+            if (s < q - 1) {
                 stack.push(s);
-                stack.push(q-1);
+                stack.push(q - 1);
             }
-            if(q+1 < e){
-                stack.push(q+1);
+            if (q + 1 < e) {
+                stack.push(q + 1);
                 stack.push(e);
             }
         }
@@ -109,6 +109,24 @@ public class Sortings implements Sortable {
     }
 
     @Override
+    public void insertionSortRecursive(int[] array, int index) {
+        if (index == array.length) return;
+        int k = array[index];
+        int j = insertionSortRec(array, k, index - 1);
+        array[j] = k;
+        insertionSortRecursive(array, index + 1);
+    }
+
+    private int insertionSortRec(int[] array, int k, int index) {
+        if (index < 0) return 0;
+        else if (k < array[index]) {
+            array[index + 1] = array[index];
+            return insertionSortRec(array, k, index - 1);
+        } else
+            return index + 1;
+    }
+
+    @Override
     public void insertionSortLinkedList(MyLinkedList linkedList) {
         Node head = linkedList.getHead().getNext();
 
@@ -129,16 +147,16 @@ public class Sortings implements Sortable {
     }
 
     @Override
-    public void bubbleSortLinkedList(MyLinkedList linkedList){
+    public void bubbleSortLinkedList(MyLinkedList linkedList) {
         Node head = linkedList.getHead();
         // first while loop is done because we don't have linked list size
         // we can calculate the size by making a function that loops on the linked list elements
         // or by making a variable "size" in MyLinkedList class that tracks the number of elements
-        while (head != linkedList.getTailNode()){
+        while (head != linkedList.getTailNode()) {
             Node n = linkedList.getHead();
-            while (n != linkedList.getTailNode().getPrevious().getPrevious()){
+            while (n != linkedList.getTailNode().getPrevious().getPrevious()) {
                 Node next = n.getNext();
-                if(n.getData() > next.getData()){
+                if (n.getData() > next.getData()) {
                     int temp = n.getData();
                     n.setData(next.getData());
                     next.setData(temp);
@@ -168,15 +186,15 @@ public class Sortings implements Sortable {
 
 
     @Override
-    public void bubbleSortRecursive(int [] array, int index){
-        if(index == array.length) return;
+    public void bubbleSortRecursive(int[] array, int index) {
+        if (index == array.length) return;
         bubbleSortRec(array, 0);
         bubbleSortRecursive(array, index + 1);
     }
 
     private void bubbleSortRec(int[] array, int index) {
-        if(index == array.length - 1) return;
-        if(array[index] > array[index + 1]){
+        if (index == array.length - 1) return;
+        if (array[index] > array[index + 1]) {
             int temp = array[index];
             array[index] = array[index + 1];
             array[index + 1] = temp;
