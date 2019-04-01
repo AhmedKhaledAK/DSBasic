@@ -145,6 +145,12 @@ public class Sortings implements Sortable {
     }
 
     @Override
+    public void heapSort(int[] array) {
+        Heap heap = new Heap(array);
+        heap.sort();
+    }
+
+    @Override
     public void mergeSortRecursively(int[] array, int s, int e) {
         if (s < e) {
             int m = (s + e) / 2;
@@ -152,12 +158,6 @@ public class Sortings implements Sortable {
             mergeSortRecursively(array, m + 1, e);
             merge(array, s, m, e);
         }
-    }
-
-    @Override
-    public void heapSort(int[] array) {
-        Heap heap = new Heap(array);
-        heap.sort();
     }
 
     private void merge(int[] array, int s, int m, int e) {
