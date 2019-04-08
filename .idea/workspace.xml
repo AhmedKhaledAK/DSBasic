@@ -12,69 +12,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="89741045">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="23" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.130" value="1" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.40" value="1" />
-          <entry key="project.open.time.47" value="1" />
-          <entry key="project.open.time.50" value="1" />
-          <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.56" value="1" />
-          <entry key="project.open.time.57" value="1" />
-          <entry key="project.open.time.59" value="1" />
-          <entry key="project.open.time.66" value="1" />
-          <entry key="project.open.time.67" value="1" />
-          <entry key="project.open.time.69" value="1" />
-          <entry key="project.open.time.73" value="1" />
-          <entry key="project.open.time.81" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="25" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="B-Trees" value="1" />
-          <entry key="Hash Tables" value="1" />
-          <entry key="Modular Arithmetic" value="1" />
-          <entry key="Number Theory" value="1" />
-          <entry key="Red-Black Trees" value="1" />
-          <entry key="java" value="82" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="82" />
-          <entry key="PLAIN_TEXT" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="B-Trees" value="2573" />
-          <entry key="Hash Tables" value="3539" />
-          <entry key="Modular Arithmetic" value="1012" />
-          <entry key="Number Theory" value="2249" />
-          <entry key="Red-Black Trees" value="2767" />
-          <entry key="dummy" value="1" />
-          <entry key="java" value="18217" />
-          <entry key="txt" value="1802" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="18217" />
-          <entry key="PLAIN_TEXT" value="13943" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
@@ -204,7 +141,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554155896392" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
