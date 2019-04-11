@@ -1,30 +1,29 @@
-*B-trees are "balanced" search trees designed to work well on disks and other direct-access
-secondary storage devices.
+*B-trees are "balanced" search trees designed to work well on disks and other direct-access secondary storage devices.
 
-*B-trees differ from red-black trees in that B-trees nodes may have many children, from a few to
-thousands. That is, the branching factor of B-trees can be quite large. B-trees are similar to
-red-black trees in that every n-node B-tree has height O(lgn).
+*B-trees differ from red-black trees in that B-trees nodes may have many children, from a few to thousands.
+That is, the branching factor of B-trees can be quite large. B-trees are similar to red-black trees
+in that every n-node B-tree has height O(lgn).
 
 *If an internal B-tree node x contains x.n keys, then x has x.n + 1 children.
 
-*When searching for an element in a B-tree, we make (x.n + 1)-way decision based on comparisons
-with the x.n keys stored at node x.
+*When searching for an element in a B-tree, we make (x.n + 1)-way decision based on comparisons with the x.n keys
+stored at node x.
 
-*In a typical B-tree application, the amount of data handled is so large that all the data do not
-fit into main memory at once. The B-tree algorithms copy selected pages from disk into main memory
-as needed and write back onto disk the pages that have changed.
+*In a typical B-tree application, the amount of data handled is so large that all the data do not fit into main
+memory at once. The B-tree algorithms copy selected pages from disk into main memory as needed and write
+back onto disk the pages that have changed.
 
-*B-tree algorithms keep only a constant number of pages in main-memory at any time; thus, the size
-of main-memory does not limit the size of B-trees that can be handled.
+*B-tree algorithms keep only a constant number of pages in main-memory at any time; thus, the size of main-memory
+does not limit the size of B-trees that can be handled.
 
-*Since in most systems the running time of a B-tree algorithm depends primarily on the number of
-DISK-READ and DISK-WRITE operations it performs, we typically want each of these operations to read
-or write as much information as possible.
+*Since in most systems the running time of a B-tree algorithm depends primarily on the number of DISK-READ and
+DISK-WRITE operations it performs, we typically want each of these operations to read or write as much
+information as possible.
 
 *All leaves have the same depth, which is the tree's height h.
 
-*Nodes have a lower and upper bounds on the number of keys they can contain. We express these
-bounds in terms of a fixed integer t >= 2 called the minimum degree of the B-tree.
+*Nodes have a lower and upper bounds on the number of keys they can contain. We express these bounds in terms of a
+fixed integer t >= 2 called the minimum degree of the B-tree.
 
 *Every internal node in a B-tree must be at least half full.
 
@@ -32,11 +31,30 @@ bounds in terms of a fixed integer t >= 2 called the minimum degree of the B-tre
 
 *Much larger values of the minimum degree yield B-trees of smaller height.
 
-*Searching a B-tree is much like searching a binary search tree, except that instead of making
-a two-way branching decision at each node, we make a multiway branching decision according to
-the number of the node's children.
+*Searching a B-tree is much like searching a binary search tree, except that instead of making a two-way branching
+decision at each node, we make a multiway branching decision according to the number of the node's children.
 
-*We cannot simply create a new leaf node and insert it,as the resulting tree would fail to be a
-valid B-Tree (as the height will not be lgn). Instead, we insert the new key into an existing leaf
-node. Since we cannot insert a key into leaf that is full, we split the node around its median into
+*We cannot simply create a new leaf node and insert it,as the resulting tree would fail to be a valid B-Tree
+(as the height will not be lgn). Instead, we insert the new key into an existing leaf node. Since we cannot insert
+a key into leaf that is full, we split the node around its median into
 two nodes having only t-1 keys (the minimum number of keys a node can have).
+
+**DELETION: --------
+
+*Just as we had to ensure that a node didn't get too big due to insertion, we must ensure that a node doesn't get too
+small due to deletion (except for the root which is accepted to have less than the minimum (t-1) number of keys).
+
+*Cases:
+  1) If the key k is in node x and x is a leaf and contains t keys, then delete the key k from x.
+  2) If the key k is in node x and x is an internal node, the do the following:
+
+     a) If the child y that precedes k in node x has at least t keys, then fnd the predecessor k' of k in the subtree
+     rooted at y. Recursively delete k', and replace k by k' in x. (We can find k' and delete it in a single
+     downward pass.)
+
+     b) If y has less than t keys, then, symmetrically, examine the child z that follows k in node x. If z has
+     at least t keys, then find the successor k' of k in the subtree rooted at z. Recursively delete k' and replace k
+     by k' in x. (We can find k' and delete it in a single downward pass.)
+
+     c) Otherwise, if both y and z have only t-1 keys, merge k and all of z into y, so that x loses both k and the
+     pointer to z, and y now contains 2*t-1 keys. Then free z and recursively delete k from y.
