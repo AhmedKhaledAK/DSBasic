@@ -89,6 +89,22 @@ public class BTree {
         }
     }
 
+    public int getPredecessor(BTreeNode node, int i){
+        BTreeNode c = node.getChild(i);
+        while (!c.isLeaf())
+            c = c.getChild(c.getN());
+
+        return c.getKey(c.getN()-1);
+    }
+
+    public int getSuccessor(BTreeNode node, int i){
+        BTreeNode c = node.getChild(i);
+        while (!c.isLeaf())
+            c = c.getChild(0);
+
+        return c.getKey(0);
+    }
+
     public int getT() {
         return t;
     }
