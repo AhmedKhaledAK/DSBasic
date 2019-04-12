@@ -31,7 +31,7 @@ public class BTree {
 
     }
 
-    public void splitChild(BTreeNode node, int i) {
+    private void splitChild(BTreeNode node, int i) {
         BTreeNode c = node.getChild(i);
         BTreeNode n = new BTreeNode(c.isLeaf(), this.t);
         n.setN(t - 1);
