@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/akopensource/graphs/Vertex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="803">
+              <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="671">
+              <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,10 +100,10 @@
         <option value="$PROJECT_DIR$/src/akopensource/sorting/Sortable.java" />
         <option value="$PROJECT_DIR$/src/akopensource/btrees/BTreeNode.java" />
         <option value="$PROJECT_DIR$/Notes/B-Trees" />
-        <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
         <option value="$PROJECT_DIR$/src/akopensource/btrees/BTree.java" />
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Vertex.java" />
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
       </list>
     </option>
   </component>
@@ -138,13 +150,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="akopensource" type="462c0819:PsiDirectoryNode" />
               <item name="btrees" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="akopensource" type="462c0819:PsiDirectoryNode" />
-              <item name="graphs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,21 +233,7 @@
       <workItem from="1554144563722" duration="8542000" />
       <workItem from="1554733684777" duration="334000" />
       <workItem from="1554985277674" duration="7311000" />
-      <workItem from="1555066894797" duration="7904000" />
-    </task>
-    <task id="LOCAL-00031" summary="added TODO in Sortings class">
-      <created>1552258078792</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1552258078792</updated>
-    </task>
-    <task id="LOCAL-00032" summary="added bst package">
-      <created>1552653287997</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1552653287997</updated>
+      <workItem from="1555066894797" duration="11031000" />
     </task>
     <task id="LOCAL-00033" summary="red-black trees notes">
       <created>1552660287844</created>
@@ -573,17 +564,31 @@
       <option name="project" value="LOCAL" />
       <updated>1555071365009</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="graphs (adj list representation)">
+      <created>1555079124806</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1555079124806</updated>
+    </task>
+    <task id="LOCAL-00081" summary="printing adjacency list in graphs">
+      <created>1555080700890</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1555080700891</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156324000" />
+    <option name="totallyTimeSpent" value="159451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25317854" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25262576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -629,8 +634,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="heap sort fixations" />
-    <MESSAGE value="generating random arrays" />
     <MESSAGE value="heap fixations" />
     <MESSAGE value="array shuffling" />
     <MESSAGE value="sorting shuffled arrays using all sorting techniques" />
@@ -654,7 +657,9 @@
     <MESSAGE value="Notes on B-trees deletion" />
     <MESSAGE value="Successor and predecessor in B-trees" />
     <MESSAGE value="remove from leave in B-tree (case 1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove from leave in B-tree (case 1)" />
+    <MESSAGE value="graphs (adj list representation)" />
+    <MESSAGE value="printing adjacency list in graphs" />
+    <option name="LAST_COMMIT_MESSAGE" value="printing adjacency list in graphs" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -816,16 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/btrees/BTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -864,8 +859,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="803">
+          <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
