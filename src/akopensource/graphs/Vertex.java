@@ -4,6 +4,9 @@ public class Vertex {
 
     private int v;
     private int weight;
+    private boolean isVisisted;
+    private Vertex predecessor;
+    private int distance;
 
     public Vertex(int v, int weight) {
         this.v = v;
@@ -28,5 +31,29 @@ public class Vertex {
 
     public void setWeight(int weight) {
         this.weight = weight;
+    }
+
+    public boolean isVisisted() {
+        return isVisisted;
+    }
+
+    public void setVisisted(boolean visisted) {
+        isVisisted = visisted;
+    }
+
+    public Vertex getPredecessor() {
+        return predecessor;
+    }
+
+    public void setPredecessor(Vertex predecessor) {
+        this.predecessor = predecessor;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
     }
 }

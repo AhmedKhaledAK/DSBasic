@@ -1,6 +1,8 @@
 package akopensource.graphs;
 
 import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Graph {
 
@@ -9,6 +11,7 @@ public class Graph {
     private LinkedList<Vertex> [] adjList;
     private int type; // 0 - undirected, 1 - directed
     private int n;
+    private Vertex[] visited;
 
     public Graph(int n, int m, int type) {
         this.matrix = new Vertex[n][n];
@@ -19,6 +22,12 @@ public class Graph {
     public Graph(int size, int type) {
         this.adjList = new LinkedList[size];
         this.type = type;
+        this.visited = new Vertex[size];
+
+        for (int i = 0; i < size; i++) {
+            visited[i] = new Vertex(i);
+            visited[i].setVisisted(false);
+        }
     }
 
     public void insertInAdjList(int src, int dest){
@@ -48,6 +57,33 @@ public class Graph {
     private void initializeList(int i) {
         if (this.adjList[i] == null)
             this.adjList[i] = new LinkedList<>();
+    }
+
+    public void bfs(int src){
+        for (Vertex vertex : visited) vertex.setVisisted(false);
+
+        visited[src].setVisisted(true);
+        visited[src].setDistance(0);
+
+        PriorityQueue<Integer> unVisited = new PriorityQueue<>();
+        unVisited.add(src);
+        while (!unVisited.isEmpty()){
+            int e = unVisited.poll();
+            visit(e);
+            for (int i = 0; i < adjList[e].size(); i++){
+                int v = adjList[e].get(i).getV();
+                if (!visited[v].isVisisted()){
+                    visited[v].setVisisted(true);
+                    visited[v].setDistance(visited[v].getDistance() + 1);
+                    visited[v].setPredecessor(new Vertex(e));
+                    unVisited.add(v);
+                }
+            }
+        }
+    }
+
+    private void visit(int e) {
+        System.out.println(e);
     }
 
     public void printGraphAdjList(){

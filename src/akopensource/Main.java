@@ -16,19 +16,19 @@ public class Main {
         //TESTING
 
 
-        Graph graph = new Graph(5, 5, 0);
-        /*graph.insertInAdjList(0,1);
-        graph.insertInAdjList(0, 4);
+        Graph graph = new Graph(4,0);
+        graph.insertInAdjList(0, 1);
+        graph.insertInAdjList(0, 2);
         graph.insertInAdjList(1, 2);
-        graph.insertInAdjList(1, 3);
-        graph.insertInAdjList(1, 4);
+        graph.insertInAdjList(2, 0);
         graph.insertInAdjList(2, 3);
-        graph.insertInAdjList(3, 4);
+        graph.insertInAdjList(3, 3);
 
-        graph.printGraphAdjList();
-*/
+        graph.bfs(2);
 
-        graph.insertInMatrix(0,1);
+        //graph.printGraphAdjList();
+
+        /*graph.insertInMatrix(0,1);
         graph.insertInMatrix(0, 4);
         graph.insertInMatrix(1, 2);
         graph.insertInMatrix(1, 3);
@@ -36,7 +36,7 @@ public class Main {
         graph.insertInMatrix(2, 3);
         graph.insertInMatrix(3, 4);
 
-        graph.printGraphMatrix();
+        graph.printGraphMatrix();*/
 
 
         /*Sortings sortings = new Sortings();
