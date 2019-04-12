@@ -74,7 +74,7 @@ public class BTree {
                 n.setKey(i + 1, n.getKey(i));
                 i--;
             }
-            n.setKey(i+1, k);
+            n.setKey(i + 1, k);
             n.setN(n.getN() + 1);
         } else {
             while (i >= 0 && k < n.getKey(i))
@@ -89,15 +89,40 @@ public class BTree {
         }
     }
 
-    public int getPredecessor(BTreeNode node, int i){
+    public void delete(int k) {
+        Pair pair = search(k);
+        BTreeNode node = (BTreeNode) pair.getFirstElem();
+        int i = (Integer) pair.getSecondElem();
+
+        if (node.isLeaf())
+            removeFromLeaf(node, i);
+        else
+            removeFromNonLeaf(node, i);
+    }
+
+    private void removeFromLeaf(BTreeNode node, int i) {
+        if (node.getN() > t-1) { // case 1
+            while (i < node.getN() - 1) {
+                node.setKey(i, node.getKey(i + 1));
+                i++;
+            }
+            node.setN(node.getN() - 1);
+        }
+    }
+
+    private void removeFromNonLeaf(BTreeNode node, int i) {
+
+    }
+
+    public int getPredecessor(BTreeNode node, int i) {
         BTreeNode c = node.getChild(i);
         while (!c.isLeaf())
             c = c.getChild(c.getN());
 
-        return c.getKey(c.getN()-1);
+        return c.getKey(c.getN() - 1);
     }
 
-    public int getSuccessor(BTreeNode node, int i){
+    public int getSuccessor(BTreeNode node, int i) {
         BTreeNode c = node.getChild(i);
         while (!c.isLeaf())
             c = c.getChild(0);

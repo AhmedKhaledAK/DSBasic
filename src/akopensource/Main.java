@@ -15,13 +15,13 @@ public class Main {
         //TESTING
 
 
-        Sortings sortings = new Sortings();
+        /*Sortings sortings = new Sortings();
         int [] array = {2,8,7,1,3,5,6,4};
         //sortings.bubbleSortRecursive(array, 0);
         sortings.insertionSortRecursive(array, 1);
         for (int i : array){
             System.out.print(i + " ");
-        }
+        }*/
 
         /*Sortings sortings = new Sortings();
         int [] array = {2,8,7,1,3,5,6,4};
@@ -31,7 +31,7 @@ public class Main {
         }*/
 
 
-        /*BTree bTree = new BTree(3,10);
+        BTree bTree = new BTree(3,10);
         bTree.insert(20);
         bTree.insert(5);
         bTree.insert(6);
@@ -48,7 +48,11 @@ public class Main {
         System.out.println(pair.getFirstElem() + " " + pair.getSecondElem());
         for (int i = 0; i < node.getN(); i++){
             System.out.println(node.getKey(i));
-        }*/
+        }
+
+        System.out.println("DELETION-----");
+        bTree.delete(20);
+        bTree.getRoot().traverse();
 
         /*HashTable hashTable = new HashTable(10);
         hashTable.chainedHashInsert(25);

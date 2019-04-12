@@ -16,7 +16,7 @@ public class BTreeNode {
         n=0;
     }
 
-    int getN() {
+    public int getN() {
         return n;
     }
 
@@ -32,7 +32,7 @@ public class BTreeNode {
         this.keys = keys;
     }
 
-    int getKey(int i){
+    public int getKey(int i){
         return keys[i];
     }
 
