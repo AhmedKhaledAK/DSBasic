@@ -20,11 +20,27 @@ public class Graph {
 
     public void insertInAdjList(int src, int dest){
         Vertex vertex = new Vertex(dest);
+        initializeList(src);
         this.adjList[src].add(vertex);
 
         if (this.type == 0){
             vertex = new Vertex(src);
+            initializeList(dest);
             this.adjList[dest].add(vertex);
+        }
+    }
+
+    private void initializeList(int i) {
+        if (this.adjList[i] == null)
+            this.adjList[i] = new LinkedList<>();
+    }
+
+    public void printGraphAdjList(){
+        for(int i = 0; i < adjList.length; i++){
+            System.out.print(i + ": ");
+            for(int j = 0; j < adjList[i].size(); j++)
+                System.out.print(adjList[i].get(j).getV() + " / ");
+            System.out.println();
         }
     }
 

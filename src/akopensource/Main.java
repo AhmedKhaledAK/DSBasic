@@ -2,6 +2,7 @@ package akopensource;
 
 import akopensource.btrees.BTree;
 import akopensource.btrees.BTreeNode;
+import akopensource.graphs.Graph;
 import akopensource.hashtables.HashTable;
 import akopensource.linkedlist.MyLinkedList;
 import akopensource.maindir.*;
@@ -14,6 +15,17 @@ public class Main {
     public static void main(String[] args) {
         //TESTING
 
+
+        Graph graph = new Graph(5, 0);
+        graph.insertInAdjList(0,1);
+        graph.insertInAdjList(0, 4);
+        graph.insertInAdjList(1, 2);
+        graph.insertInAdjList(1, 3);
+        graph.insertInAdjList(1, 4);
+        graph.insertInAdjList(2, 3);
+        graph.insertInAdjList(3, 4);
+
+        graph.printGraphAdjList();
 
         /*Sortings sortings = new Sortings();
         int [] array = {2,8,7,1,3,5,6,4};
@@ -31,7 +43,7 @@ public class Main {
         }*/
 
 
-        BTree bTree = new BTree(3,10);
+        /*BTree bTree = new BTree(3,10);
         bTree.insert(20);
         bTree.insert(5);
         bTree.insert(6);
@@ -52,7 +64,7 @@ public class Main {
 
         System.out.println("DELETION-----");
         bTree.delete(20);
-        bTree.getRoot().traverse();
+        bTree.getRoot().traverse();*/
 
         /*HashTable hashTable = new HashTable(10);
         hashTable.chainedHashInsert(25);
