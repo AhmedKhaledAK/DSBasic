@@ -74,7 +74,7 @@ public class Graph {
                 int v = adjList[e].get(i).getV();
                 if (!visited[v].isVisisted()){
                     visited[v].setVisisted(true);
-                    visited[v].setDistance(visited[v].getDistance() + 1);
+                    visited[v].setDistance(visited[e].getDistance() + 1);
                     visited[v].setPredecessor(new Vertex(e));
                     unVisited.add(v);
                 }
@@ -107,6 +107,12 @@ public class Graph {
                 System.out.print(matrix[i][j] == null ? "-1" : 1);
             }
             System.out.println();
+        }
+    }
+
+    public void printVisited(){
+        for (int i = 0; i < visited.length; i++){
+            System.out.println(visited[i].getV() + ": " + "distance --> " + visited[i].getDistance());
         }
     }
 }

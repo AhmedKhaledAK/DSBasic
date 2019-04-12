@@ -16,15 +16,18 @@ public class Main {
         //TESTING
 
 
-        Graph graph = new Graph(4,0);
+        Graph graph = new Graph(6,0);
         graph.insertInAdjList(0, 1);
         graph.insertInAdjList(0, 2);
         graph.insertInAdjList(1, 2);
-        graph.insertInAdjList(2, 0);
         graph.insertInAdjList(2, 3);
-        graph.insertInAdjList(3, 3);
+        graph.insertInAdjList(3, 4);
+        graph.insertInAdjList(4, 5);
 
         graph.bfs(2);
+        System.out.println("----------------");
+
+        graph.printVisited();
 
         //graph.printGraphAdjList();
 

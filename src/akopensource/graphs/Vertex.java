@@ -11,10 +11,12 @@ public class Vertex {
     public Vertex(int v, int weight) {
         this.v = v;
         this.weight = weight;
+        this.distance = 0;
     }
 
     public Vertex(int v) {
         this.v = v;
+        this.distance = 0;
     }
 
     public int getV() {
