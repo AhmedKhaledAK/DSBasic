@@ -12,6 +12,18 @@ public class RedBlackTree {
         root.setColor(1);
     }
 
+    public Node search(int data){
+        return search(data, this.root);
+    }
+
+    private Node search(int data, Node node){
+        if (node == null || node.getData() == data)
+            return node;
+        if (data < node.getData())
+            return search(data, node.getLeft());
+        return search(data, node.getRight());
+    }
+
     public void insert(int data){
         Node z = new Node(data);
         Node node = this.root, n = null;
@@ -116,6 +128,19 @@ public class RedBlackTree {
 
         y.setRight(x);
         x.setParent(y);
+    }
+
+
+    private void transplant(Node u, Node v){
+        if (u.getParent() == null)
+            this.root = v;
+        else if (u == u.getParent().getLeft())
+            u.getParent().setLeft(v);
+        else u.getParent().setRight(v);
+    }
+
+    public void delete(){
+
     }
 
     public Node getRoot() {

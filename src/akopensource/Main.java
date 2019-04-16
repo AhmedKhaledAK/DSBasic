@@ -16,19 +16,20 @@ public class Main {
         //TESTING
 
 
-        Graph graph = new Graph(6,0);
+        /*Graph graph = new Graph(6,0);
         graph.insertInAdjList(0, 1);
         graph.insertInAdjList(0, 2);
         graph.insertInAdjList(1, 2);
         graph.insertInAdjList(2, 3);
         graph.insertInAdjList(3, 4);
         graph.insertInAdjList(4, 5);
+        graph.insertInAdjList(5, 1);
 
         graph.bfs(2);
         System.out.println("----------------");
 
         graph.printVisited();
-
+*/
         //graph.printGraphAdjList();
 
         /*graph.insertInMatrix(0,1);
@@ -165,14 +166,15 @@ public class Main {
         linkedList.printLinkedList();*/
 
 
-        /*RedBlackTree redBlackTree = new RedBlackTree(41);
+        RedBlackTree redBlackTree = new RedBlackTree(41);
         redBlackTree.insert(38);
         redBlackTree.insert(31);
         redBlackTree.insert(12);
         redBlackTree.insert(19);
         redBlackTree.insert(8);
 
-        redBlackTree.traverseInorder(redBlackTree.getRoot());*/
+        redBlackTree.traverseInorder(redBlackTree.getRoot());
+        System.out.println(redBlackTree.search(13));
 
 
         /*Sortings sortings = new Sortings();
@@ -181,8 +183,10 @@ public class Main {
 
         for (int e : array) {
             System.out.print(e + " ");
-        }
-*/
+        }*/
+
+
+
         /* HEAP TEST */
 
         /*int [] hp = {0,0,6,5,20,30,1,5,2,3,4};
