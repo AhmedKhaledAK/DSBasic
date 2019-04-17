@@ -33,6 +33,7 @@ public class RedBlackTree {
         z.setLeft(nil);
         z.setRight(nil);
         z.setParent(nil);
+
         Node node = this.root, n = nil;
         while (node != nil){
             n = node; // get leaf node
@@ -48,8 +49,7 @@ public class RedBlackTree {
             n.setLeft(z);
         else
             n.setRight(z);
-        // No need for setting the color or left and right child to null because they're already
-        // set when creating the node
+
         insertFixup(z);
     }
 
