@@ -1,7 +1,5 @@
 package akopensource.rbtrees;
 
-import java.util.PriorityQueue;
-
 public class RedBlackTree {
     private Node root;
     private Node nil = new Node(-404);
