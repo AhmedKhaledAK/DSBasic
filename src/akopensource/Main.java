@@ -165,8 +165,10 @@ public class Main {
         sortings.bubbleSortLinkedList(linkedList);
         linkedList.printLinkedList();*/
 
+        // 22 33 4 5 6 7 8 55 3 2 1 6 4
 
         RedBlackTree tree = new RedBlackTree(7);
+
         tree.insert(3);
         tree.insert(18);
         tree.insert(10);
@@ -179,18 +181,35 @@ public class Main {
         tree.insert(13);
 
         tree.traverseInorder(tree.getRoot());
-        //tree.printLevelOrder();
+        System.out.println();
+        tree.traverseLevelOrder();
+
+        System.out.println();
+        System.out.println("SEARCH: " + tree.search(26).getData());
+        System.out.println();
 
         System.out.println("Deleting 18, 11, 3, 10, 22");
 
         tree.delete(18);
-        tree.delete(11);
-        tree.delete(3);
-        tree.delete(10);
-        tree.delete(22);
+        //tree.traverseInorder(tree.getRoot());
+        //System.out.println();
 
+        tree.delete(11);
+        //tree.traverseInorder(tree.getRoot());
+        //System.out.println();
+
+        tree.delete(3);
+        //tree.traverseInorder(tree.getRoot());
+        //System.out.println();
+
+        tree.delete(10);
+        //tree.traverseInorder(tree.getRoot());
+        //System.out.println();
+
+        tree.delete(22);
         tree.traverseInorder(tree.getRoot());
-        //tree.printLevelOrder();
+        System.out.println();
+        tree.traverseLevelOrder();
 
         // System.out.println(redBlackTree.search(13));
 
