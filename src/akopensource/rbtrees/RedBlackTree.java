@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class RedBlackTree {
     private Node root;
-    private Node nil = new Node(-1);
+    private Node nil = new Node(-404);
 
     public RedBlackTree(Node root) {
         this.root = root;
