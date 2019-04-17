@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,29 +13,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+            <state relative-caret-position="918">
+              <caret line="220" column="13" lean-forward="true" selection-start-line="220" selection-start-column="13" selection-end-line="220" selection-end-column="13" />
               <folding>
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#8084#8085#0" expanded="true" />
+                <element signature="e#8129#8130#0" expanded="true" />
+                <element signature="e#8438#8439#0" expanded="true" />
+                <element signature="e#8508#8509#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/bst/BinarySearchTree.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+            <state relative-caret-position="774">
+              <caret line="187" column="13" selection-start-line="187" selection-start-column="13" selection-end-line="187" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +102,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,28 +132,12 @@
               <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="akopensource" type="462c0819:PsiDirectoryNode" />
-              <item name="bst" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="akopensource" type="462c0819:PsiDirectoryNode" />
-              <item name="btrees" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="akopensource" type="462c0819:PsiDirectoryNode" />
               <item name="rbtrees" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,21 +218,8 @@
       <workItem from="1554985277674" duration="7311000" />
       <workItem from="1555066894797" duration="16584000" />
       <workItem from="1555254111262" duration="154000" />
-      <workItem from="1555443894222" duration="1304000" />
-    </task>
-    <task id="LOCAL-00036" summary="notes rb tree">
-      <created>1552737929742</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1552737929742</updated>
-    </task>
-    <task id="LOCAL-00037" summary="edited class node in rbtrees package">
-      <created>1552738314416</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1552738314416</updated>
+      <workItem from="1555443894222" duration="11194000" />
+      <workItem from="1555524307370" duration="202000" />
     </task>
     <task id="LOCAL-00038" summary="inserting in a red-black tree (without fixing-up)">
       <created>1552739571504</created>
@@ -574,17 +550,31 @@
       <option name="project" value="LOCAL" />
       <updated>1555092275214</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="search in red-black trees">
+      <created>1555446278333</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1555446278336</updated>
+    </task>
+    <task id="LOCAL-00086" summary="get minimum, successor and incomplete delete in red-black trees">
+      <created>1555461164984</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1555461164984</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166462000" />
+    <option name="totallyTimeSpent" value="176595000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25815368" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26091763" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -593,7 +583,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.48929664" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39653414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -602,7 +592,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49932885" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932885" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932885" weight="0.32925585" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -630,8 +620,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Notes on Hash Tables" />
-    <MESSAGE value="Hashtable with chaining collision resolving" />
     <MESSAGE value="notes on hash tables" />
     <MESSAGE value="notes on B-trees" />
     <MESSAGE value="B-trees (search only)" />
@@ -655,7 +643,9 @@
     <MESSAGE value="matrix representation in graphs" />
     <MESSAGE value="breadth-first search in graphs" />
     <MESSAGE value="breadth-first search test in graphs" />
-    <option name="LAST_COMMIT_MESSAGE" value="breadth-first search test in graphs" />
+    <MESSAGE value="search in red-black trees" />
+    <MESSAGE value="get minimum, successor and incomplete delete in red-black trees" />
+    <option name="LAST_COMMIT_MESSAGE" value="get minimum, successor and incomplete delete in red-black trees" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -693,13 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
           <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -841,30 +824,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/bst/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="180">
+          <caret line="187" column="13" selection-start-line="187" selection-start-column="13" selection-end-line="187" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/bst/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="504">
+          <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
           <folding>
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#8084#8085#0" expanded="true" />
+            <element signature="e#8129#8130#0" expanded="true" />
+            <element signature="e#8437#8438#0" expanded="true" />
+            <element signature="e#8507#8508#0" expanded="true" />
           </folding>
         </state>
       </provider>

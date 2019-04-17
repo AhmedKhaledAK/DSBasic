@@ -55,13 +55,11 @@ public class RedBlackTree {
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);
                     z = z.getParent().getParent();
-                } else if (z == z.getParent().getRight()){
-                    z = z.getParent();
-                    rotateLeft(z);
-                    z.getParent().setColor(1);
-                    z.getParent().getParent().setColor(0);
-                    rotateRight(z.getParent().getParent());
-                } else if (z == z.getParent().getLeft()){
+                } else {
+                    if (z == z.getParent().getRight()) {
+                        z = z.getParent();
+                        rotateLeft(z);
+                    }
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);
                     rotateRight(z.getParent().getParent());
@@ -74,13 +72,11 @@ public class RedBlackTree {
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);
                     z = z.getParent().getParent();
-                } else if (z == z.getParent().getLeft()){
-                    z = z.getParent();
-                    rotateRight(z);
-                    z.getParent().setColor(1);
-                    z.getParent().getParent().setColor(0);
-                    rotateLeft(z.getParent().getParent());
-                } else if (z == z.getParent().getRight()){
+                } else {
+                    if (z == z.getParent().getLeft()) {
+                        z = z.getParent();
+                        rotateRight(z);
+                    }
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);
                     rotateLeft(z.getParent().getParent());
@@ -150,7 +146,7 @@ public class RedBlackTree {
             x = target.getLeft();
             transplant(target, target.getLeft());
         } else {
-            y = getSuccessor(target.getRight());
+            y = findMinimum(target.getRight());
             yOriginalColor = y.getColor();
             x = y.getRight();
             if (y.getParent() == target && x != null)
@@ -184,18 +180,13 @@ public class RedBlackTree {
                         || sibling.getRight().getColor() == 1)) {
                     sibling.setColor(0);
                     x = x.getParent();
-                } else if (sibling.getRight() == null || sibling.getRight().getColor() == 1){
-                    sibling.getLeft().setColor(1);
-                    sibling.setColor(0);
-                    rotateRight(sibling);
-                    sibling = x.getParent().getRight();
-
-                    sibling.setColor(x.getParent().getColor());
-                    x.getParent().setColor(1);
-                    sibling.getRight().setColor(1);
-                    rotateLeft(x.getParent());
-                    x = this.root;
                 } else {
+                    if (sibling.getRight() == null || sibling.getRight().getColor() == 1) {
+                        sibling.getLeft().setColor(1);
+                        sibling.setColor(0);
+                        rotateRight(sibling);
+                        sibling = x.getParent().getRight();
+                    }
                     sibling.setColor(x.getParent().getColor());
                     x.getParent().setColor(1);
                     sibling.getRight().setColor(1);
@@ -214,18 +205,13 @@ public class RedBlackTree {
                         || sibling.getRight().getColor() == 1)){
                     sibling.setColor(0);
                     x = x.getParent();
-                } else if (sibling.getLeft() == null || sibling.getLeft().getColor() == 1){
-                    sibling.getRight().setColor(1);
-                    sibling.setColor(0);
-                    rotateLeft(sibling);
-                    sibling = x.getParent().getLeft();
-
-                    sibling.setColor(x.getParent().getColor());
-                    x.getParent().setColor(1);
-                    sibling.getLeft().setColor(1);
-                    rotateRight(x.getParent());
-                    x = this.root;
                 } else {
+                    if (sibling.getLeft() == null || sibling.getLeft().getColor() == 1) {
+                        sibling.getRight().setColor(1);
+                        sibling.setColor(0);
+                        rotateLeft(sibling);
+                        sibling = x.getParent().getLeft();
+                    }
                     sibling.setColor(x.getParent().getColor());
                     x.getParent().setColor(1);
                     sibling.getLeft().setColor(1);
