@@ -166,15 +166,33 @@ public class Main {
         linkedList.printLinkedList();*/
 
 
-        RedBlackTree redBlackTree = new RedBlackTree(41);
-        redBlackTree.insert(38);
-        redBlackTree.insert(31);
-        redBlackTree.insert(12);
-        redBlackTree.insert(19);
-        redBlackTree.insert(8);
+        RedBlackTree tree = new RedBlackTree(7);
+        tree.insert(3);
+        tree.insert(18);
+        tree.insert(10);
+        tree.insert(22);
+        tree.insert(8);
+        tree.insert(11);
+        tree.insert(26);
+        tree.insert(2);
+        tree.insert(6);
+        tree.insert(13);
 
-        redBlackTree.traverseInorder(redBlackTree.getRoot());
-        System.out.println(redBlackTree.search(13));
+        tree.traverseInorder(tree.getRoot());
+        //tree.printLevelOrder();
+
+        System.out.println("Deleting 18, 11, 3, 10, 22");
+
+        tree.delete(18);
+        tree.delete(11);
+        tree.delete(3);
+        tree.delete(10);
+        tree.delete(22);
+
+        tree.traverseInorder(tree.getRoot());
+        //tree.printLevelOrder();
+
+        // System.out.println(redBlackTree.search(13));
 
 
         /*Sortings sortings = new Sortings();
