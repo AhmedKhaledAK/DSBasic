@@ -9,6 +9,7 @@ public class RedBlackTree {
     }
 
     public RedBlackTree(int data) {
+        nil.setColor(1);
         root = new Node(data);
         root.setParent(nil);
         root.setRight(nil);
