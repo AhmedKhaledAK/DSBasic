@@ -18,6 +18,7 @@ public class RedBlackTree {
     }
 
     public RedBlackTree(){
+        nil.setColor(1);
         this.root = nil;
     }
 
