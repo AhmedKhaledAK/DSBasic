@@ -17,6 +17,10 @@ public class RedBlackTree {
         root.setColor(1);
     }
 
+    public RedBlackTree(){
+        this.root = nil;
+    }
+
     public Node search(int data){
         return search(data, this.root);
     }
