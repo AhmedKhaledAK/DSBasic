@@ -283,11 +283,9 @@ public class RedBlackTree {
             return 0;
         else
         {
-            /* compute  height of each subtree */
             int lheight = height(root.getLeft());
             int rheight = height(root.getRight());
 
-            /* use the larger one */
             if (lheight > rheight)
                 return(lheight+1);
             else return(rheight+1);
