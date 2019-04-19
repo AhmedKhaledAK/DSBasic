@@ -35,6 +35,7 @@ Currently in the repo:
   
 * Miscellaneous:
   * Doubly LinkedList
-  * Generatiing Random Arrays
+  * Generating Random Arrays
   * Heap
+  * Greatest Common Divisor algorithms
   * Tuples (triplets and pairs)
