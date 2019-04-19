@@ -16,21 +16,22 @@ public class Main {
         //TESTING
 
 
-        /*Graph graph = new Graph(6,0);
+        Graph graph = new Graph(6,1);
         graph.insertInAdjList(0, 1);
-        graph.insertInAdjList(0, 2);
-        graph.insertInAdjList(1, 2);
-        graph.insertInAdjList(2, 3);
-        graph.insertInAdjList(3, 4);
-        graph.insertInAdjList(4, 5);
-        graph.insertInAdjList(5, 1);
+        graph.insertInAdjList(0, 3);
+        graph.insertInAdjList(1, 4);
+        graph.insertInAdjList(2, 4);
+        graph.insertInAdjList(2, 5);
+        graph.insertInAdjList(3, 1);
+        graph.insertInAdjList(4, 3);
+        graph.insertInAdjList(5, 5);
 
-        graph.bfs(2);
+        //graph.bfs(2);
+        graph.dfs();
         System.out.println("----------------");
 
+        graph.printGraphAdjList();
         graph.printVisited();
-*/
-        //graph.printGraphAdjList();
 
         /*graph.insertInMatrix(0,1);
         graph.insertInMatrix(0, 4);
@@ -167,7 +168,7 @@ public class Main {
 
         // 22 33 4 5 6 7 8 55 3 2 1 6 4
 
-        RedBlackTree tree = new RedBlackTree(7);
+        /*RedBlackTree tree = new RedBlackTree(7);
 
         tree.insert(3);
         tree.insert(18);
@@ -209,7 +210,7 @@ public class Main {
         tree.delete(22);
         tree.traverseInorder(tree.getRoot());
         System.out.println();
-        tree.traverseLevelOrder();
+        tree.traverseLevelOrder();*/
 
         // System.out.println(redBlackTree.search(13));
 

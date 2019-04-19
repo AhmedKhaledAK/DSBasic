@@ -7,6 +7,7 @@ public class Vertex {
     private boolean isVisisted;
     private Vertex predecessor;
     private int distance;
+    private int discoveryTime, finishTime; // timestamps
 
     public Vertex(int v, int weight) {
         this.v = v;
@@ -14,12 +15,12 @@ public class Vertex {
         this.distance = 0;
     }
 
-    public Vertex(int v) {
+    Vertex(int v) {
         this.v = v;
         this.distance = 0;
     }
 
-    public int getV() {
+    int getV() {
         return v;
     }
 
@@ -35,11 +36,11 @@ public class Vertex {
         this.weight = weight;
     }
 
-    public boolean isVisisted() {
+    boolean isVisisted() {
         return isVisisted;
     }
 
-    public void setVisisted(boolean visisted) {
+    void setVisisted(boolean visisted) {
         isVisisted = visisted;
     }
 
@@ -47,15 +48,31 @@ public class Vertex {
         return predecessor;
     }
 
-    public void setPredecessor(Vertex predecessor) {
+    void setPredecessor(Vertex predecessor) {
         this.predecessor = predecessor;
     }
 
-    public int getDistance() {
+    int getDistance() {
         return distance;
     }
 
-    public void setDistance(int distance) {
+    void setDistance(int distance) {
         this.distance = distance;
+    }
+
+    int getDiscoveryTime() {
+        return discoveryTime;
+    }
+
+    void setDiscoveryTime(int discoveryTime) {
+        this.discoveryTime = discoveryTime;
+    }
+
+    int getFinishTime() {
+        return finishTime;
+    }
+
+    void setFinishTime(int finishTime) {
+        this.finishTime = finishTime;
     }
 }

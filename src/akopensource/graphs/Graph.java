@@ -2,7 +2,6 @@ package akopensource.graphs;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 public class Graph {
 
@@ -12,6 +11,7 @@ public class Graph {
     private int type; // 0 - undirected, 1 - directed
     private int n;
     private Vertex[] visited;
+    private int time;
 
     public Graph(int n, int m, int type) {
         this.matrix = new Vertex[n][n];
@@ -82,6 +82,31 @@ public class Graph {
         }
     }
 
+    public void dfs(){
+        for (Vertex vertex : visited) vertex.setVisisted(false);
+
+        for (int i = 0; i < visited.length; i++){
+            if (!visited[i].isVisisted())
+                dfsVisit(visited, i);
+        }
+    }
+
+    private void dfsVisit(Vertex[] visited, int i) {
+        time += 1;
+        visited[i].setDiscoveryTime(time);
+        visited[i].setVisisted(true);
+        visit(i);
+        for (int j = 0; j < adjList[i].size(); j++){
+            int v = adjList[i].get(j).getV();
+            if (!visited[v].isVisisted()){
+                visited[v].setPredecessor(visited[i]);
+                dfsVisit(visited, v);
+            }
+        }
+        time += 1;
+        visited[i].setFinishTime(time);
+    }
+
     private void visit(int e) {
         System.out.println(e);
     }
@@ -89,6 +114,10 @@ public class Graph {
     public void printGraphAdjList(){
         for(int i = 0; i < adjList.length; i++){
             System.out.print(i + ": ");
+            if (adjList[i] == null){
+                System.out.println("/");
+                continue;
+            }
             for(int j = 0; j < adjList[i].size(); j++)
                 System.out.print(adjList[i].get(j).getV() + " / ");
             System.out.println();
@@ -111,8 +140,9 @@ public class Graph {
     }
 
     public void printVisited(){
-        for (int i = 0; i < visited.length; i++){
-            System.out.println(visited[i].getV() + ": " + "distance --> " + visited[i].getDistance());
+        for (Vertex vertex : visited) {
+            System.out.println(vertex.getV() + ": " + "discovery time --> " + vertex.getDiscoveryTime() + ", " +
+                    "finish time " + vertex.getFinishTime());
         }
     }
 }
