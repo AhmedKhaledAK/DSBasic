@@ -14,7 +14,9 @@ Currently in the repo:
   * Matrix representation
   * Breadth-first traversal
   * Calculating shortest path using BFS
-  * Getting predecessor of each vertex using BFS
+  * Depth-first traversal
+  * Getting predecessor of each vertex using BFS and DFS
+  * Timestamps of vertices in DFS
   
 * Sorting Algorithms: https://github.com/AhmedKhaledAK/DSBasic/tree/master/src/akopensource/sorting
   * Quicksort
