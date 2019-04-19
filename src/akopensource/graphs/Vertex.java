@@ -8,6 +8,14 @@ public class Vertex {
     private Vertex predecessor;
     private int distance;
     private int discoveryTime, finishTime; // timestamps
+    private EdgeType edgeType;
+
+    public enum EdgeType {
+        BACK,
+        FORWARD,
+        TREE,
+        CROSS
+    }
 
     public Vertex(int v, int weight) {
         this.v = v;
@@ -18,6 +26,7 @@ public class Vertex {
     Vertex(int v) {
         this.v = v;
         this.distance = 0;
+        this.finishTime = 0;
     }
 
     int getV() {
@@ -74,5 +83,13 @@ public class Vertex {
 
     void setFinishTime(int finishTime) {
         this.finishTime = finishTime;
+    }
+
+    public EdgeType getEdgeType() {
+        return edgeType;
+    }
+
+    public void setEdgeType(EdgeType edgeType) {
+        this.edgeType = edgeType;
     }
 }

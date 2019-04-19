@@ -16,8 +16,33 @@ public class Main {
         //TESTING
 
 
-        Graph graph = new Graph(6,1);
+        Graph graph = new Graph(8,1);
+        graph.insertInAdjList(0, 4);
         graph.insertInAdjList(0, 1);
+        graph.insertInAdjList(1, 4);
+        graph.insertInAdjList(1, 2);
+        graph.insertInAdjList(2, 3);
+        graph.insertInAdjList(3, 1);
+        graph.insertInAdjList(4, 3);
+        graph.insertInAdjList(5, 6);
+        graph.insertInAdjList(5, 7);
+        graph.insertInAdjList(6, 4);
+        graph.insertInAdjList(6, 0);
+        graph.insertInAdjList(7, 6);
+        graph.insertInAdjList(7, 5);
+
+
+        //graph.bfs(2);
+        graph.dfs();
+        System.out.println("----------------");
+
+        graph.printGraphAdjList();
+        graph.printVisited();
+
+
+
+
+        /*graph.insertInAdjList(0, 1);
         graph.insertInAdjList(0, 3);
         graph.insertInAdjList(1, 4);
         graph.insertInAdjList(2, 4);
@@ -32,7 +57,7 @@ public class Main {
 
         graph.printGraphAdjList();
         graph.printVisited();
-
+*/
         /*graph.insertInMatrix(0,1);
         graph.insertInMatrix(0, 4);
         graph.insertInMatrix(1, 2);

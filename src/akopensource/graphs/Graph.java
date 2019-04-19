@@ -99,8 +99,17 @@ public class Graph {
         for (int j = 0; j < adjList[i].size(); j++){
             int v = adjList[i].get(j).getV();
             if (!visited[v].isVisisted()){
+                adjList[i].get(j).setEdgeType(Vertex.EdgeType.TREE);
                 visited[v].setPredecessor(visited[i]);
                 dfsVisit(visited, v);
+            }else {
+                if(visited[i].getDiscoveryTime() >= visited[v].getDiscoveryTime() && visited[v].getFinishTime() == 0){
+                    adjList[i].get(j).setEdgeType(Vertex.EdgeType.BACK);
+                }else if(visited[i].getDiscoveryTime() < visited[v].getDiscoveryTime()){
+                    adjList[i].get(j).setEdgeType(Vertex.EdgeType.FORWARD);
+                }else if(visited[i].getDiscoveryTime() > visited[v].getDiscoveryTime() && visited[i].getFinishTime() == 0){
+                    adjList[i].get(j).setEdgeType(Vertex.EdgeType.CROSS);
+                }
             }
         }
         time += 1;
@@ -119,7 +128,7 @@ public class Graph {
                 continue;
             }
             for(int j = 0; j < adjList[i].size(); j++)
-                System.out.print(adjList[i].get(j).getV() + " / ");
+                System.out.print(adjList[i].get(j).getV() + ":> " + " edge type: " + adjList[i].get(j).getEdgeType()+ " / ");
             System.out.println();
         }
     }
