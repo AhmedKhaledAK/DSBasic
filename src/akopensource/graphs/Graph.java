@@ -1,5 +1,7 @@
 package akopensource.graphs;
 
+import akopensource.tuples.Triplet;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
@@ -132,6 +134,8 @@ public class Graph {
 
     public void dfsTransposeGraph(){
         Graph graph = transposeGraph();
+        // this if condition is here because of the strongly connected components problem, we consider the vertices in order of
+        // decreasing finishing time
         if (topologicalSortedList.isEmpty()){
             dfs();
         }
@@ -140,8 +144,10 @@ public class Graph {
         for (Vertex vertex : visitedCopy) vertex.setVisisted(false);
         for (Vertex vertex : topCopy) {
             int v = vertex.getV();
-            if (!visitedCopy[v].isVisisted())
+            if (!visitedCopy[v].isVisisted()) {
                 dfsVisitTransposeGraph(visitedCopy, v, graph);
+                System.out.println("-----------");
+            }
         }
     }
 

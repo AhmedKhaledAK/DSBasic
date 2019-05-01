@@ -32,10 +32,10 @@ public class Main {
         graph.insertInAdjList(6, 2);
         graph.insertInAdjList(7, 5);
 
-        graph.dfs();
-        graph.printVisited();
+        //graph.dfs();
+        //graph.printVisited();
         graph.dfsTransposeGraph();
-        graph.printVisited();
+        //graph.printVisited();
 
         /*graph.insertInAdjList(0, 1);
         graph.insertInAdjList(0, 3);
