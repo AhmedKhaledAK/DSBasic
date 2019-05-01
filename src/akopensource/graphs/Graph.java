@@ -1,5 +1,6 @@
 package akopensource.graphs;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 
@@ -61,6 +62,16 @@ public class Graph {
             this.adjList[i] = new LinkedList<>();
     }
 
+    public Graph transposeGraph(){
+        Graph graph = new Graph(this.adjList.length, type);
+        for (int i = 0; i < adjList.length; i++){
+            for (int j = 0; j < adjList[i].size(); j++){
+                graph.insertInAdjList(adjList[i].get(j).getV(), i);
+            }
+        }
+        return graph;
+    }
+
     public void bfs(int src){
         for (Vertex vertex : visited) vertex.setVisisted(false);
 
@@ -89,28 +100,28 @@ public class Graph {
 
         for (int i = 0; i < visited.length; i++){
             if (!visited[i].isVisisted())
-                dfsVisit(visited, i);
+                dfsVisit(visited, i, this);
         }
     }
 
-    private void dfsVisit(Vertex[] visited, int i) {
+    private void dfsVisit(Vertex[] visited, int i, Graph graph) {
         time += 1;
         visited[i].setDiscoveryTime(time);
         visited[i].setVisisted(true);
         visit(i);
-        for (int j = 0; adjList[i] != null && j < adjList[i].size(); j++){
-            int v = adjList[i].get(j).getV();
+        for (int j = 0; graph.adjList[i] != null && j < graph.adjList[i].size(); j++){
+            int v = graph.adjList[i].get(j).getV();
             if (!visited[v].isVisisted()){
-                adjList[i].get(j).setEdgeType(Vertex.EdgeType.TREE);
+                graph.adjList[i].get(j).setEdgeType(Vertex.EdgeType.TREE);
                 visited[v].setPredecessor(visited[i]);
-                dfsVisit(visited, v);
+                dfsVisit(visited, v, graph);
             }else {
                 if(visited[i].getDiscoveryTime() >= visited[v].getDiscoveryTime() && visited[v].getFinishTime() == 0){
-                    adjList[i].get(j).setEdgeType(Vertex.EdgeType.BACK);
+                    graph.adjList[i].get(j).setEdgeType(Vertex.EdgeType.BACK);
                 }else if(visited[i].getDiscoveryTime() < visited[v].getDiscoveryTime()){
-                    adjList[i].get(j).setEdgeType(Vertex.EdgeType.FORWARD);
+                    graph.adjList[i].get(j).setEdgeType(Vertex.EdgeType.FORWARD);
                 }else if(visited[i].getDiscoveryTime() > visited[v].getDiscoveryTime() && visited[i].getFinishTime() == 0){
-                    adjList[i].get(j).setEdgeType(Vertex.EdgeType.CROSS);
+                    graph.adjList[i].get(j).setEdgeType(Vertex.EdgeType.CROSS);
                 }
             }
         }
@@ -118,6 +129,35 @@ public class Graph {
         visited[i].setFinishTime(time);
         topologicalSortedList.addFirst(visited[i]);
     }
+
+    public void dfsTransposeGraph(){
+        Graph graph = transposeGraph();
+        if (topologicalSortedList.isEmpty()){
+            dfs();
+        }
+        Vertex [] visitedCopy = Arrays.copyOf(visited, this.adjList.length);
+        LinkedList<Vertex> topCopy = (LinkedList<Vertex>) topologicalSortedList.clone();
+        for (Vertex vertex : visitedCopy) vertex.setVisisted(false);
+        for (Vertex vertex : topCopy) {
+            int v = vertex.getV();
+            if (!visitedCopy[v].isVisisted())
+                dfsVisitTransposeGraph(visitedCopy, v, graph);
+        }
+    }
+
+    private void dfsVisitTransposeGraph(Vertex [] visited, int i , Graph graph){
+        visited[i].setVisisted(true);
+        visit(i);
+        for (int j = 0; graph.adjList[i] != null && j < graph.adjList[i].size(); j++){
+            int v = graph.adjList[i].get(j).getV();
+            if (!visited[v].isVisisted()){
+                graph.adjList[i].get(j).setEdgeType(Vertex.EdgeType.TREE);
+                visited[v].setPredecessor(visited[i]);
+                dfsVisitTransposeGraph(visited, v, graph);
+            }
+        }
+    }
+
 
     private void visit(int e) {
         System.out.println(e);
