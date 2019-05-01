@@ -92,4 +92,9 @@ public class Vertex {
     public void setEdgeType(EdgeType edgeType) {
         this.edgeType = edgeType;
     }
+
+    @Override
+    public String toString() {
+        return v+"";
+    }
 }

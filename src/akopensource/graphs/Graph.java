@@ -12,6 +12,7 @@ public class Graph {
     private int n;
     private Vertex[] visited;
     private int time;
+    private LinkedList<Vertex> topologicalSortedList;
 
     public Graph(int n, int m, int type) {
         this.matrix = new Vertex[n][n];
@@ -28,6 +29,7 @@ public class Graph {
             visited[i] = new Vertex(i);
             visited[i].setVisisted(false);
         }
+        topologicalSortedList = new LinkedList<>();
     }
 
     public void insertInAdjList(int src, int dest){
@@ -96,7 +98,7 @@ public class Graph {
         visited[i].setDiscoveryTime(time);
         visited[i].setVisisted(true);
         visit(i);
-        for (int j = 0; j < adjList[i].size(); j++){
+        for (int j = 0; adjList[i] != null && j < adjList[i].size(); j++){
             int v = adjList[i].get(j).getV();
             if (!visited[v].isVisisted()){
                 adjList[i].get(j).setEdgeType(Vertex.EdgeType.TREE);
@@ -114,6 +116,7 @@ public class Graph {
         }
         time += 1;
         visited[i].setFinishTime(time);
+        topologicalSortedList.addFirst(visited[i]);
     }
 
     private void visit(int e) {
@@ -153,5 +156,9 @@ public class Graph {
             System.out.println(vertex.getV() + ": " + "discovery time --> " + vertex.getDiscoveryTime() + ", " +
                     "finish time " + vertex.getFinishTime());
         }
+    }
+
+    public LinkedList<Vertex> getTopologicalSortedList(){
+        return topologicalSortedList;
     }
 }

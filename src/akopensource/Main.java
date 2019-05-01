@@ -16,8 +16,21 @@ public class Main {
         //TESTING
 
 
-        Graph graph = new Graph(8,1);
-        graph.insertInAdjList(0, 4);
+        Graph graph = new Graph(9,1);
+        graph.insertInAdjList(0, 1);
+        graph.insertInAdjList(0, 3);
+        graph.insertInAdjList(1, 2);
+        graph.insertInAdjList(3, 2);
+        graph.insertInAdjList(5, 6);
+        graph.insertInAdjList(5, 7);
+        graph.insertInAdjList(6, 3);
+        graph.insertInAdjList(6, 7);
+        graph.insertInAdjList(8, 7);
+
+        graph.dfs();
+        System.out.println(graph.getTopologicalSortedList());
+
+        /*graph.insertInAdjList(0, 4);
         graph.insertInAdjList(0, 1);
         graph.insertInAdjList(1, 4);
         graph.insertInAdjList(1, 2);
@@ -37,7 +50,7 @@ public class Main {
         System.out.println("----------------");
 
         graph.printGraphAdjList();
-        graph.printVisited();
+        graph.printVisited();*/
 
 
 

@@ -17,6 +17,7 @@ Currently in the repo:
   * Depth-first traversal
   * Getting predecessor of each vertex using BFS and DFS
   * Timestamps of vertices in DFS and classifications of edges
+  * Topological sort
   
 * Sorting Algorithms: https://github.com/AhmedKhaledAK/DSBasic/tree/master/src/akopensource/sorting
   * Quicksort
