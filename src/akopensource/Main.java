@@ -16,7 +16,7 @@ public class Main {
         //TESTING
 
 
-        Graph graph = new Graph(8,1);
+        /*Graph graph = new Graph(8,1);
         graph.insertInAdjList(0, 1);
         graph.insertInAdjList(0, 4);
         graph.insertInAdjList(1, 2);
@@ -34,7 +34,7 @@ public class Main {
 
         //graph.dfs();
         //graph.printVisited();
-        graph.dfsTransposeGraph();
+        graph.dfsTransposeGraph();*/
         //graph.printVisited();
 
         /*graph.insertInAdjList(0, 1);
@@ -226,7 +226,7 @@ public class Main {
 
         // 22 33 4 5 6 7 8 55 3 2 1 6 4
 
-        /*RedBlackTree tree = new RedBlackTree(7);
+        RedBlackTree tree = new RedBlackTree(7);
 
         tree.insert(3);
         tree.insert(18);
@@ -268,7 +268,7 @@ public class Main {
         tree.delete(22);
         tree.traverseInorder(tree.getRoot());
         System.out.println();
-        tree.traverseLevelOrder();*/
+        tree.traverseLevelOrder();
 
         // System.out.println(redBlackTree.search(13));
 

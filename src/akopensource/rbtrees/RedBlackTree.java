@@ -60,10 +60,10 @@ public class RedBlackTree {
     }
 
     private void insertFixup(Node z) {
-        while (z.getParent() != nil && z.getParent().getColor() == 0){
+        while (z.getParent().getColor() == 0){
             if(z.getParent() == z.getParent().getParent().getLeft()){
                 Node uncle = z.getParent().getParent().getRight();
-                if (uncle != nil && uncle.getColor() == 0){ // case 1
+                if (uncle.getColor() == 0){ // case 1
                     uncle.setColor(1);
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);
@@ -80,7 +80,7 @@ public class RedBlackTree {
             }
             else{
                 Node uncle = z.getParent().getParent().getLeft();
-                if(uncle != nil && uncle.getColor() == 0){
+                if(uncle.getColor() == 0){
                     uncle.setColor(1);
                     z.getParent().setColor(1);
                     z.getParent().getParent().setColor(0);
@@ -100,13 +100,10 @@ public class RedBlackTree {
     }
 
     private void rotateLeft(Node x){
-        Node y = nil;
-        if(x.getRight() != nil)
-            y = x.getRight();
+        Node y = x.getRight();
 
         x.setRight(y.getLeft());
-        if(y.getLeft() != nil)
-            y.getLeft().setParent(x);
+        y.getLeft().setParent(x);
 
         y.setParent(x.getParent());
         if(x == root)
@@ -120,13 +117,10 @@ public class RedBlackTree {
     }
 
     private void rotateRight(Node x){
-        Node y = nil;
-        if (x.getLeft() != nil)
-            y = x.getLeft();
+        Node y = x.getLeft();
 
         x.setLeft(y.getRight());
-        if(y.getRight() != nil)
-            y.getRight().setParent(x);
+        y.getRight().setParent(x);
 
         y.setParent(x.getParent());
         if(x == root)
