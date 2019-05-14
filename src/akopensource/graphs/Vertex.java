@@ -1,7 +1,5 @@
 package akopensource.graphs;
 
-import java.util.Comparator;
-
 public class Vertex implements Comparable<Vertex> {
 
     private int v;
