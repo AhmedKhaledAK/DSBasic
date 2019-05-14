@@ -9,6 +9,7 @@ public class Vertex {
     private int distance;
     private int discoveryTime, finishTime; // timestamps
     private EdgeType edgeType;
+    private int weightKey;
 
     public enum EdgeType {
         BACK,
@@ -85,12 +86,20 @@ public class Vertex {
         this.finishTime = finishTime;
     }
 
-    public EdgeType getEdgeType() {
+    EdgeType getEdgeType() {
         return edgeType;
     }
 
-    public void setEdgeType(EdgeType edgeType) {
+    void setEdgeType(EdgeType edgeType) {
         this.edgeType = edgeType;
+    }
+
+    int getWeightKey() {
+        return weightKey;
+    }
+
+    void setWeightKey(int weightKey) {
+        this.weightKey = weightKey;
     }
 
     @Override
