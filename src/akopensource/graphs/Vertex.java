@@ -107,13 +107,16 @@ public class Vertex implements Comparable<Vertex> {
         this.weightKey = weightKey;
     }
 
+
+    // these methods can be used too
+
     /*@Override
     public boolean equals(Object obj) {
        // System.out.println("this v: " + this.getV() + ", " + "obj v: " + ((Vertex)obj).getV());
-        return this.getWeightKey() == ((Vertex)obj).getWeightKey();
-    }*/
+        return this.getV() == ((Vertex)obj).getV();
+    }
 
-    /*@Override
+    @Override
     public int hashCode() {
         System.out.println("result: " + v);
         return v;
