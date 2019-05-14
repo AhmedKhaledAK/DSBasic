@@ -8,8 +8,8 @@ import java.util.PriorityQueue;
 
 public class Graph {
 
-    private Vertex [][] matrix; // matrix can hold one bit only, which is better. Here we're doing this to hold all the attributes of a
-    // vertex and if there were weighted edges
+    private Vertex [][] matrix; // matrix can hold one bit only, which is better. Here we're doing this to hold all the
+    // attributes of a vertex
     private LinkedList<Vertex> [] adjList;
     private int type; // 0 - undirected, 1 - directed
     private int n;

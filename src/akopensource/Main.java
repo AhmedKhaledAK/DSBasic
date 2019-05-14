@@ -226,7 +226,7 @@ public class Main {
 
         // 22 33 4 5 6 7 8 55 3 2 1 6 4
 
-        RedBlackTree tree = new RedBlackTree(7);
+        /*RedBlackTree tree = new RedBlackTree(7);
 
         tree.insert(3);
         tree.insert(18);
@@ -268,7 +268,7 @@ public class Main {
         tree.delete(22);
         tree.traverseInorder(tree.getRoot());
         System.out.println();
-        tree.traverseLevelOrder();
+        tree.traverseLevelOrder();*/
 
         // System.out.println(redBlackTree.search(13));
 
