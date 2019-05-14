@@ -12,7 +12,9 @@ public class Graph {
     private int type; // 0 - undirected, 1 - directed
     private int n;
     private Vertex[] visited;
+    private Vertex[] helperArray;
     private int time;
+    private int size;
     private LinkedList<Vertex> topologicalSortedList;
 
     public Graph(int n, int m, int type) {
@@ -22,9 +24,11 @@ public class Graph {
     }
 
     public Graph(int size, int type) {
+        this.size = size;
         this.adjList = new LinkedList[size];
         this.type = type;
         this.visited = new Vertex[size];
+        this.helperArray = new Vertex[size];
 
         for (int i = 0; i < size; i++) {
             visited[i] = new Vertex(i);
@@ -72,6 +76,15 @@ public class Graph {
     private void initializeList(int i) {
         if (this.adjList[i] == null)
             this.adjList[i] = new LinkedList<>();
+    }
+
+    public void createMSTPrim(int src){
+        for (int i = 0; i < this.size; i++){
+            helperArray[i] = new Vertex(i);
+            helperArray[i].setWeightKey(Integer.MAX_VALUE);
+        }
+        helperArray[src].setWeightKey(0);
+
     }
 
     public void bfs(int src){

@@ -1,9 +1,28 @@
 package akopensource;
 
+import akopensource.graphs.Graph;
+
 public class Main {
 
     public static void main(String[] args) {
         //TESTING
+
+
+        Graph graph = new Graph(9, 0);
+        graph.insertInAdjList(0, 1, 4);
+        graph.insertInAdjList(0,6,8);
+        graph.insertInAdjList(1, 2,8);
+        graph.insertInAdjList(1,6,11);
+        graph.insertInAdjList(2, 3, 2);
+        graph.insertInAdjList(2, 4, 4);
+        graph.insertInAdjList(2,7,7);
+        graph.insertInAdjList(3, 5,6);
+        graph.insertInAdjList(3, 6, 7);
+        graph.insertInAdjList(4, 5, 2);
+        graph.insertInAdjList(4, 7, 14);
+        graph.insertInAdjList(4, 8, 10);
+        graph.insertInAdjList(5, 6, 1);
+        graph.insertInAdjList(7,8, 9);
 
 
         /*Graph graph = new Graph(8,1);

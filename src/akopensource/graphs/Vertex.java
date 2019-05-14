@@ -1,6 +1,6 @@
 package akopensource.graphs;
 
-public class Vertex {
+public class Vertex implements Comparable<Vertex>{
 
     private int v;
     private int weight;
@@ -9,7 +9,12 @@ public class Vertex {
     private int distance;
     private int discoveryTime, finishTime; // timestamps
     private EdgeType edgeType;
-    private int weightKey;
+    private Integer weightKey; // Integer object for comparing
+
+    @Override
+    public int compareTo(Vertex vertex) {
+        return this.getWeightKey().compareTo(vertex.getWeightKey());
+    }
 
     public enum EdgeType {
         BACK,
@@ -94,11 +99,11 @@ public class Vertex {
         this.edgeType = edgeType;
     }
 
-    int getWeightKey() {
+    Integer getWeightKey() {
         return weightKey;
     }
 
-    void setWeightKey(int weightKey) {
+    void setWeightKey(Integer weightKey) {
         this.weightKey = weightKey;
     }
 
