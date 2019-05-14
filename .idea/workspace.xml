@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +20,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+            <state relative-caret-position="432">
+              <caret line="54" column="62" lean-forward="true" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1420#1421#0" expanded="true" />
+                <element signature="e#1453#1454#0" expanded="true" />
+                <element signature="e#1903#1904#0" expanded="true" />
+                <element signature="e#1935#1936#0" expanded="true" />
                 <element signature="e#5901#5902#0" expanded="true" />
                 <element signature="e#5938#5939#0" expanded="true" />
               </folding>
@@ -86,8 +91,8 @@
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Vertex.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
       </list>
     </option>
   </component>
@@ -228,21 +233,7 @@
       <workItem from="1556719371624" duration="15052000" />
       <workItem from="1557355604468" duration="604000" />
       <workItem from="1557578426896" duration="1364000" />
-      <workItem from="1557835873558" duration="329000" />
-    </task>
-    <task id="LOCAL-00060" summary="split child in B-trees">
-      <created>1553638480249</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1553638480249</updated>
-    </task>
-    <task id="LOCAL-00061" summary="insertion in b-trees (incomplete)">
-      <created>1553646940634</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1553646940634</updated>
+      <workItem from="1557835873558" duration="2685000" />
     </task>
     <task id="LOCAL-00062" summary="B-trees fixations (insertion)">
       <created>1553702518499</created>
@@ -573,11 +564,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557836040484</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="removed unnecessary comment">
+      <created>1557836311179</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1557836311179</updated>
+    </task>
+    <task id="LOCAL-00110" summary="removed unnecessary import">
+      <created>1557836454697</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1557836454697</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224434000" />
+    <option name="totallyTimeSpent" value="226790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -629,8 +634,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="upgraded Java to Java 11" />
-    <MESSAGE value="Notes on B-trees deletion" />
     <MESSAGE value="Successor and predecessor in B-trees" />
     <MESSAGE value="remove from leave in B-tree (case 1)" />
     <MESSAGE value="graphs (adj list representation)" />
@@ -654,7 +657,9 @@
     <MESSAGE value="strongly connected components" />
     <MESSAGE value="fixations in rb trees" />
     <MESSAGE value="changed method signature" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed method signature" />
+    <MESSAGE value="removed unnecessary comment" />
+    <MESSAGE value="removed unnecessary import" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary import" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -863,10 +868,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+        <state relative-caret-position="432">
+          <caret line="54" column="62" lean-forward="true" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
             <element signature="e#5901#5902#0" expanded="true" />
             <element signature="e#5938#5939#0" expanded="true" />
           </folding>

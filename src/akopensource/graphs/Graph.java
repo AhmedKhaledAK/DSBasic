@@ -33,28 +33,40 @@ public class Graph {
         topologicalSortedList = new LinkedList<>();
     }
 
-    public void insertInAdjList(int src, int dest){
+    public void insertInAdjList(int src, int dest, int weight){
         Vertex vertex = new Vertex(dest);
+        vertex.setWeight(weight);
         initializeList(src);
         this.adjList[src].add(vertex);
 
         if (this.type == 0){
             if(src == dest) return;
             vertex = new Vertex(src);
+            vertex.setWeight(weight);
             initializeList(dest);
             this.adjList[dest].add(vertex);
         }
     }
 
-    public void insertInMatrix(int src, int dest){
+    public void insertInAdjList(int src, int dest){
+        insertInAdjList(src,dest,0);
+    }
+
+    public void insertInMatrix(int src, int dest, int weight){
         Vertex vertex = new Vertex(dest);
+        vertex.setWeight(weight);
         this.matrix[src][dest] = vertex;
 
         if (this.type == 0){
             if(src == dest) return;
             vertex = new Vertex(src);
+            vertex.setWeight(weight);
             this.matrix[dest][src] = vertex;
         }
+    }
+
+    public void insertInMatrix(int src, int dest){
+        insertInMatrix(src,dest,0);
     }
 
     private void initializeList(int i) {
