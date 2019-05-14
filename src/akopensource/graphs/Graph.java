@@ -1,8 +1,9 @@
 package akopensource.graphs;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
+
+import akopensource.tuples.Pair;
+
+import java.util.*;
 
 public class Graph {
 
@@ -16,6 +17,7 @@ public class Graph {
     private int time;
     private int size;
     private LinkedList<Vertex> topologicalSortedList;
+    private LinkedList<Pair> pairs;
 
     public Graph(int n, int m, int type) {
         this.matrix = new Vertex[n][n];
@@ -35,6 +37,7 @@ public class Graph {
             visited[i].setVisisted(false);
         }
         topologicalSortedList = new LinkedList<>();
+        pairs = new LinkedList<>();
     }
 
     public void insertInAdjList(int src, int dest, int weight){
@@ -85,6 +88,64 @@ public class Graph {
         }
         helperArray[src].setWeightKey(0);
 
+        PriorityQueue<Vertex> queue = createQueue(helperArray);
+
+        printQueue(queue);
+
+
+        pairs = new LinkedList<>();
+        while (!queue.isEmpty()){
+            Vertex vertex = queue.poll();
+            printQueue(queue);
+            int v = vertex.getV();
+            System.out.println("dequeue v: " + v);
+            if (vertex.getPredecessor() != null)
+                pairs.add(new Pair(vertex.getPredecessor().getV(), v));
+            for (int i = 0; i < adjList[v].size(); i++){
+
+                System.out.println("helperArray[adjList[v].get(i).getV()]: " + helperArray[adjList[v].get(i).getV()] +
+                        " weightKey: " + helperArray[adjList[v].get(i).getV()].getWeightKey() +
+                        ",,, adjList[v].get(i).getWeight(): " + adjList[v].get(i).getWeight());
+
+                if (helperArray[adjList[v].get(i).getV()].getWeightKey() > adjList[v].get(i).getWeight()
+                        && isInQueue(queue, adjList[v].get(i))){
+                    System.out.println("in queue: " + adjList[v].get(i).getV());
+                    helperArray[adjList[v].get(i).getV()].setWeightKey(adjList[v].get(i).getWeight());
+                    helperArray[adjList[v].get(i).getV()].setPredecessor(vertex);
+                    heapifyQueue(queue, helperArray[adjList[v].get(i).getV()]);
+                    printQueue(queue);
+                }
+            }
+        }
+    }
+
+    // time complexity: logn too because it deletes and inserts
+    private void heapifyQueue(PriorityQueue<Vertex> queue, Vertex vertex) {
+        queue.remove(vertex);
+        queue.add(vertex);
+    }
+
+    private void printQueue(PriorityQueue<Vertex> queue) {
+        System.out.println("---printing queue......");
+        for (Vertex vert : queue){
+            System.out.println("v: " + vert.getV() + ", " + "weightkey: " + vert.getWeightKey());
+        }
+        System.out.println("---end of printing queue......");
+    }
+
+    private boolean isInQueue(PriorityQueue<Vertex> queue, Vertex vertex) {
+        for (Vertex vert : queue) {
+            if (vert.getV() == vertex.getV())
+                return true;
+        }
+        return false;
+    }
+
+
+    private PriorityQueue<Vertex> createQueue(Vertex[] helperArray) {
+        PriorityQueue<Vertex> queue = new PriorityQueue<>();
+        Collections.addAll(queue, helperArray); // adding all elements in helperArray to queue
+        return queue;
     }
 
     public void bfs(int src){
@@ -229,5 +290,12 @@ public class Graph {
 
     public LinkedList<Vertex> getTopologicalSortedList(){
         return topologicalSortedList;
+    }
+
+    public void printMST(){
+        for (Pair pair : pairs) {
+            System.out.println("(" + pair.getFirstElem() + ", "
+                    + pair.getSecondElem() + ")");
+        }
     }
 }

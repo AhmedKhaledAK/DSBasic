@@ -24,6 +24,8 @@ public class Main {
         graph.insertInAdjList(5, 6, 1);
         graph.insertInAdjList(7,8, 9);
 
+        graph.createMSTPrim(0);
+        graph.printMST();
 
         /*Graph graph = new Graph(8,1);
         graph.insertInAdjList(0, 1);

@@ -1,6 +1,8 @@
 package akopensource.graphs;
 
-public class Vertex implements Comparable<Vertex>{
+import java.util.Comparator;
+
+public class Vertex implements Comparable<Vertex> {
 
     private int v;
     private int weight;
@@ -99,13 +101,25 @@ public class Vertex implements Comparable<Vertex>{
         this.edgeType = edgeType;
     }
 
-    Integer getWeightKey() {
+    public Integer getWeightKey() {
         return weightKey;
     }
 
-    void setWeightKey(Integer weightKey) {
+    public void setWeightKey(Integer weightKey) {
         this.weightKey = weightKey;
     }
+
+    /*@Override
+    public boolean equals(Object obj) {
+       // System.out.println("this v: " + this.getV() + ", " + "obj v: " + ((Vertex)obj).getV());
+        return this.getWeightKey() == ((Vertex)obj).getWeightKey();
+    }*/
+
+    /*@Override
+    public int hashCode() {
+        System.out.println("result: " + v);
+        return v;
+    }*/
 
     @Override
     public String toString() {
