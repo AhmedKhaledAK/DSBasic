@@ -64,16 +64,6 @@ public class Graph {
             this.adjList[i] = new LinkedList<>();
     }
 
-    public Graph transposeGraph(){
-        Graph graph = new Graph(this.adjList.length, type);
-        for (int i = 0; i < adjList.length; i++){
-            for (int j = 0; j < adjList[i].size(); j++){
-                graph.insertInAdjList(adjList[i].get(j).getV(), i);
-            }
-        }
-        return graph;
-    }
-
     public void bfs(int src){
         for (Vertex vertex : visited) vertex.setVisisted(false);
 
@@ -132,7 +122,17 @@ public class Graph {
         topologicalSortedList.addFirst(visited[i]);
     }
 
-    public void dfsTransposeGraph(){
+    private Graph transposeGraph(){
+        Graph graph = new Graph(this.adjList.length, type);
+        for (int i = 0; i < adjList.length; i++){
+            for (int j = 0; j < adjList[i].size(); j++){
+                graph.insertInAdjList(adjList[i].get(j).getV(), i);
+            }
+        }
+        return graph;
+    }
+
+    public void getConnectedComponents(){
         Graph graph = transposeGraph();
         // this if condition is here because of the strongly connected components problem, we consider the vertices in order of
         // decreasing finishing time
