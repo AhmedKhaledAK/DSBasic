@@ -82,14 +82,14 @@ public class Graph {
     private void initializeSingleSource(int src){
         for (int i = 0; i < size; i++){
             helperArraySP[i] = new Vertex(i);
-            helperArraySP[i].setDistance(Integer.MAX_VALUE);
+            helperArraySP[i].setWeightKey(Integer.MAX_VALUE);
         }
-        helperArraySP[src].setDistance(0);
+        helperArraySP[src].setWeightKey(0);
     }
 
     private void relaxEdge(Vertex u, Vertex v, int weight){
-        if (v.getDistance() > u.getDistance() + weight){
-            v.setDistance(u.getDistance() + weight);
+        if (v.getWeightKey() > u.getWeightKey() + weight){
+            v.setWeightKey(u.getWeightKey() + weight);
             v.setPredecessor(u);
         }
     }
