@@ -18,6 +18,7 @@ Currently in the repo:
   * Getting predecessor of each vertex using BFS and DFS
   * Timestamps of vertices in DFS, classifications of edges, and topological sort
   * Transpose graphs and strongly connected components
+  * Single-source shortest paths using Dijkstra's algorithm
 
 * Minimum Spanning Trees: https://github.com/AhmedKhaledAK/DSBasic/tree/master/src/akopensource/graphs
   * Prim's algorithm
