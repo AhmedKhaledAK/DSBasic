@@ -25,6 +25,8 @@ public class Main {
 
         graph.dijkstra(0);
         graph.printShortesPathsList();
+        System.out.println();
+        graph.printAllShortestPaths();
 
         // MST
 

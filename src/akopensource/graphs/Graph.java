@@ -338,4 +338,22 @@ public class Graph {
             System.out.println("vertex: " + v.getV() +  ", " + "shortest-path: " + v.getWeightKey());
         }
     }
+
+    public void printAllShortestPaths(){
+        Stack<Integer> stack = new Stack<>();
+        for (Vertex v : shortestPathList){
+            System.out.println("----- next vertex -----");
+            Vertex v1 = v;
+            stack.push(v1.getV());
+            while (v1.getPredecessor() != null){
+                v1 = v1.getPredecessor();
+                stack.push(v1.getV());
+            }
+            System.out.println("path for: " + v.getV());
+            while (!stack.isEmpty()){
+                Integer i = stack.pop();
+                System.out.println("v: " + i + ", " + "distance: " + helperArraySP[i].getWeightKey());
+            }
+        }
+    }
 }
