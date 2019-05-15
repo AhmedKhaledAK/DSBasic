@@ -13,7 +13,7 @@ Currently in the repo:
   * Adjacency List representation
   * Matrix representation
   * Breadth-first traversal
-  * Calculating shortest path using BFS
+  * Calculating shortest-paths of unweighted graphs using BFS
   * Depth-first traversal
   * Getting predecessor of each vertex using BFS and DFS
   * Timestamps of vertices in DFS, classifications of edges, and topological sort
