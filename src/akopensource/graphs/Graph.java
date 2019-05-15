@@ -79,6 +79,14 @@ public class Graph {
         insertInMatrix(src,dest,0);
     }
 
+    private void initializeSingleSource(int src){
+        for (int i = 0; i < size; i++){
+            helperArraySP[i] = new Vertex(i);
+            helperArraySP[i].setDistance(Integer.MAX_VALUE);
+        }
+        helperArraySP[src].setDistance(0);
+    }
+
     public void createMSTPrim(int src){
         for (int i = 0; i < this.size; i++){
             helperArrayMST[i] = new Vertex(i);
