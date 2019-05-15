@@ -4,7 +4,7 @@ public class Vertex implements Comparable<Vertex> {
 
     private int v;
     private int weight;
-    private boolean isVisisted;
+    private boolean isVisited;
     private Vertex predecessor;
     private int distance;
     private int discoveryTime, finishTime; // timestamps
@@ -51,12 +51,12 @@ public class Vertex implements Comparable<Vertex> {
         this.weight = weight;
     }
 
-    boolean isVisisted() {
-        return isVisisted;
+    boolean isVisited() {
+        return isVisited;
     }
 
-    void setVisisted(boolean visisted) {
-        isVisisted = visisted;
+    void setVisited(boolean visited) {
+        isVisited = visited;
     }
 
     public Vertex getPredecessor() {

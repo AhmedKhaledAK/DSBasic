@@ -36,7 +36,7 @@ public class Graph {
 
         for (int i = 0; i < size; i++) {
             visited[i] = new Vertex(i);
-            visited[i].setVisisted(false);
+            visited[i].setVisited(false);
         }
 
         topologicalSortedList = new LinkedList<>();
@@ -134,9 +134,9 @@ public class Graph {
     }
 
     public void bfs(int src){
-        for (Vertex vertex : visited) vertex.setVisisted(false);
+        for (Vertex vertex : visited) vertex.setVisited(false);
 
-        visited[src].setVisisted(true);
+        visited[src].setVisited(true);
         visited[src].setDistance(0);
 
         PriorityQueue<Integer> unVisited = new PriorityQueue<>();
@@ -146,8 +146,8 @@ public class Graph {
             visit(e);
             for (int i = 0; i < adjList[e].size(); i++){
                 int v = adjList[e].get(i).getV();
-                if (!visited[v].isVisisted()){
-                    visited[v].setVisisted(true);
+                if (!visited[v].isVisited()){
+                    visited[v].setVisited(true);
                     visited[v].setDistance(visited[e].getDistance() + 1);
                     visited[v].setPredecessor(new Vertex(e));
                     unVisited.add(v);
@@ -157,10 +157,10 @@ public class Graph {
     }
 
     public void dfs(){
-        for (Vertex vertex : visited) vertex.setVisisted(false);
+        for (Vertex vertex : visited) vertex.setVisited(false);
 
         for (int i = 0; i < visited.length; i++){
-            if (!visited[i].isVisisted())
+            if (!visited[i].isVisited())
                 dfsVisit(visited, i, this);
         }
     }
@@ -168,11 +168,11 @@ public class Graph {
     private void dfsVisit(Vertex[] visited, int i, Graph graph) {
         time += 1;
         visited[i].setDiscoveryTime(time);
-        visited[i].setVisisted(true);
+        visited[i].setVisited(true);
         visit(i);
         for (int j = 0; graph.adjList[i] != null && j < graph.adjList[i].size(); j++){
             int v = graph.adjList[i].get(j).getV();
-            if (!visited[v].isVisisted()){
+            if (!visited[v].isVisited()){
                 graph.adjList[i].get(j).setEdgeType(Vertex.EdgeType.TREE);
                 visited[v].setPredecessor(visited[i]);
                 dfsVisit(visited, v, graph);
@@ -210,10 +210,10 @@ public class Graph {
         }
         Vertex [] visitedCopy = Arrays.copyOf(visited, this.adjList.length);
         LinkedList<Vertex> topCopy = (LinkedList<Vertex>) topologicalSortedList.clone();
-        for (Vertex vertex : visitedCopy) vertex.setVisisted(false);
+        for (Vertex vertex : visitedCopy) vertex.setVisited(false);
         for (Vertex vertex : topCopy) {
             int v = vertex.getV();
-            if (!visitedCopy[v].isVisisted()) {
+            if (!visitedCopy[v].isVisited()) {
                 dfsVisitTransposeGraph(visitedCopy, v, graph);
                 System.out.println("-----------");
             }
@@ -221,11 +221,11 @@ public class Graph {
     }
 
     private void dfsVisitTransposeGraph(Vertex [] visited, int i , Graph graph){
-        visited[i].setVisisted(true);
+        visited[i].setVisited(true);
         visit(i);
         for (int j = 0; graph.adjList[i] != null && j < graph.adjList[i].size(); j++){
             int v = graph.adjList[i].get(j).getV();
-            if (!visited[v].isVisisted()){
+            if (!visited[v].isVisited()){
                 graph.adjList[i].get(j).setEdgeType(Vertex.EdgeType.TREE);
                 visited[v].setPredecessor(visited[i]);
                 dfsVisitTransposeGraph(visited, v, graph);

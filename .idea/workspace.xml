@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="86" column="41" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
+            <state relative-caret-position="232">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#insertInAdjList#0;class#Graph#0" />
@@ -265,14 +264,7 @@
       <workItem from="1557355604468" duration="604000" />
       <workItem from="1557578426896" duration="1364000" />
       <workItem from="1557835873558" duration="21253000" />
-      <workItem from="1557955845323" duration="2823000" />
-    </task>
-    <task id="LOCAL-00073" summary="various edits">
-      <created>1554155622448</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1554155622448</updated>
+      <workItem from="1557955845323" duration="3192000" />
     </task>
     <task id="LOCAL-00074" summary="upgraded Java to Java 11">
       <created>1554733849686</created>
@@ -610,11 +602,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557959545587</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="added method initializeSingleSource for shortest-paths algorithms">
+      <created>1557959808987</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1557959808987</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248181000" />
+    <option name="totallyTimeSpent" value="248550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -706,7 +705,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edits" />
     <MESSAGE value="readme" />
     <MESSAGE value="fixations" />
     <MESSAGE value="Depth-First Search in Graphs" />
@@ -731,7 +729,8 @@
     <MESSAGE value="removed a comment that provided wrong information" />
     <MESSAGE value="changed helperArray name to helperArrayMST" />
     <MESSAGE value="reordered methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="reordered methods" />
+    <MESSAGE value="added method initializeSingleSource for shortest-paths algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="added method initializeSingleSource for shortest-paths algorithms" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -966,8 +965,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="86" column="41" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
+        <state relative-caret-position="232">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#insertInAdjList#0;class#Graph#0" />
