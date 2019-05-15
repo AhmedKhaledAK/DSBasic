@@ -14,6 +14,7 @@ public class Graph {
     private int n;
     private Vertex[] visited;
     private Vertex[] helperArrayMST;
+    private Vertex[] helperArraySP;
     private int time;
     private int size;
     private LinkedList<Vertex> topologicalSortedList;
@@ -31,11 +32,13 @@ public class Graph {
         this.type = type;
         this.visited = new Vertex[size];
         this.helperArrayMST = new Vertex[size];
+        this.helperArraySP = new Vertex[size];
 
         for (int i = 0; i < size; i++) {
             visited[i] = new Vertex(i);
             visited[i].setVisisted(false);
         }
+
         topologicalSortedList = new LinkedList<>();
         pairs = new LinkedList<>();
     }
@@ -76,11 +79,6 @@ public class Graph {
         insertInMatrix(src,dest,0);
     }
 
-    private void initializeList(int i) {
-        if (this.adjList[i] == null)
-            this.adjList[i] = new LinkedList<>();
-    }
-
     public void createMSTPrim(int src){
         for (int i = 0; i < this.size; i++){
             helperArrayMST[i] = new Vertex(i);
@@ -118,34 +116,6 @@ public class Graph {
                 }
             }
         }
-    }
-
-    private void heapifyQueue(PriorityQueue<Vertex> queue, Vertex vertex) {
-        queue.remove(vertex);
-        queue.add(vertex);
-    }
-
-    private void printQueue(PriorityQueue<Vertex> queue) {
-        System.out.println("---printing queue......");
-        for (Vertex vert : queue){
-            System.out.println("v: " + vert.getV() + ", " + "weightkey: " + vert.getWeightKey());
-        }
-        System.out.println("---end of printing queue......");
-    }
-
-    private boolean isInQueue(PriorityQueue<Vertex> queue, Vertex vertex) {
-        for (Vertex vert : queue) {
-            if (vert.getV() == vertex.getV())
-                return true;
-        }
-        return false;
-    }
-
-
-    private PriorityQueue<Vertex> createQueue(Vertex[] helperArray) {
-        PriorityQueue<Vertex> queue = new PriorityQueue<>();
-        Collections.addAll(queue, helperArray); // adding all elements in helperArrayMST to queue
-        return queue;
     }
 
     public void bfs(int src){
@@ -251,6 +221,38 @@ public class Graph {
 
     private void visit(int e) {
         System.out.println(e);
+    }
+
+    private PriorityQueue<Vertex> createQueue(Vertex[] helperArray) {
+        PriorityQueue<Vertex> queue = new PriorityQueue<>();
+        Collections.addAll(queue, helperArray); // adding all elements in helperArrayMST to queue
+        return queue;
+    }
+
+    private void heapifyQueue(PriorityQueue<Vertex> queue, Vertex vertex) {
+        queue.remove(vertex);
+        queue.add(vertex);
+    }
+
+    private void printQueue(PriorityQueue<Vertex> queue) {
+        System.out.println("---printing queue......");
+        for (Vertex vert : queue){
+            System.out.println("v: " + vert.getV() + ", " + "weightkey: " + vert.getWeightKey());
+        }
+        System.out.println("---end of printing queue......");
+    }
+
+    private boolean isInQueue(PriorityQueue<Vertex> queue, Vertex vertex) {
+        for (Vertex vert : queue) {
+            if (vert.getV() == vertex.getV())
+                return true;
+        }
+        return false;
+    }
+
+    private void initializeList(int i) {
+        if (this.adjList[i] == null)
+            this.adjList[i] = new LinkedList<>();
     }
 
     public void printGraphAdjList(){
