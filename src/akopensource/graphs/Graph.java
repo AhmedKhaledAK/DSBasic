@@ -119,7 +119,6 @@ public class Graph {
         }
     }
 
-    // time complexity: logn too because it deletes and inserts
     private void heapifyQueue(PriorityQueue<Vertex> queue, Vertex vertex) {
         queue.remove(vertex);
         queue.add(vertex);
