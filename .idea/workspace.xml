@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1872">
-              <caret line="110" column="62" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="62" />
+            <state relative-caret-position="270">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -113,8 +113,8 @@
         <option value="$PROJECT_DIR$/src/akopensource/MyComparator.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Vertex.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
       </list>
     </option>
   </component>
@@ -263,21 +263,7 @@
       <workItem from="1557355604468" duration="604000" />
       <workItem from="1557578426896" duration="1364000" />
       <workItem from="1557835873558" duration="21253000" />
-      <workItem from="1557955845323" duration="791000" />
-    </task>
-    <task id="LOCAL-00069" summary="bubble sort (recursive method) implemented">
-      <created>1554150936970</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1554150936970</updated>
-    </task>
-    <task id="LOCAL-00070" summary="bubble sort (using doubly linked list) implemented">
-      <created>1554151540007</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1554151540007</updated>
+      <workItem from="1557955845323" duration="2301000" />
     </task>
     <task id="LOCAL-00071" summary="bubble sort (using doubly linked list) implemented">
       <created>1554151697874</created>
@@ -608,11 +594,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557878012482</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="more illustration in README.md">
+      <created>1557956682571</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1557956682572</updated>
+    </task>
+    <task id="LOCAL-00119" summary="removed a comment that provided wrong information">
+      <created>1557957582737</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1557957582737</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246149000" />
+    <option name="totallyTimeSpent" value="247659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -704,8 +704,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="search in red-black trees" />
-    <MESSAGE value="get minimum, successor and incomplete delete in red-black trees" />
     <MESSAGE value="fixations in red-black tree" />
     <MESSAGE value="deletion in red-black trees completed, fixations, and traversing level order" />
     <MESSAGE value="edits" />
@@ -729,7 +727,9 @@
     <MESSAGE value="removed unnecessary imports" />
     <MESSAGE value="updated README.md" />
     <MESSAGE value="added a comment in Vertex class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a comment in Vertex class" />
+    <MESSAGE value="more illustration in README.md" />
+    <MESSAGE value="removed a comment that provided wrong information" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed a comment that provided wrong information" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -935,16 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="110" column="62" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -969,6 +959,16 @@
             <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

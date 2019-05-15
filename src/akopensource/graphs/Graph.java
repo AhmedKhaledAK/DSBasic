@@ -13,7 +13,7 @@ public class Graph {
     private int type; // 0 - undirected, 1 - directed
     private int n;
     private Vertex[] visited;
-    private Vertex[] helperArray;
+    private Vertex[] helperArrayMST;
     private int time;
     private int size;
     private LinkedList<Vertex> topologicalSortedList;
@@ -30,7 +30,7 @@ public class Graph {
         this.adjList = new LinkedList[size];
         this.type = type;
         this.visited = new Vertex[size];
-        this.helperArray = new Vertex[size];
+        this.helperArrayMST = new Vertex[size];
 
         for (int i = 0; i < size; i++) {
             visited[i] = new Vertex(i);
@@ -83,15 +83,14 @@ public class Graph {
 
     public void createMSTPrim(int src){
         for (int i = 0; i < this.size; i++){
-            helperArray[i] = new Vertex(i);
-            helperArray[i].setWeightKey(Integer.MAX_VALUE);
+            helperArrayMST[i] = new Vertex(i);
+            helperArrayMST[i].setWeightKey(Integer.MAX_VALUE);
         }
-        helperArray[src].setWeightKey(0);
+        helperArrayMST[src].setWeightKey(0);
 
-        PriorityQueue<Vertex> queue = createQueue(helperArray);
+        PriorityQueue<Vertex> queue = createQueue(helperArrayMST);
 
         printQueue(queue);
-
 
         pairs = new LinkedList<>();
         while (!queue.isEmpty()){
@@ -99,20 +98,22 @@ public class Graph {
             printQueue(queue);
             int v = vertex.getV();
             System.out.println("dequeue v: " + v);
+
             if (vertex.getPredecessor() != null)
                 pairs.add(new Pair(vertex.getPredecessor().getV(), v));
+
             for (int i = 0; i < adjList[v].size(); i++){
 
-                System.out.println("helperArray[adjList[v].get(i).getV()]: " + helperArray[adjList[v].get(i).getV()] +
-                        " weightKey: " + helperArray[adjList[v].get(i).getV()].getWeightKey() +
+                System.out.println("helperArrayMST[adjList[v].get(i).getV()]: " + helperArrayMST[adjList[v].get(i).getV()] +
+                        " weightKey: " + helperArrayMST[adjList[v].get(i).getV()].getWeightKey() +
                         ",,, adjList[v].get(i).getWeight(): " + adjList[v].get(i).getWeight());
 
-                if (helperArray[adjList[v].get(i).getV()].getWeightKey() > adjList[v].get(i).getWeight()
+                if (helperArrayMST[adjList[v].get(i).getV()].getWeightKey() > adjList[v].get(i).getWeight()
                         && isInQueue(queue, adjList[v].get(i))){
                     System.out.println("in queue: " + adjList[v].get(i).getV());
-                    helperArray[adjList[v].get(i).getV()].setWeightKey(adjList[v].get(i).getWeight());
-                    helperArray[adjList[v].get(i).getV()].setPredecessor(vertex);
-                    heapifyQueue(queue, helperArray[adjList[v].get(i).getV()]);
+                    helperArrayMST[adjList[v].get(i).getV()].setWeightKey(adjList[v].get(i).getWeight());
+                    helperArrayMST[adjList[v].get(i).getV()].setPredecessor(vertex);
+                    heapifyQueue(queue, helperArrayMST[adjList[v].get(i).getV()]);
                     printQueue(queue);
                 }
             }
@@ -143,7 +144,7 @@ public class Graph {
 
     private PriorityQueue<Vertex> createQueue(Vertex[] helperArray) {
         PriorityQueue<Vertex> queue = new PriorityQueue<>();
-        Collections.addAll(queue, helperArray); // adding all elements in helperArray to queue
+        Collections.addAll(queue, helperArray); // adding all elements in helperArrayMST to queue
         return queue;
     }
 
