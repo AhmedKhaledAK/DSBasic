@@ -87,6 +87,13 @@ public class Graph {
         helperArraySP[src].setDistance(0);
     }
 
+    private void relaxEdge(Vertex u, Vertex v, int weight){
+        if (v.getDistance() > u.getDistance() + weight){
+            v.setDistance(u.getDistance() + weight);
+            v.setPredecessor(u);
+        }
+    }
+
     public void createMSTPrim(int src){
         for (int i = 0; i < this.size; i++){
             helperArrayMST[i] = new Vertex(i);
