@@ -15,6 +15,7 @@ public class Graph {
     private Vertex[] visited;
     private Vertex[] helperArrayMST;
     private Vertex[] helperArraySP;
+    private LinkedList<Vertex> shortestPathList;
     private int time;
     private int size;
     private LinkedList<Vertex> topologicalSortedList;
@@ -41,6 +42,7 @@ public class Graph {
 
         topologicalSortedList = new LinkedList<>();
         pairs = new LinkedList<>();
+        shortestPathList = new LinkedList<>();
     }
 
     public void insertInAdjList(int src, int dest, int weight){
@@ -87,10 +89,25 @@ public class Graph {
         helperArraySP[src].setWeightKey(0);
     }
 
-    private void relaxEdge(Vertex u, Vertex v, int weight){
+    private void relaxEdge(Vertex u, Vertex v, int weight, PriorityQueue<Vertex> queue){
         if (v.getWeightKey() > u.getWeightKey() + weight){
             v.setWeightKey(u.getWeightKey() + weight);
             v.setPredecessor(u);
+            heapifyQueue(queue, v);
+        }
+    }
+
+    public void dijkstra(int src){
+        initializeSingleSource(src);
+        PriorityQueue<Vertex> queue = createQueue(helperArraySP);
+        while (!queue.isEmpty()){
+            Vertex vertex = queue.poll();
+            int v = vertex.getV();
+            shortestPathList.add(vertex);
+            for (int i = 0; i < adjList[v].size(); i++){
+                int vert = adjList[v].get(i).getV();
+                relaxEdge(vertex, helperArraySP[vert], adjList[v].get(i).getWeight(), queue);
+            }
         }
     }
 
@@ -313,6 +330,12 @@ public class Graph {
         for (Pair pair : pairs) {
             System.out.println("(" + pair.getFirstElem() + ", "
                     + pair.getSecondElem() + ")");
+        }
+    }
+
+    public void printShortesPathsList(){
+        for (Vertex v : shortestPathList){
+            System.out.println("vertex: " + v.getV() +  ", " + "shortest-path: " + v.getWeightKey());
         }
     }
 }

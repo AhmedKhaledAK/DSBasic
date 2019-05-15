@@ -8,7 +8,27 @@ public class Main {
         //TESTING
 
 
-        Graph graph = new Graph(9, 0);
+
+        // DIJKSTRA
+
+        Graph graph = new Graph(5, 1);
+        graph.insertInAdjList(0, 1, 10);
+        graph.insertInAdjList(0, 2, 5);
+        graph.insertInAdjList(1,2,2);
+        graph.insertInAdjList(1,3,1);
+        graph.insertInAdjList(2, 1, 3);
+        graph.insertInAdjList(2,3,9);
+        graph.insertInAdjList(2,4,2);
+        graph.insertInAdjList(3,4 ,4);
+        graph.insertInAdjList(4, 3, 6);
+        graph.insertInAdjList(4, 0, 7);
+
+        graph.dijkstra(0);
+        graph.printShortesPathsList();
+
+        // MST
+
+        /*Graph graph = new Graph(9, 0);
         graph.insertInAdjList(0, 1, 4);
         graph.insertInAdjList(0,6,8);
         graph.insertInAdjList(1, 2,8);
@@ -25,7 +45,7 @@ public class Main {
         graph.insertInAdjList(7,8, 9);
 
         graph.createMSTPrim(0);
-        graph.printMST();
+        graph.printMST();*/
 
         /*Graph graph = new Graph(8,1);
         graph.insertInAdjList(0, 1);
