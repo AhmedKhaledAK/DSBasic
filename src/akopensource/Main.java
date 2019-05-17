@@ -24,7 +24,7 @@ public class Main {
         graph.insertInAdjList(4, 0, 7);
 
         graph.dijkstra(0);
-        graph.printShortesPathsList();
+        graph.printShortestPathsList();
         System.out.println();
         graph.printAllShortestPaths();
 

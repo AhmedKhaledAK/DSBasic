@@ -333,7 +333,7 @@ public class Graph {
         }
     }
 
-    public void printShortesPathsList(){
+    public void printShortestPathsList(){
         for (Vertex v : shortestPathList){
             System.out.println("vertex: " + v.getV() +  ", " + "shortest-path: " + v.getWeightKey());
         }
