@@ -340,19 +340,24 @@ public class Graph {
     }
 
     public void printAllShortestPaths(){
-        Stack<Integer> stack = new Stack<>();
+        Stack<Vertex> stack = new Stack<>();
+        int edgeWeight;
         for (Vertex v : shortestPathList){
             System.out.println("----- next vertex -----");
             Vertex v1 = v;
-            stack.push(v1.getV());
+            stack.push(v1);
             while (v1.getPredecessor() != null){
                 v1 = v1.getPredecessor();
-                stack.push(v1.getV());
+                stack.push(v1);
             }
             System.out.println("path for: " + v.getV());
             while (!stack.isEmpty()){
-                Integer i = stack.pop();
-                System.out.println("v: " + i + ", " + "distance: " + helperArraySP[i].getWeightKey());
+                edgeWeight = 0;
+                Vertex i = stack.pop();
+                if (i.getPredecessor() != null){
+                    edgeWeight = i.getWeightKey() - i.getPredecessor().getWeightKey();
+                }
+                System.out.println("v: " + i.getV() + ", distance: " + i.getWeightKey() + ", edge weight: " + edgeWeight);
             }
         }
     }
