@@ -89,11 +89,13 @@ public class Graph {
         helperArraySP[src].setWeightKey(0);
     }
 
-    private void relaxEdge(Vertex u, Vertex v, int weight, PriorityQueue<Vertex> queue){
+    private void relax(Vertex u, Vertex v, int weight, PriorityQueue<Vertex> queue){
         if (v.getWeightKey() > u.getWeightKey() + weight){
             v.setWeightKey(u.getWeightKey() + weight);
             v.setPredecessor(u);
-            heapifyQueue(queue, v);
+            //heapifyQueue(queue, v);
+            Vertex minV = queue.poll();
+            queue.add(minV);
         }
     }
 
@@ -106,7 +108,7 @@ public class Graph {
             shortestPathList.add(vertex);
             for (int i = 0; i < adjList[v].size(); i++){
                 int vert = adjList[v].get(i).getV();
-                relaxEdge(vertex, helperArraySP[vert], adjList[v].get(i).getWeight(), queue);
+                relax(vertex, helperArraySP[vert], adjList[v].get(i).getWeight(), queue);
             }
         }
     }

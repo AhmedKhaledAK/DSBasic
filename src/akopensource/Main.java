@@ -20,12 +20,15 @@ public class Main {
 
         graph.printGraphAdjList();
 
-        System.out.println();
+        graph.dijkstra(0);
+        graph.printAllShortestPaths();
+
+        /*System.out.println();
 
         Graph graphTranspose = graph.getTransposeGraph();
         graphTranspose.printGraphAdjList();
         graphTranspose.dijkstra(0);
-        graphTranspose.printAllShortestPaths();
+        graphTranspose.printAllShortestPaths();*/
 
         /*Graph graph = new Graph(5, 1);
         graph.insertInAdjList(0, 1, 10);
