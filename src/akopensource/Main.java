@@ -8,10 +8,26 @@ public class Main {
         //TESTING
 
 
-
         // DIJKSTRA
 
-        Graph graph = new Graph(5, 1);
+        Graph graph = new Graph(4, 1);
+        graph.insertInAdjList(0,1,10);
+        graph.insertInAdjList(0,2,20);
+        graph.insertInAdjList(1, 0, 60);
+        graph.insertInAdjList(1,3,5);
+        graph.insertInAdjList(2,3,10);
+        graph.insertInAdjList(3,0,50);
+
+        graph.printGraphAdjList();
+
+        System.out.println();
+
+        Graph graphTranspose = graph.getTransposeGraph();
+        graphTranspose.printGraphAdjList();
+        graphTranspose.dijkstra(0);
+        graphTranspose.printAllShortestPaths();
+
+        /*Graph graph = new Graph(5, 1);
         graph.insertInAdjList(0, 1, 10);
         graph.insertInAdjList(0, 2, 5);
         graph.insertInAdjList(1,2,2);
@@ -26,7 +42,7 @@ public class Main {
         graph.dijkstra(0);
         graph.printShortestPathsList();
         System.out.println();
-        graph.printAllShortestPaths();
+        graph.printAllShortestPaths();*/
 
         // MST
 

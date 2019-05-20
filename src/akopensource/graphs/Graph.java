@@ -208,18 +208,18 @@ public class Graph {
         topologicalSortedList.addFirst(visited[i]);
     }
 
-    private Graph transposeGraph(){
+     public Graph getTransposeGraph(){
         Graph graph = new Graph(this.adjList.length, type);
         for (int i = 0; i < adjList.length; i++){
             for (int j = 0; j < adjList[i].size(); j++){
-                graph.insertInAdjList(adjList[i].get(j).getV(), i);
+                graph.insertInAdjList(adjList[i].get(j).getV(), i,adjList[i].get(j).getWeight());
             }
         }
         return graph;
     }
 
     public void getConnectedComponents(){
-        Graph graph = transposeGraph();
+        Graph graph = getTransposeGraph();
         // this if condition is here because of the strongly connected components problem, we consider the vertices in order of
         // decreasing finishing time
         if (topologicalSortedList.isEmpty()){
@@ -295,7 +295,7 @@ public class Graph {
                 continue;
             }
             for(int j = 0; j < adjList[i].size(); j++)
-                System.out.print(adjList[i].get(j).getV() + ":> " + " edge type: " + adjList[i].get(j).getEdgeType()+ " / ");
+                System.out.print(adjList[i].get(j).getV() + " / ");
             System.out.println();
         }
     }
