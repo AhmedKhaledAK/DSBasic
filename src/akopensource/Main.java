@@ -45,7 +45,7 @@ public class Main {
 
         // DIJKSTRA
 
-        /*Graph graph = new Graph(4, 1);
+        Graph graph = new Graph(4, 1);
         graph.insertInAdjList(0,1,10);
         graph.insertInAdjList(0,2,20);
         graph.insertInAdjList(1, 0, 60);
@@ -53,10 +53,12 @@ public class Main {
         graph.insertInAdjList(2,3,10);
         graph.insertInAdjList(3,0,50);
 
-        graph.printGraphAdjList();
+        /*graph.printGraphAdjList();
 
         graph.dijkstra(0);
         graph.printAllShortestPaths();*/
+
+        System.out.println(graph.bellmanFord(0));
 
         /*System.out.println();
 
@@ -84,7 +86,7 @@ public class Main {
 
         // MST
 
-        Graph graph = new Graph(9, 0);
+        /*Graph graph = new Graph(9, 0);
         graph.insertInAdjList(0, 1, 4);
         graph.insertInAdjList(0,6,8);
         graph.insertInAdjList(1, 2,8);
@@ -101,7 +103,7 @@ public class Main {
         graph.insertInAdjList(7,8, 9);
 
         graph.createMSTKruskal();
-        graph.printMST();
+        graph.printMST();*/
 
         /*Graph graph = new Graph(8,1);
         graph.insertInAdjList(0, 1);
