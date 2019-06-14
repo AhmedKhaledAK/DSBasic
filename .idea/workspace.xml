@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/akopensource/graphs/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="648">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +42,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="129" column="30" lean-forward="true" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
+            <state relative-caret-position="448">
+              <caret line="159" column="58" selection-start-line="159" selection-start-column="58" selection-end-line="159" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#insertInMatrix#0;class#Graph#0" />
+                <element signature="method#dijkstra#0;class#Graph#0" />
+                <element signature="method#createMSTPrim#0;class#Graph#0" />
+                <element signature="e#5345#5346#0" expanded="true" />
+                <element signature="e#5409#5410#0" expanded="true" />
+                <element signature="method#bfs#0;class#Graph#0" />
+                <element signature="method#dfs#0;class#Graph#0" />
+                <element signature="method#dfsVisit#0;class#Graph#0" />
+                <element signature="method#getTransposeGraph#0;class#Graph#0" />
+                <element signature="method#getConnectedComponents#0;class#Graph#0" />
+                <element signature="method#dfsVisitTransposeGraph#0;class#Graph#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Edge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <folding>
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,10 +148,11 @@
         <option value="$PROJECT_DIR$/src/akopensource/tuples/Pair.java" />
         <option value="$PROJECT_DIR$/src/akopensource/MyComparator.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Vertex.java" />
         <option value="$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/graphs/Edge.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
       </list>
     </option>
   </component>
@@ -270,21 +305,7 @@
       <workItem from="1558101206771" duration="6168000" />
       <workItem from="1558122522561" duration="1390000" />
       <workItem from="1558366628816" duration="4961000" />
-      <workItem from="1560513298836" duration="4600000" />
-    </task>
-    <task id="LOCAL-00088" summary="deletion in red-black trees completed, fixations, and traversing level order">
-      <created>1555536951713</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1555536951714</updated>
-    </task>
-    <task id="LOCAL-00089" summary="deletion in red-black trees completed, fixations, and traversing level order">
-      <created>1555537272659</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1555537272659</updated>
+      <workItem from="1560513298836" duration="5905000" />
     </task>
     <task id="LOCAL-00090" summary="deletion in red-black trees completed, fixations, and traversing level order">
       <created>1555537353705</created>
@@ -615,17 +636,31 @@
       <option name="project" value="LOCAL" />
       <updated>1560543059297</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="union in disjoint sets testing done">
+      <created>1560543311678</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1560543311678</updated>
+    </task>
+    <task id="LOCAL-00138" summary="findSet in disjoint sets testing done">
+      <created>1560543401074</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1560543401075</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270050000" />
+    <option name="totallyTimeSpent" value="271355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2899834" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2899834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -711,8 +746,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added weightKey attribute in Vertex class" />
-    <MESSAGE value="Vertex implements Comparable object for comparing vertices in queue" />
     <MESSAGE value="added Prim's algorithm for Minimum Spanning Trees" />
     <MESSAGE value="removed unnecessary imports" />
     <MESSAGE value="updated README.md" />
@@ -736,7 +769,9 @@
     <MESSAGE value="added print method for disjoint sets" />
     <MESSAGE value="added array initialization for parent and rank arrays in disjoint sets" />
     <MESSAGE value="changed print format in disjoint sets" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed print format in disjoint sets" />
+    <MESSAGE value="union in disjoint sets testing done" />
+    <MESSAGE value="findSet in disjoint sets testing done" />
+    <option name="LAST_COMMIT_MESSAGE" value="findSet in disjoint sets testing done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -952,17 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="129" column="30" lean-forward="true" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#insertInMatrix#0;class#Graph#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -972,10 +996,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="648">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="159" column="58" selection-start-line="159" selection-start-column="58" selection-end-line="159" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#insertInMatrix#0;class#Graph#0" />
+            <element signature="method#dijkstra#0;class#Graph#0" />
+            <element signature="method#createMSTPrim#0;class#Graph#0" />
+            <element signature="e#5345#5346#0" expanded="true" />
+            <element signature="e#5409#5410#0" expanded="true" />
+            <element signature="method#bfs#0;class#Graph#0" />
+            <element signature="method#dfs#0;class#Graph#0" />
+            <element signature="method#dfsVisit#0;class#Graph#0" />
+            <element signature="method#getTransposeGraph#0;class#Graph#0" />
+            <element signature="method#getConnectedComponents#0;class#Graph#0" />
+            <element signature="method#dfsVisitTransposeGraph#0;class#Graph#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -20,6 +20,7 @@ public class Graph {
     private int size;
     private LinkedList<Vertex> topologicalSortedList;
     private LinkedList<Pair> pairs;
+    private LinkedList<Edge> edges;
 
     public Graph(int n, int m, int type) {
         this.matrix = new Vertex[n][n];
@@ -58,6 +59,9 @@ public class Graph {
             initializeList(dest);
             this.adjList[dest].add(vertex);
         }
+
+        Edge edge = new Edge(src, dest, weight);
+        edges.add(edge);
     }
 
     public void insertInAdjList(int src, int dest){
@@ -150,6 +154,10 @@ public class Graph {
                 }
             }
         }
+    }
+
+    public void createMSTKruskal(){
+        PriorityQueue<Edge> queue = new PriorityQueue<>();
     }
 
     public void bfs(int src){
