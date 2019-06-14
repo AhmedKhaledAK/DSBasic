@@ -19,6 +19,7 @@ Currently in the repo:
   * Timestamps of vertices in DFS, classifications of edges, and topological sort
   * Transpose graphs and strongly connected components
   * Single-source shortest paths using Dijkstra's algorithm
+  * Bellman Ford's algorithm
   
 * Disjoint Sets: https://github.com/AhmedKhaledAK/DSBasic/tree/master/src/akopensource/disjointsets
   * Make-Set operation
