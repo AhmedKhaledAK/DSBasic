@@ -29,6 +29,7 @@ Currently in the repo:
 
 * Minimum Spanning Trees: https://github.com/AhmedKhaledAK/DSBasic/tree/master/src/akopensource/graphs
   * Prim's algorithm
+  * Kruskal's algorithm
   
 * Sorting Algorithms: https://github.com/AhmedKhaledAK/DSBasic/tree/master/src/akopensource/sorting
   * Quicksort
