@@ -37,7 +37,9 @@ public class Main {
 
         sets.printDisjointSets();
 
-
+        sets.findSet(6);
+        System.out.println();
+        sets.printDisjointSets();
 
         // DIJKSTRA
 
