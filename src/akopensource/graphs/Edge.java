@@ -1,9 +1,12 @@
 package akopensource.graphs;
 
-public class Edge {
-    int src, dest, weight;
+public class Edge implements Comparable<Edge> {
+    int src, dest;
+    Integer weight;
 
-    public Edge(int src, int dest, int weight) {
+
+
+    public Edge(int src, int dest, Integer weight) {
         this.src = src;
         this.dest = dest;
         this.weight = weight;
@@ -25,11 +28,16 @@ public class Edge {
         this.dest = dest;
     }
 
-    public int getWeight() {
+    public Integer getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(Integer weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public int compareTo(Edge o) {
+        return this.getWeight().compareTo(o.getWeight());
     }
 }
