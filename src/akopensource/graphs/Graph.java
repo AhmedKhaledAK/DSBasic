@@ -100,8 +100,10 @@ public class Graph {
             v.setWeightKey(u.getWeightKey() + weight);
             v.setPredecessor(u);
             //heapifyQueue(queue, v);
-            Vertex minV = queue.poll();
-            queue.add(minV);
+            if (queue != null){
+                Vertex minV = queue.poll();
+                queue.add(minV);
+            }
         }
     }
 
@@ -117,6 +119,26 @@ public class Graph {
                 relax(vertex, helperArraySP[vert], adjList[v].get(i).getWeight(), queue);
             }
         }
+    }
+
+    public boolean bellmanFord(int src){
+        initializeSingleSource(src);
+        for (int i = 0; i < this.size; i++){
+            for (Edge edge : edges) {
+                int v = edge.getSrc();
+                int u = edge.getDest();
+                int w = edge.getWeight();
+                relax(helperArraySP[v], helperArraySP[u], w, null);
+            }
+        }
+        for (Edge edge : edges) {
+            int v = edge.getSrc();
+            int u = edge.getDest();
+            int w = edge.getWeight();
+            if (helperArraySP[u].getWeightKey() > helperArraySP[v].getWeightKey() + w)
+                return false;
+        }
+        return true;
     }
 
     public void createMSTPrim(int src){
