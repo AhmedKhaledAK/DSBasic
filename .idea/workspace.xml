@@ -4,6 +4,7 @@
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+            <state relative-caret-position="414">
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
+            <state relative-caret-position="1026">
               <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
             </state>
           </provider>
@@ -41,11 +42,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="129" column="41" lean-forward="true" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+            <state relative-caret-position="434">
+              <caret line="310" lean-forward="true" selection-start-line="310" selection-end-line="310" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#insertInMatrix#0;class#Graph#0" />
+                <element signature="method#initializeSingleSource#0;class#Graph#0" />
+                <element signature="method#relax#0;class#Graph#0" />
+                <element signature="method#dijkstra#0;class#Graph#0" />
+                <element signature="method#bellmanFord#0;class#Graph#0" />
                 <element signature="method#createMSTPrim#0;class#Graph#0" />
                 <element signature="method#createMSTKruskal#0;class#Graph#0" />
                 <element signature="method#bfs#0;class#Graph#0" />
@@ -54,9 +59,19 @@
                 <element signature="method#getTransposeGraph#0;class#Graph#0" />
                 <element signature="method#getConnectedComponents#0;class#Graph#0" />
                 <element signature="method#dfsVisitTransposeGraph#0;class#Graph#0" />
-                <element signature="e#10695#10696#0" expanded="true" />
-                <element signature="e#13056#13057#0" expanded="true" />
-                <element signature="e#13100#13101#0" expanded="true" />
+                <element signature="e#11207#11208#0" expanded="true" />
+                <element signature="e#11266#11267#0" expanded="true" />
+                <element signature="method#createQueue#0;class#Graph#0" />
+                <element signature="method#heapifyQueue#0;class#Graph#0" />
+                <element signature="method#printQueue#0;class#Graph#0" />
+                <element signature="method#isInQueue#0;class#Graph#0" />
+                <element signature="method#initializeList#0;class#Graph#0" />
+                <element signature="method#printGraphAdjList#0;class#Graph#0" />
+                <element signature="method#printGraphMatrix#0;class#Graph#0" />
+                <element signature="method#printVisited#0;class#Graph#0" />
+                <element signature="method#printMST#0;class#Graph#0" />
+                <element signature="method#printShortestPathsList#0;class#Graph#0" />
+                <element signature="method#printAllShortestPaths#0;class#Graph#0" />
               </folding>
             </state>
           </provider>
@@ -66,8 +81,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="338">
-                <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+              <first_editor relative-caret-position="320">
+                <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -80,20 +95,8 @@
             <state relative-caret-position="72">
               <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding>
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
                 <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Vertex.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -171,6 +174,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,8 +217,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,21 +311,8 @@
       <workItem from="1558101206771" duration="6168000" />
       <workItem from="1558122522561" duration="1390000" />
       <workItem from="1558366628816" duration="4961000" />
-      <workItem from="1560513298836" duration="9784000" />
-    </task>
-    <task id="LOCAL-00097" summary="fixations">
-      <created>1555630542888</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1555630542888</updated>
-    </task>
-    <task id="LOCAL-00098" summary="README">
-      <created>1555681648014</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1555681648015</updated>
+      <workItem from="1560513298836" duration="9977000" />
+      <workItem from="1560553853620" duration="921000" />
     </task>
     <task id="LOCAL-00099" summary="Depth-First Search in Graphs">
       <created>1555688579031</created>
@@ -653,17 +643,31 @@
       <option name="project" value="LOCAL" />
       <updated>1560551950702</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="Bellman Ford algorithm">
+      <created>1560552480523</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1560552480523</updated>
+    </task>
+    <task id="LOCAL-00147" summary="added Bellman Ford algorithm">
+      <created>1560552529706</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1560552529706</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275234000" />
+    <option name="totallyTimeSpent" value="276348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2899834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29330382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -749,8 +753,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added method initializeSingleSource for shortest-paths algorithms" />
-    <MESSAGE value="added method relaxEdge for shortest-paths algorithms" />
     <MESSAGE value="corrected isVisisted to isVisited in Vertex class" />
     <MESSAGE value="changed setDistance and getDistance to set and get WeightKey for comparisons in queue" />
     <MESSAGE value="added Dijkstra's algorithm for single-source shortest paths" />
@@ -774,7 +776,9 @@
     <MESSAGE value="Kruskal's algorithm for MST implemented" />
     <MESSAGE value="added Kruskal's algorithm" />
     <MESSAGE value="Bellman Ford algorithm (not tested yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bellman Ford algorithm (not tested yet)" />
+    <MESSAGE value="Bellman Ford algorithm" />
+    <MESSAGE value="added Bellman Ford algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Bellman Ford algorithm" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -973,20 +977,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/MyComparator.java" />
-    <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Vertex.java">
+    <entry file="file://$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="338">
-            <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="1026">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -995,38 +989,40 @@
         <state relative-caret-position="72">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding>
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
             <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java">
+    <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+        <state relative-caret-position="126">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="320">
+            <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="129" column="41" lean-forward="true" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+        <state relative-caret-position="434">
+          <caret line="310" lean-forward="true" selection-start-line="310" selection-end-line="310" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#insertInMatrix#0;class#Graph#0" />
+            <element signature="method#initializeSingleSource#0;class#Graph#0" />
+            <element signature="method#relax#0;class#Graph#0" />
+            <element signature="method#dijkstra#0;class#Graph#0" />
+            <element signature="method#bellmanFord#0;class#Graph#0" />
             <element signature="method#createMSTPrim#0;class#Graph#0" />
             <element signature="method#createMSTKruskal#0;class#Graph#0" />
             <element signature="method#bfs#0;class#Graph#0" />
@@ -1035,17 +1031,27 @@
             <element signature="method#getTransposeGraph#0;class#Graph#0" />
             <element signature="method#getConnectedComponents#0;class#Graph#0" />
             <element signature="method#dfsVisitTransposeGraph#0;class#Graph#0" />
-            <element signature="e#10695#10696#0" expanded="true" />
-            <element signature="e#13056#13057#0" expanded="true" />
-            <element signature="e#13100#13101#0" expanded="true" />
+            <element signature="e#11207#11208#0" expanded="true" />
+            <element signature="e#11266#11267#0" expanded="true" />
+            <element signature="method#createQueue#0;class#Graph#0" />
+            <element signature="method#heapifyQueue#0;class#Graph#0" />
+            <element signature="method#printQueue#0;class#Graph#0" />
+            <element signature="method#isInQueue#0;class#Graph#0" />
+            <element signature="method#initializeList#0;class#Graph#0" />
+            <element signature="method#printGraphAdjList#0;class#Graph#0" />
+            <element signature="method#printGraphMatrix#0;class#Graph#0" />
+            <element signature="method#printVisited#0;class#Graph#0" />
+            <element signature="method#printMST#0;class#Graph#0" />
+            <element signature="method#printShortestPathsList#0;class#Graph#0" />
+            <element signature="method#printAllShortestPaths#0;class#Graph#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+        <state relative-caret-position="414">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -257,7 +257,7 @@ public class Graph {
         topologicalSortedList.addFirst(visited[i]);
     }
 
-     public Graph getTransposeGraph(){
+    public Graph getTransposeGraph(){
         Graph graph = new Graph(this.adjList.length, type);
         for (int i = 0; i < adjList.length; i++){
             for (int j = 0; j < adjList[i].size(); j++){
@@ -299,9 +299,27 @@ public class Graph {
         }
     }
 
-
     private void visit(int e) {
         System.out.println(e);
+    }
+
+    // using Disjoing Sets
+    public DisjointSets connectedComponents(){
+        DisjointSets sets = new DisjointSets(this.size);
+        for (int i = 0; i < this.size; i++)
+            sets.makeSet(i);
+
+        for (Edge edge : edges) {
+            int v = edge.getSrc();
+            int u = edge.getDest();
+            if (sets.findSet(u) != sets.findSet(v))
+                sets.union(v, u);
+        }
+        return sets;
+    }
+
+    public boolean isSameComponent(int v1, int v2, DisjointSets sets){
+        return sets.findSet(v1) == sets.findSet(v2);
     }
 
     private PriorityQueue<Vertex> createQueue(Vertex[] helperArray) {

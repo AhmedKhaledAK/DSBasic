@@ -11,6 +11,19 @@ public class Main {
 
         // DISJOINT SETS
 
+        Graph graph = new Graph(10, 0);
+        graph.insertInAdjList(0,1);
+        graph.insertInAdjList(0,2);
+        graph.insertInAdjList(1,2);
+        graph.insertInAdjList(1,3);
+        graph.insertInAdjList(4,6);
+        graph.insertInAdjList(4,5);
+        graph.insertInAdjList(7,8);
+
+        DisjointSets sets = graph.connectedComponents();
+        System.out.println(graph.isSameComponent(4,9,sets));
+
+
         /*DisjointSets sets = new DisjointSets(10);
         sets.makeSet(0);
         sets.makeSet(1);
@@ -45,20 +58,20 @@ public class Main {
 
         // DIJKSTRA
 
-        Graph graph = new Graph(4, 1);
+        /*Graph graph = new Graph(4, 1);
         graph.insertInAdjList(0,1,10);
         graph.insertInAdjList(0,2,20);
         graph.insertInAdjList(1, 0, 60);
         graph.insertInAdjList(1,3,5);
         graph.insertInAdjList(2,3,10);
-        graph.insertInAdjList(3,0,50);
+        graph.insertInAdjList(3,0,50);*/
 
         /*graph.printGraphAdjList();
 
         graph.dijkstra(0);
         graph.printAllShortestPaths();*/
 
-        System.out.println(graph.bellmanFord(0));
+        //System.out.println(graph.bellmanFord(0));
 
         /*System.out.println();
 
