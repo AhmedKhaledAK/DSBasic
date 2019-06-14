@@ -9,7 +9,25 @@ public class Main {
         //TESTING
 
 
-        DisjointSets sets = new DisjointSets(20);
+        DisjointSets sets = new DisjointSets(10);
+        sets.makeSet(0);
+        sets.makeSet(1);
+        sets.makeSet(2);
+        sets.makeSet(3);
+        sets.makeSet(4);
+        sets.makeSet(5);
+        sets.makeSet(6);
+        sets.makeSet(7);
+        sets.makeSet(8);
+        sets.makeSet(9);
+
+        sets.union(3, 8);
+        sets.union(9,8);
+        sets.union(4,8);
+
+        sets.printDisjointSets();
+
+
 
         // DIJKSTRA
 

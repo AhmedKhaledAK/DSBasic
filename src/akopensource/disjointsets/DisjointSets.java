@@ -53,11 +53,11 @@ public class DisjointSets {
     public void printDisjointSets(){
         System.out.println("parent array: ");
         for (int i = 0; i < maxNumOfSets; i++){
-            System.out.println(i + ": " + parent[i]);
+            System.out.print(i + ": " + parent[i] + " /// ");
         }
-        System.out.println("rank array: ");
+        System.out.println("\nrank array: ");
         for (int i = 0; i < maxNumOfSets; i++){
-            System.out.println(i + ": " + rank[i]);
+            System.out.print(i + ": " + rank[i] + " /// ");
         }
     }
 }
