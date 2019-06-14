@@ -18,6 +18,7 @@ Currently in the repo:
   * Getting predecessor of each vertex using BFS and DFS
   * Timestamps of vertices in DFS, classifications of edges, and topological sort
   * Transpose graphs and strongly connected components
+  * Connected components using Disjoint Sets
   * Single-source shortest paths using Dijkstra's algorithm
   * Bellman Ford's algorithm
   
