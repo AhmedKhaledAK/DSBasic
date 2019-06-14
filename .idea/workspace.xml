@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/graphs/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/graphs/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            <state relative-caret-position="694">
+              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -276,14 +275,7 @@
       <workItem from="1558101206771" duration="6168000" />
       <workItem from="1558122522561" duration="1390000" />
       <workItem from="1558366628816" duration="4961000" />
-      <workItem from="1560513298836" duration="3198000" />
-    </task>
-    <task id="LOCAL-00084" summary="breadth-first search test in graphs">
-      <created>1555092275214</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1555092275214</updated>
+      <workItem from="1560513298836" duration="3728000" />
     </task>
     <task id="LOCAL-00085" summary="search in red-black trees">
       <created>1555446278333</created>
@@ -621,11 +613,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558374585749</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="added DisjointSets class">
+      <created>1560542017630</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1560542017631</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268648000" />
+    <option name="totallyTimeSpent" value="269178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -717,7 +716,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed method signature" />
     <MESSAGE value="removed unnecessary comment" />
     <MESSAGE value="removed unnecessary import" />
     <MESSAGE value="added insertion with weights in graphs" />
@@ -742,7 +740,8 @@
     <MESSAGE value="printed more info in print shortest paths" />
     <MESSAGE value="Single-Destination Shortest Paths test" />
     <MESSAGE value="improved Dijkstra's implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved Dijkstra's implementation" />
+    <MESSAGE value="added DisjointSets class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added DisjointSets class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -978,8 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        <state relative-caret-position="694">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
         </state>
       </provider>
     </entry>

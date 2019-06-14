@@ -44,4 +44,15 @@ public class DisjointSets {
         int repY = findSet(v2);
         if (repX != -1 && repY != -1) link(repX, repY);
     }
+
+    public void printDisjointSets(){
+        System.out.println("parent array: ");
+        for (int i = 0; i < parent.length; i++){
+            System.out.println(i + ": " + parent[i]);
+        }
+        System.out.println("rank array: ");
+        for (int i = 0; i < rank.length; i++){
+            System.out.println(i + ": " + rank[i]);
+        }
+    }
 }
