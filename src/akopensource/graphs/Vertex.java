@@ -35,7 +35,7 @@ public class Vertex implements Comparable<Vertex> {
         this.finishTime = 0;
     }
 
-    int getV() {
+    public int getV() {
         return v;
     }
 
