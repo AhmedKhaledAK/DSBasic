@@ -1,8 +1,8 @@
 package akopensource.graphs;
 
 public class Edge implements Comparable<Edge> {
-    int src, dest;
-    Integer weight;
+    private int src, dest;
+    private Integer weight;
 
 
 

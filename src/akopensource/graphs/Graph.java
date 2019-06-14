@@ -1,6 +1,7 @@
 package akopensource.graphs;
 
 
+import akopensource.disjointsets.DisjointSets;
 import akopensource.tuples.Pair;
 
 import java.util.*;
@@ -159,7 +160,20 @@ public class Graph {
 
     public void createMSTKruskal(){
         Collections.sort(edges);
+        DisjointSets sets = new DisjointSets(this.size);
 
+        for (int i = 0; i < this.size; i++)
+            sets.makeSet(i);
+
+        for (Edge edge : edges) {
+            int v = edge.getSrc();
+            int u = edge.getDest();
+
+            if (sets.findSet(u) != sets.findSet(v)) {
+                pairs.add(new Pair(u, v));
+                sets.union(u, v);
+            }
+        }
 
     }
 

@@ -101,6 +101,7 @@ public class Main {
         graph.insertInAdjList(7,8, 9);
 
         graph.createMSTKruskal();
+        graph.printMST();
 
         /*Graph graph = new Graph(8,1);
         graph.insertInAdjList(0, 1);
