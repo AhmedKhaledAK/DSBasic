@@ -27,6 +27,16 @@ public class Main {
 
         sets.printDisjointSets();
 
+        sets.union(6,5);
+        sets.union(1,5);
+        sets.union(2,7);
+        sets.union(0,7);
+        sets.union(5,7);
+
+        System.out.println();
+
+        sets.printDisjointSets();
+
 
 
         // DIJKSTRA
