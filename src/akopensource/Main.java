@@ -1,5 +1,6 @@
 package akopensource;
 
+import akopensource.disjointsets.DisjointSets;
 import akopensource.graphs.Graph;
 
 public class Main {
@@ -8,9 +9,11 @@ public class Main {
         //TESTING
 
 
+        DisjointSets sets = new DisjointSets(20);
+
         // DIJKSTRA
 
-        Graph graph = new Graph(4, 1);
+        /*Graph graph = new Graph(4, 1);
         graph.insertInAdjList(0,1,10);
         graph.insertInAdjList(0,2,20);
         graph.insertInAdjList(1, 0, 60);
@@ -21,7 +24,7 @@ public class Main {
         graph.printGraphAdjList();
 
         graph.dijkstra(0);
-        graph.printAllShortestPaths();
+        graph.printAllShortestPaths();*/
 
         /*System.out.println();
 

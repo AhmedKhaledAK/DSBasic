@@ -10,6 +10,11 @@ public class DisjointSets {
         this.maxNumOfSets = size;
         this.parent = new int[maxNumOfSets];
         this.rank = new int[maxNumOfSets];
+
+        for (int i = 0; i < size; i++){
+            parent[i] = -1;
+            rank[i] = -1;
+        }
     }
 
     public void makeSet(int v){
@@ -47,11 +52,11 @@ public class DisjointSets {
 
     public void printDisjointSets(){
         System.out.println("parent array: ");
-        for (int i = 0; i < parent.length; i++){
+        for (int i = 0; i < maxNumOfSets; i++){
             System.out.println(i + ": " + parent[i]);
         }
         System.out.println("rank array: ");
-        for (int i = 0; i < rank.length; i++){
+        for (int i = 0; i < maxNumOfSets; i++){
             System.out.println(i + ": " + rank[i]);
         }
     }
