@@ -44,6 +44,7 @@ public class Graph {
         topologicalSortedList = new LinkedList<>();
         pairs = new LinkedList<>();
         shortestPathList = new LinkedList<>();
+        edges = new LinkedList<>();
     }
 
     public void insertInAdjList(int src, int dest, int weight){
@@ -157,7 +158,9 @@ public class Graph {
     }
 
     public void createMSTKruskal(){
-        PriorityQueue<Edge> queue = new PriorityQueue<>();
+        Collections.sort(edges);
+
+
     }
 
     public void bfs(int src){

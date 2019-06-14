@@ -9,7 +9,9 @@ public class Main {
         //TESTING
 
 
-        DisjointSets sets = new DisjointSets(10);
+        // DISJOINT SETS
+
+        /*DisjointSets sets = new DisjointSets(10);
         sets.makeSet(0);
         sets.makeSet(1);
         sets.makeSet(2);
@@ -39,7 +41,7 @@ public class Main {
 
         sets.findSet(6);
         System.out.println();
-        sets.printDisjointSets();
+        sets.printDisjointSets();*/
 
         // DIJKSTRA
 
@@ -82,7 +84,7 @@ public class Main {
 
         // MST
 
-        /*Graph graph = new Graph(9, 0);
+        Graph graph = new Graph(9, 0);
         graph.insertInAdjList(0, 1, 4);
         graph.insertInAdjList(0,6,8);
         graph.insertInAdjList(1, 2,8);
@@ -98,8 +100,7 @@ public class Main {
         graph.insertInAdjList(5, 6, 1);
         graph.insertInAdjList(7,8, 9);
 
-        graph.createMSTPrim(0);
-        graph.printMST();*/
+        graph.createMSTKruskal();
 
         /*Graph graph = new Graph(8,1);
         graph.insertInAdjList(0, 1);
