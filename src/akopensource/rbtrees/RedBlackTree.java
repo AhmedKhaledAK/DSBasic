@@ -101,6 +101,7 @@ public class RedBlackTree {
 
     private void rotateLeft(Node x){
         Node y = x.getRight();
+        //assuming that x.right is not nil
 
         x.setRight(y.getLeft());
         y.getLeft().setParent(x);
@@ -118,6 +119,7 @@ public class RedBlackTree {
 
     private void rotateRight(Node x){
         Node y = x.getLeft();
+        // assuming x.left is not nil
 
         x.setLeft(y.getRight());
         y.getRight().setParent(x);
