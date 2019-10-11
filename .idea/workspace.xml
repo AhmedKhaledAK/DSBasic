@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,55 +18,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Graph.java">
+        <entry file="file://$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="313" column="35" lean-forward="true" selection-start-line="313" selection-start-column="35" selection-end-line="313" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2085#2463#0" />
-                <element signature="e#2563#2816#0" />
-                <element signature="e#2822#3226#0" />
-                <element signature="e#3232#3748#0" />
-                <element signature="e#3754#4420#0" />
-                <element signature="e#4426#6114#0" />
-                <element signature="e#6120#6584#0" />
-                <element signature="e#6590#7373#0" />
-                <element signature="e#8911#9261#0" />
-                <element signature="e#9267#10087#0" />
-                <element signature="e#10093#10624#0" />
-                <element signature="e#11265#11517#0" />
-                <element signature="e#11523#11657#0" />
-                <element signature="e#11663#11983#0" />
-                <element signature="e#11989#12209#0" />
-                <element signature="e#12350#12762#0" />
-                <element signature="e#12768#13226#0" />
-                <element signature="e#13232#13490#0" />
-                <element signature="e#13599#13787#0" />
-                <element signature="e#13793#13991#0" />
-                <element signature="e#13997#14870#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/disjointsets/DisjointSets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+            <state relative-caret-position="486">
+              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -118,6 +74,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" />
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java" />
       </list>
     </option>
   </component>
@@ -162,28 +119,7 @@
               <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="akopensource" type="462c0819:PsiDirectoryNode" />
-              <item name="disjointsets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="akopensource" type="462c0819:PsiDirectoryNode" />
-              <item name="graphs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="akopensource" type="462c0819:PsiDirectoryNode" />
-              <item name="rbtrees" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="akopensource" type="462c0819:PsiDirectoryNode" />
-              <item name="sorting" type="462c0819:PsiDirectoryNode" />
+              <item name="variousalgorithms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,14 +226,7 @@
       <workItem from="1561293955800" duration="607000" />
       <workItem from="1561647777486" duration="859000" />
       <workItem from="1562671947451" duration="1918000" />
-      <workItem from="1570795541285" duration="1198000" />
-    </task>
-    <task id="LOCAL-00102" summary="Classification of edges added in graphs">
-      <created>1555698044968</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1555698044968</updated>
+      <workItem from="1570795541285" duration="2659000" />
     </task>
     <task id="LOCAL-00103" summary="update readme">
       <created>1555711476868</created>
@@ -635,11 +564,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560954981794</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="added the package variousalgorithms for various algorithms">
+      <created>1570799423750</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1570799423751</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286245000" />
+    <option name="totallyTimeSpent" value="287706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -731,7 +667,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="printing all shortest paths for dijkstra algorithm" />
     <MESSAGE value="one more element in graphs list" />
     <MESSAGE value="fixed typo" />
     <MESSAGE value="printed more info in print shortest paths" />
@@ -756,7 +691,8 @@
     <MESSAGE value="Connected components using Disjoint Sets" />
     <MESSAGE value="added connected components using Disjoint Sets" />
     <MESSAGE value="more illustration in red-black trees" />
-    <option name="LAST_COMMIT_MESSAGE" value="more illustration in red-black trees" />
+    <MESSAGE value="added the package variousalgorithms for various algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the package variousalgorithms for various algorithms" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -890,13 +826,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/ada.java" />
-    <entry file="file://$PROJECT_DIR$/src/akopensource/tuples/Triplet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/linkedlist/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1028,6 +957,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1026">
           <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/tuples/Triplet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
         </state>
       </provider>
     </entry>
