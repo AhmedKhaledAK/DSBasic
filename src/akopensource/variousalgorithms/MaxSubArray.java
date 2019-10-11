@@ -30,7 +30,23 @@ public class MaxSubArray {
     }
 
     private Triplet findMaxCrossingArray(int[] ar, int low, int mid, int high) {
-        return null;
+        int maxi=-1, maxj=-1, leftsum = Integer.MIN_VALUE, rightsum = Integer.MIN_VALUE, sum=0;
+        for (int i = mid; i >= low; i--){
+            sum+=ar[i];
+            if(sum > leftsum){
+                leftsum = sum;
+                maxi = i;
+            }
+        }
+        sum =0;
+        for (int j = mid+1; j <= high; j++){
+            sum+=ar[j];
+            if(sum > rightsum){
+                rightsum = sum;
+                maxj = j;
+            }
+        }
+        return new Triplet(maxi,maxj,leftsum+rightsum);
     }
 
 }
