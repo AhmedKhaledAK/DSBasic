@@ -2,6 +2,8 @@ package akopensource;
 
 import akopensource.disjointsets.DisjointSets;
 import akopensource.graphs.Graph;
+import akopensource.tuples.Triplet;
+import akopensource.variousalgorithms.MaxSubArray;
 
 public class Main {
 
@@ -9,9 +11,15 @@ public class Main {
         //TESTING
 
 
+        int [] ar = {13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};
+        MaxSubArray maxSubArray = new MaxSubArray();
+        Triplet triplet = maxSubArray.findMaxSubArray(ar,0,15);
+        System.out.println(triplet.getFirstElem() + " " + triplet.getSecondElem() + " " + triplet.getThirdElem());
+
+
         // DISJOINT SETS
 
-        Graph graph = new Graph(10, 0);
+        /*Graph graph = new Graph(10, 0);
         graph.insertInAdjList(0,1);
         graph.insertInAdjList(0,2);
         graph.insertInAdjList(1,2);
@@ -21,7 +29,7 @@ public class Main {
         graph.insertInAdjList(7,8);
 
         DisjointSets sets = graph.connectedComponents();
-        System.out.println(graph.isSameComponent(4,9,sets));
+        System.out.println(graph.isSameComponent(4,9,sets));*/
 
 
         /*DisjointSets sets = new DisjointSets(10);
