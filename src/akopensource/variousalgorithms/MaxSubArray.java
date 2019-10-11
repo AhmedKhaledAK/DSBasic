@@ -7,11 +7,20 @@ import akopensource.tuples.Triplet;
 public class MaxSubArray {
 
     private int leftIndex, rightIndex, maxSum;
-    private int [] subArray;
+    int [] subArray, orgArray;
+
+    public MaxSubArray(int [] ar){
+        orgArray = ar;
+    }
+
 
     public Triplet findMaxSubArray(int [] ar, int low, int high){
-        if(low == high)
-            return new Triplet(low, high,ar[low]);
+        if(low == high) {
+            leftIndex = low;
+            rightIndex = high;
+            maxSum=ar[low];
+            return new Triplet(low, high, ar[low]);
+        }
         else {
             int mid = (low+high)/2;
             Triplet leftTriplet = findMaxSubArray(ar,low,mid);
@@ -19,13 +28,25 @@ public class MaxSubArray {
             Triplet midCrossTriplet = findMaxCrossingArray(ar,low,mid,high);
 
             if( (Integer) leftTriplet.getThirdElem() >= (Integer) rightTriplet.getThirdElem()
-                    && (Integer) leftTriplet.getThirdElem() >= (Integer) midCrossTriplet.getThirdElem())
+                    && (Integer) leftTriplet.getThirdElem() >= (Integer) midCrossTriplet.getThirdElem()) {
+                leftIndex = (Integer) leftTriplet.getFirstElem();
+                rightIndex = (Integer) leftTriplet.getSecondElem();
+                maxSum= (Integer) leftTriplet.getThirdElem();
                 return leftTriplet;
+            }
             else if((Integer) rightTriplet.getThirdElem() >= (Integer) leftTriplet.getThirdElem()
-                    && (Integer) rightTriplet.getThirdElem() >= (Integer) midCrossTriplet.getThirdElem())
+                    && (Integer) rightTriplet.getThirdElem() >= (Integer) midCrossTriplet.getThirdElem()) {
+                leftIndex = (Integer) rightTriplet.getFirstElem();
+                rightIndex = (Integer) rightTriplet.getSecondElem();
+                maxSum= (Integer) rightTriplet.getThirdElem();
                 return rightTriplet;
-            else
+            }
+            else {
+                leftIndex = (Integer) midCrossTriplet.getFirstElem();
+                rightIndex = (Integer) midCrossTriplet.getSecondElem();
+                maxSum= (Integer) midCrossTriplet.getThirdElem();
                 return midCrossTriplet;
+            }
         }
     }
 
@@ -47,6 +68,16 @@ public class MaxSubArray {
             }
         }
         return new Triplet(maxi,maxj,leftsum+rightsum);
+    }
+
+    public int [] getMaxSubArray(){
+        this.subArray = new int[rightIndex-leftIndex+1];
+
+        int j = 0;
+        for(int i =leftIndex; i <= rightIndex; i++)
+            this.subArray[j++] = this.orgArray[i];
+
+        return this.subArray;
     }
 
 }

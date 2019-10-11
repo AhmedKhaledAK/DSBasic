@@ -12,9 +12,13 @@ public class Main {
 
 
         int [] ar = {13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};
-        MaxSubArray maxSubArray = new MaxSubArray();
+        MaxSubArray maxSubArray = new MaxSubArray(ar);
         Triplet triplet = maxSubArray.findMaxSubArray(ar,0,15);
         System.out.println(triplet.getFirstElem() + " " + triplet.getSecondElem() + " " + triplet.getThirdElem());
+        int [] subAr = maxSubArray.getMaxSubArray();
+        for (int e : subAr) {
+            System.out.print(e+" ");
+        }
 
 
         // DISJOINT SETS
