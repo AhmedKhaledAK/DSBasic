@@ -14,7 +14,8 @@ public class Main {
 
         // FIBONACCI DP vs FIBONACCI NOT DP
 
-        System.out.println(DP.fibonacci(100));
+        /*System.out.println(DP.fibonacci(100));*/ // 1 sec
+        /*System.out.println(DP.fibonacciNotDP(100));*/ // forever
 
 
         /*int [] ar = {13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};
