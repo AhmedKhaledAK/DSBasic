@@ -2,7 +2,7 @@ package akopensource.DP;
 
 public class DP {
 
-    int fibonacci(int n){
+    public static int fibonacci(int n){
         int [] fib = new int [n];
         fib[0]=1;
         fib[1]=1;
@@ -11,7 +11,7 @@ public class DP {
         return fib[n-1];
     }
 
-    int fibonacciNotDP(int n){
+    public static int fibonacciNotDP(int n){
         if(n<2) return 1;
         return fibonacciNotDP(n-1) + fibonacciNotDP(n-2);
     }

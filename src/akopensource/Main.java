@@ -11,7 +11,12 @@ public class Main {
         //TESTING
 
 
-        int [] ar = {13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};
+        // FIBONACCI DP vs FIBONACCI NOT DP
+
+        //System.out.println(fibo);
+
+
+        /*int [] ar = {13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};
         MaxSubArray maxSubArray = new MaxSubArray(ar);
         Triplet triplet = maxSubArray.findMaxSubArray(ar,0,15);
         System.out.println(triplet.getFirstElem() + " " + triplet.getSecondElem() + " " + triplet.getThirdElem());
@@ -19,7 +24,7 @@ public class Main {
         for (int e : subAr) {
             System.out.print(e+" ");
         }
-
+*/
 
         // DISJOINT SETS
 
