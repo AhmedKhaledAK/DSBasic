@@ -10,4 +10,9 @@ public class DP {
             fib[i] = fib[i-1] + fib[i-2];
         return fib[n-1];
     }
+
+    int fibonacciNotDP(int n){
+        if(n<2) return 1;
+        return fibonacciNotDP(n-1) + fibonacciNotDP(n-2);
+    }
 }
