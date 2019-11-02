@@ -11,7 +11,7 @@ public class DP {
         return fib[n-1];
     }
 
-    public static int fibonacciNotDP(int n){
+    public static long fibonacciNotDP(int n){
         if(n<2) return 1;
         return fibonacciNotDP(n-1) + fibonacciNotDP(n-2);
     }
