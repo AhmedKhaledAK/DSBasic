@@ -2,8 +2,8 @@ package akopensource.DP;
 
 public class DP {
 
-    public static int fibonacci(int n){
-        int [] fib = new int [n];
+    public static long fibonacci(int n){
+        long [] fib = new long [n];
         fib[0]=1;
         fib[1]=1;
         for (int i =2; i < n; i++)

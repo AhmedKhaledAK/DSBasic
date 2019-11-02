@@ -1,5 +1,6 @@
 package akopensource;
 
+import akopensource.DP.DP;
 import akopensource.disjointsets.DisjointSets;
 import akopensource.graphs.Graph;
 import akopensource.tuples.Triplet;
@@ -13,7 +14,7 @@ public class Main {
 
         // FIBONACCI DP vs FIBONACCI NOT DP
 
-        //System.out.println(fibo);
+        System.out.println(DP.fibonacci(100));
 
 
         /*int [] ar = {13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};
