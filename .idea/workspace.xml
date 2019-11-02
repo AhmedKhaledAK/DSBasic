@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="648">
+              <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="16" column="112" selection-start-line="16" selection-start-column="112" selection-end-line="16" selection-end-column="112" />
+            <state relative-caret-position="288">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +84,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" />
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java" />
       </list>
     </option>
   </component>
@@ -102,7 +101,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,7 +129,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,21 +230,8 @@
       <workItem from="1561293955800" duration="607000" />
       <workItem from="1561647777486" duration="859000" />
       <workItem from="1562671947451" duration="1918000" />
-      <workItem from="1570795541285" duration="3266000" />
-    </task>
-    <task id="LOCAL-00105" summary="transpose graphs">
-      <created>1556743747229</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1556743747229</updated>
-    </task>
-    <task id="LOCAL-00106" summary="strongly connected components">
-      <created>1556745541523</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1556745541523</updated>
+      <workItem from="1570795541285" duration="4628000" />
+      <workItem from="1570989665067" duration="599000" />
     </task>
     <task id="LOCAL-00107" summary="fixations in rb trees">
       <created>1557578798704</created>
@@ -576,17 +562,30 @@
       <option name="project" value="LOCAL" />
       <updated>1570802452043</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="tested the max sub-array problem algorithm, it works correctly">
+      <created>1570802737000</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1570802737000</updated>
+    </task>
+    <task id="LOCAL-00155" summary="added a method that returns the maximum subarray to the user">
+      <created>1570803426120</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1570803426120</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288313000" />
+    <option name="totallyTimeSpent" value="290274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31045932" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31433314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -672,8 +671,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="printed more info in print shortest paths" />
-    <MESSAGE value="Single-Destination Shortest Paths test" />
     <MESSAGE value="improved Dijkstra's implementation" />
     <MESSAGE value="added DisjointSets class" />
     <MESSAGE value="added print method for disjoint sets" />
@@ -697,7 +694,9 @@
     <MESSAGE value="added the package variousalgorithms for various algorithms" />
     <MESSAGE value="created class MaxSubArray and added a divide and conquer algorithm" />
     <MESSAGE value="added a method to complete the max subarray problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a method to complete the max subarray problem" />
+    <MESSAGE value="tested the max sub-array problem algorithm, it works correctly" />
+    <MESSAGE value="added a method that returns the maximum subarray to the user" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a method that returns the maximum subarray to the user" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -964,15 +963,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="648">
+          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="112" selection-start-line="16" selection-start-column="112" selection-end-line="16" selection-end-column="112" />
+        <state relative-caret-position="288">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
