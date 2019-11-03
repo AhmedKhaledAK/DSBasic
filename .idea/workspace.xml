@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/DP/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/DP/DP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,20 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="432">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="234">
+              <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" />
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
         <option value="$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/DP/DP.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/DP/DP.java" />
       </list>
     </option>
   </component>
@@ -103,8 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,6 +130,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,28 +234,8 @@
       <workItem from="1562671947451" duration="1918000" />
       <workItem from="1570795541285" duration="4628000" />
       <workItem from="1570989665067" duration="599000" />
-      <workItem from="1572723530922" duration="985000" />
-    </task>
-    <task id="LOCAL-00111" summary="added insertion with weights in graphs">
-      <created>1557840429328</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1557840429328</updated>
-    </task>
-    <task id="LOCAL-00112" summary="added weightKey attribute in Vertex class">
-      <created>1557848214796</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1557848214796</updated>
-    </task>
-    <task id="LOCAL-00113" summary="Vertex implements Comparable object for comparing vertices in queue">
-      <created>1557859306169</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1557859306169</updated>
+      <workItem from="1572723530922" duration="1726000" />
+      <workItem from="1572775686351" duration="379000" />
     </task>
     <task id="LOCAL-00114" summary="added Prim's algorithm for Minimum Spanning Trees">
       <created>1557875152996</created>
@@ -579,17 +559,38 @@
       <option name="project" value="LOCAL" />
       <updated>1572724372274</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="changed fib with dp method signature to long instead of int">
+      <created>1572724567530</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1572724567530</updated>
+    </task>
+    <task id="LOCAL-00161" summary="changed fib without dp method signature to long instead of int">
+      <created>1572724591393</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1572724591393</updated>
+    </task>
+    <task id="LOCAL-00162" summary="compared between fibonacci with dp and without dp">
+      <created>1572724658273</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1572724658273</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291259000" />
+    <option name="totallyTimeSpent" value="292379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31820697" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3220808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -598,7 +599,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5334773" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5334773" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985729" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -675,9 +676,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed print format in disjoint sets" />
-    <MESSAGE value="union in disjoint sets testing done" />
-    <MESSAGE value="findSet in disjoint sets testing done" />
     <MESSAGE value="Added Edge class in graphs" />
     <MESSAGE value="added disjoint sets in read me" />
     <MESSAGE value="added comparator in Edge class" />
@@ -700,7 +698,10 @@
     <MESSAGE value="added fibonacci using dynamic programming" />
     <MESSAGE value="added fibonacci not dynamic programming" />
     <MESSAGE value="made methods public and static" />
-    <option name="LAST_COMMIT_MESSAGE" value="made methods public and static" />
+    <MESSAGE value="changed fib with dp method signature to long instead of int" />
+    <MESSAGE value="changed fib without dp method signature to long instead of int" />
+    <MESSAGE value="compared between fibonacci with dp and without dp" />
+    <option name="LAST_COMMIT_MESSAGE" value="compared between fibonacci with dp and without dp" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -974,15 +975,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="432">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="234">
+          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
