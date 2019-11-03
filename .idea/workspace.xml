@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="504">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -235,21 +235,7 @@
       <workItem from="1570795541285" duration="4628000" />
       <workItem from="1570989665067" duration="599000" />
       <workItem from="1572723530922" duration="1726000" />
-      <workItem from="1572775686351" duration="379000" />
-    </task>
-    <task id="LOCAL-00114" summary="added Prim's algorithm for Minimum Spanning Trees">
-      <created>1557875152996</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1557875152996</updated>
-    </task>
-    <task id="LOCAL-00115" summary="removed unnecessary imports">
-      <created>1557875182059</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1557875182059</updated>
+      <workItem from="1572775686351" duration="1168000" />
     </task>
     <task id="LOCAL-00116" summary="updated README.md">
       <created>1557875275806</created>
@@ -580,17 +566,31 @@
       <option name="project" value="LOCAL" />
       <updated>1572724658273</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="added longest common subsequence DP algorithm">
+      <created>1572776264102</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1572776264103</updated>
+    </task>
+    <task id="LOCAL-00164" summary="added longest common subsequence not DP algorithm">
+      <created>1572776731654</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1572776731654</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292379000" />
+    <option name="totallyTimeSpent" value="293168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3220808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3220808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -676,8 +676,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Edge class in graphs" />
-    <MESSAGE value="added disjoint sets in read me" />
     <MESSAGE value="added comparator in Edge class" />
     <MESSAGE value="sorted edges in kurskal algorithm" />
     <MESSAGE value="sorted edges in Kruskal's algorithm" />
@@ -701,7 +699,9 @@
     <MESSAGE value="changed fib with dp method signature to long instead of int" />
     <MESSAGE value="changed fib without dp method signature to long instead of int" />
     <MESSAGE value="compared between fibonacci with dp and without dp" />
-    <option name="LAST_COMMIT_MESSAGE" value="compared between fibonacci with dp and without dp" />
+    <MESSAGE value="added longest common subsequence DP algorithm" />
+    <MESSAGE value="added longest common subsequence not DP algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="added longest common subsequence not DP algorithm" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -975,8 +975,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="504">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
         </state>
       </provider>
     </entry>

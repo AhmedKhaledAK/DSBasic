@@ -2,6 +2,7 @@ package akopensource.DP;
 
 public class DP {
 
+    // bottom-up approach
     public static long fibonacci(int n){
         long [] fib = new long [n];
         fib[0]=1;
@@ -16,6 +17,7 @@ public class DP {
         return fibonacciNotDP(n-1) + fibonacciNotDP(n-2);
     }
 
+    // bottom-up approach
     public static int LCS(String s1, String s2){
         int [][] table = new int [s1.length()+1][s2.length()+1];
         for(int i = 0; i <= s1.length(); i++){
