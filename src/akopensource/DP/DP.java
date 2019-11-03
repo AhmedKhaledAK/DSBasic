@@ -23,7 +23,7 @@ public class DP {
         for(int i = 0; i <= s1.length(); i++){
             for(int j = 0; j <= s2.length(); j++){
                 if(i==0 || j==0) table[i][j] = 0;
-                else if(s1.charAt(i-1) == s1.charAt(j-1)) table[i][j] = 1 + table[i-1][j-1];
+                else if(s1.charAt(i-1) == s2.charAt(j-1)) table[i][j] = 1 + table[i-1][j-1];
                 else table[i][j] = Integer.max(table[i][j-1], table[i-1][j]);
             }
         }

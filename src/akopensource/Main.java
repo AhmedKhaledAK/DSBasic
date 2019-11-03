@@ -12,6 +12,11 @@ public class Main {
         //TESTING
 
 
+
+        // LCS
+
+        System.out.println(DP.LCS("algorithm", "alligator"));
+
         // FIBONACCI DP vs FIBONACCI NOT DP
 
         /*System.out.println(DP.fibonacci(100));*/ // 1 sec
