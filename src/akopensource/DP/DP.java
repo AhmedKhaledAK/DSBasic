@@ -45,12 +45,12 @@ public class DP {
         for(int i = 2; i <= s.length(); i++){
             for(int j = 0; j < s.length()-i+1; j++){
                 int l = j+i-1;
-                boolean b = s.charAt(i) == s.charAt(j);
+                boolean b = s.charAt(j) == s.charAt(l);
                 if(i==2 && b)
-                    table[i][j] = 2;
+                    table[j][l] = 2;
                 else if(b)
-                    table[i][j] = table[i+1][j-1] + 2;
-                else table[i][j] = Integer.max(table[i+1][j], table[i][j-1]);
+                    table[j][l] = table[j+1][l-1] + 2;
+                else table[j][l] = Integer.max(table[j+1][l], table[j][l-1]);
             }
         }
         return table[0][s.length()-1];

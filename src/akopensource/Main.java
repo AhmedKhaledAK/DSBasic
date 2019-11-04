@@ -13,9 +13,13 @@ public class Main {
 
 
 
+        // LPS
+
+        System.out.println(DP.LPS("agbdba"));
+
         // LCS
 
-        System.out.println(DP.LCS("algorithm", "alligator"));
+        //System.out.println(DP.LCS("algorithm", "alligator"));
 
         // FIBONACCI DP vs FIBONACCI NOT DP
 
