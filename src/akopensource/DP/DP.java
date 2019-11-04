@@ -37,4 +37,23 @@ public class DP {
         return Integer.max(LCSNotDP(s1,s2,i-1, j), LCSNotDP(s1,s2,i,j-1));
     }
 
+
+    public static int LPS(String s){
+        int [][]table = new int [s.length()][s.length()];
+        for (int i =0; i < s.length(); i++)
+            table[i][i] = 1;
+        for(int i = 2; i <= s.length(); i++){
+            for(int j = 0; j < s.length()-i+1; j++){
+                int l = j+i-1;
+                boolean b = s.charAt(i) == s.charAt(j);
+                if(i==2 && b)
+                    table[i][j] = 2;
+                else if(b)
+                    table[i][j] = table[i+1][j-1] + 2;
+                else table[i][j] = Integer.max(table[i+1][j], table[i][j-1]);
+            }
+        }
+        return table[0][s.length()-1];
+    }
+
 }
