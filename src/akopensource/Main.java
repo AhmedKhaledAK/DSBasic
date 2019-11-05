@@ -13,9 +13,13 @@ public class Main {
 
 
 
+        //LCSubstring
+
+        System.out.println(DP.LCSubstring("abcaf", "zbcdf"));
+
         // LPS
 
-        System.out.println(DP.LPS("agbdba"));
+        //System.out.println(DP.LPS("agbdba"));
 
         // LCS
 
