@@ -17,7 +17,7 @@ public class DP {
         return fibonacciNotDP(n-1) + fibonacciNotDP(n-2);
     }
 
-    // bottom-up approach
+    // bottom-up approach for longest common sub-sequence
     public static int LCS(String s1, String s2){
         int [][] table = new int [s1.length()+1][s2.length()+1];
         for(int i = 0; i <= s1.length(); i++){
@@ -38,6 +38,7 @@ public class DP {
     }
 
 
+    // longest palindromic substring
     public static int LPS(String s){
         int [][]table = new int [s.length()][s.length()];
         for (int i =0; i < s.length(); i++)
@@ -56,6 +57,7 @@ public class DP {
         return table[0][s.length()-1];
     }
 
+    // longest common substring
     public static int LCSubstring(String s1, String s2){
         int [][] table = new int[s1.length()+1][s2.length()+1];
         for(int i =0; i <= s1.length(); i++){
