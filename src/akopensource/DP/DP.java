@@ -38,7 +38,7 @@ public class DP {
     }
 
 
-    // longest palindromic substring
+    // longest palindromic sub-sequence
     public static int LPS(String s){
         int [][]table = new int [s.length()][s.length()];
         for (int i =0; i < s.length(); i++)
