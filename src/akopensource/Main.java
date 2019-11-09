@@ -15,7 +15,7 @@ public class Main {
 
         //LCSubstring
 
-        System.out.println(DP.LCSubstring("abcaf", "zbcdf"));
+        System.out.println(DP.LCSubstring("abcdaf", "zbcdf"));
 
         // LPS
 

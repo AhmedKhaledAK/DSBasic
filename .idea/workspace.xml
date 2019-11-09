@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/DP/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/DP/DP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,20 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+            <state relative-caret-position="352">
+              <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="342">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,8 +83,8 @@
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" />
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
         <option value="$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/DP/DP.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/DP/DP.java" />
       </list>
     </option>
   </component>
@@ -238,21 +234,7 @@
       <workItem from="1572723530922" duration="1726000" />
       <workItem from="1572775686351" duration="1651000" />
       <workItem from="1572888703345" duration="1935000" />
-      <workItem from="1572996060689" duration="898000" />
-    </task>
-    <task id="LOCAL-00120" summary="changed helperArray name to helperArrayMST">
-      <created>1557959322028</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1557959322028</updated>
-    </task>
-    <task id="LOCAL-00121" summary="reordered methods">
-      <created>1557959545580</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1557959545587</updated>
+      <workItem from="1572996060689" duration="1639000" />
     </task>
     <task id="LOCAL-00122" summary="added method initializeSingleSource for shortest-paths algorithms">
       <created>1557959808987</created>
@@ -583,15 +565,28 @@
       <option name="project" value="LOCAL" />
       <updated>1572890119140</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="added DP algorithm for longest common substring problem">
+      <created>1572996993878</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1572996993879</updated>
+    </task>
+    <task id="LOCAL-00170" summary="added illustrative comments">
+      <created>1572997105348</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1572997105348</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296484000" />
+    <option name="totallyTimeSpent" value="297225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32982844" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -602,7 +597,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33045357" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33045357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985729" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -680,7 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added Kruskal's algorithm" />
     <MESSAGE value="Bellman Ford algorithm (not tested yet)" />
     <MESSAGE value="Bellman Ford algorithm" />
     <MESSAGE value="added Bellman Ford algorithm" />
@@ -701,11 +695,12 @@
     <MESSAGE value="compared between fibonacci with dp and without dp" />
     <MESSAGE value="added longest common subsequence DP algorithm" />
     <MESSAGE value="added longest common subsequence not DP algorithm" />
-    <MESSAGE value="added illustrative comments" />
     <MESSAGE value="tested LCS DP algorithm and edited LCS DP code" />
     <MESSAGE value="added DP algorithm for longest palindromic subsequence" />
     <MESSAGE value="tested and edited DP algorithm for longest palindromic subsequence" />
-    <option name="LAST_COMMIT_MESSAGE" value="tested and edited DP algorithm for longest palindromic subsequence" />
+    <MESSAGE value="added DP algorithm for longest common substring problem" />
+    <MESSAGE value="added illustrative comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="added illustrative comments" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -977,20 +972,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="342">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
         </state>
       </provider>
     </entry>
