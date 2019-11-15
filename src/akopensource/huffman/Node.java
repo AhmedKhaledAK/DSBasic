@@ -9,8 +9,13 @@ public class Node implements Comparable<Node>{
     public Node(char c, int freq){
         this.c = c;
         this.freq = freq;
+        // the left and right nodes are already null, this is for more illustration
         this.left = null;
         this.right = null;
+    }
+
+    Node(){
+
     }
 
     void addLeft(Node n){
