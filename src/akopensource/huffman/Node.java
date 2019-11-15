@@ -26,12 +26,20 @@ public class Node implements Comparable<Node>{
         this.right = n;
     }
 
-    Integer getFreq(){
+    public Integer getFreq(){
         return this.freq;
     }
 
     void addFreq(int freq){
         this.freq = freq;
+    }
+
+    public Node getLeft(){
+        return this.left;
+    }
+
+    public Node getRight(){
+        return this.right;
     }
 
     @Override
