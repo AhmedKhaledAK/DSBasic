@@ -1,8 +1,8 @@
 package akopensource.huffman;
 
-public class Node {
+public class Node implements Comparable<Node>{
     private char c;
-    private int freq;
+    private Integer freq;
     private Node left;
     private Node right;
 
@@ -21,8 +21,12 @@ public class Node {
         this.right = n;
     }
 
-    int getFreq(){
+    Integer getFreq(){
         return this.freq;
     }
 
+    @Override
+    public int compareTo(Node o) {
+        return this.getFreq().compareTo(o.getFreq());
+    }
 }

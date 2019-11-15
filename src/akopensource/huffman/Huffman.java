@@ -1,9 +1,19 @@
 package akopensource.huffman;
 
-import akopensource.tuples.Pair;
+import java.util.PriorityQueue;
 
 public class Huffman {
 
+    Node [] nodes;
 
+    public Huffman(Node[] nodes){
+        this.nodes = nodes;
+    }
+
+    public Node compress(){
+        PriorityQueue<Node> pq = new PriorityQueue<>();
+
+        return null;
+    }
 
 }
