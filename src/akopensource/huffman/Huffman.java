@@ -15,11 +15,9 @@ public class Huffman {
         PriorityQueue<Node> pq = createQueue(this.nodes);
         for(int i =0; i < this.nodes.length -1; i++){
             Node node = new Node();
-            Node x = pq.poll();
-            Node y = pq.poll();
-            node.addLeft(x);
-            node.addRight(y);
-            node.addFreq(x.getFreq() + y.getFreq());
+            node.addLeft(pq.poll());
+            node.addRight(pq.poll());
+            node.addFreq(node.getLeft().getFreq() + node.getRight().getFreq());
             pq.add(node);
         }
         return pq.poll();

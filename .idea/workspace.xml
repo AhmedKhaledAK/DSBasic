@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/huffman/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/huffman/Huffman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/huffman/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/huffman/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+            <state relative-caret-position="414">
+              <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/huffman/Huffman.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="288">
+              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#149#150#0" expanded="true" />
@@ -43,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/huffman/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="468">
+              <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
               <folding>
                 <element signature="e#323#324#0" expanded="true" />
                 <element signature="e#352#353#0" expanded="true" />
@@ -57,6 +58,10 @@
                 <element signature="e#456#457#0" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
                 <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
                 <element signature="e#649#650#0" expanded="true" />
                 <element signature="e#709#710#0" expanded="true" />
               </folding>
@@ -112,11 +117,11 @@
         <option value="$PROJECT_DIR$/src/akopensource/rbtrees/RedBlackTree.java" />
         <option value="$PROJECT_DIR$/src/akopensource/graphs/Graph.java" />
         <option value="$PROJECT_DIR$/src/akopensource/variousalgorithms/MaxSubArray.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
         <option value="$PROJECT_DIR$/src/akopensource/DP/DP.java" />
         <option value="$PROJECT_DIR$/src/akopensource/huffman/Character.java" />
-        <option value="$PROJECT_DIR$/src/akopensource/huffman/Huffman.java" />
         <option value="$PROJECT_DIR$/src/akopensource/huffman/Node.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/huffman/Huffman.java" />
       </list>
     </option>
   </component>
@@ -161,13 +166,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="akopensource" type="462c0819:PsiDirectoryNode" />
               <item name="graphs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="akopensource" type="462c0819:PsiDirectoryNode" />
-              <item name="huffman" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,21 +280,7 @@
       <workItem from="1572888703345" duration="1935000" />
       <workItem from="1572996060689" duration="1639000" />
       <workItem from="1573294747526" duration="357000" />
-      <workItem from="1573827484349" duration="3597000" />
-    </task>
-    <task id="LOCAL-00131" summary="Single-Destination Shortest Paths test">
-      <created>1558368042752</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1558368042752</updated>
-    </task>
-    <task id="LOCAL-00132" summary="improved Dijkstra's implementation">
-      <created>1558374585748</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1558374585749</updated>
+      <workItem from="1573827484349" duration="4832000" />
     </task>
     <task id="LOCAL-00133" summary="added DisjointSets class">
       <created>1560542017630</created>
@@ -627,17 +611,31 @@
       <option name="project" value="LOCAL" />
       <updated>1573831737362</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="added addFreq method in Node class of Huffman">
+      <created>1573831905263</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1573831905264</updated>
+    </task>
+    <task id="LOCAL-00181" summary="tested Huffman compressing, works correctly">
+      <created>1573832476637</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1573832476639</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301179000" />
+    <option name="totallyTimeSpent" value="302414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3375761" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3375761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -646,7 +644,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925585" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33045357" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33045357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985729" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -724,9 +722,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="tested the max sub-array problem algorithm, it works correctly" />
-    <MESSAGE value="added a method that returns the maximum subarray to the user" />
-    <MESSAGE value="added Dynamic Programming package and class" />
     <MESSAGE value="added fibonacci using dynamic programming" />
     <MESSAGE value="added fibonacci not dynamic programming" />
     <MESSAGE value="made methods public and static" />
@@ -749,7 +744,10 @@
     <MESSAGE value="added code of class Node in Huffman" />
     <MESSAGE value="implemented Comparable interface method in Node class of Huffman" />
     <MESSAGE value="added another constructor in Node class of Huffman" />
-    <option name="LAST_COMMIT_MESSAGE" value="added another constructor in Node class of Huffman" />
+    <MESSAGE value="added addFreq method in Node class of Huffman" />
+    <MESSAGE value="added compressing method in Huffman" />
+    <MESSAGE value="tested Huffman compressing, works correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="tested Huffman compressing, works correctly" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -990,16 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/graphs/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1037,22 +1025,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/huffman/Huffman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/huffman/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="468">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
           <folding>
             <element signature="e#323#324#0" expanded="true" />
             <element signature="e#352#353#0" expanded="true" />
@@ -1062,8 +1038,34 @@
             <element signature="e#456#457#0" expanded="true" />
             <element signature="e#617#618#0" expanded="true" />
             <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
             <element signature="e#649#650#0" expanded="true" />
             <element signature="e#709#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/huffman/Huffman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
           </folding>
         </state>
       </provider>
