@@ -30,6 +30,10 @@ public class Node implements Comparable<Node>{
         return this.freq;
     }
 
+    void addFreq(int freq){
+        this.freq = freq;
+    }
+
     @Override
     public int compareTo(Node o) {
         return this.getFreq().compareTo(o.getFreq());

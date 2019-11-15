@@ -14,7 +14,11 @@ public class Huffman {
     public Node compress(){
         PriorityQueue<Node> pq = createQueue(this.nodes);
         for(int i =0; i < this.nodes.length -1; i++){
-
+            Node node = new Node();
+            Node x = pq.poll();
+            Node y = pq.poll();
+            node.addLeft(x);
+            node.addRight(y);
         }
         return null;
     }
