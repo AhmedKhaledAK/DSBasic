@@ -48,6 +48,8 @@ Currently in the repo:
   * Successor
   * Deletion (case 1)
   
+* Huffman codes: https://github.com/AhmedKhaledAK/DSBasic/tree/master/src/akopensource/huffman
+  
 * Miscellaneous:
   * Doubly LinkedList
   * Generating Random Arrays
