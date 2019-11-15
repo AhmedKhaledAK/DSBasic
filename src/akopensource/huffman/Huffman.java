@@ -19,8 +19,10 @@ public class Huffman {
             Node y = pq.poll();
             node.addLeft(x);
             node.addRight(y);
+            node.addFreq(x.getFreq() + y.getFreq());
+            pq.add(node);
         }
-        return null;
+        return pq.poll();
     }
 
 
