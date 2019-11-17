@@ -85,6 +85,19 @@ public class DP {
         return q;
     }
 
+    public static int cutRod(int [] prices, int n){
+        int [] maxPrices = new int[n+1];
+        maxPrices[0] = 0;
+        int q = Integer.MIN_VALUE;
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <=i; j++){
+                q = Integer.max(q, maxPrices[i-j] + prices[j]);
+            }
+            maxPrices[i] = q;
+        }
+        return maxPrices[n];
+    }
+
     // top-down approach for rod-cutting problem
     public static int cutRodRecursive(int [] prices, int n){
         int [] maxPrices = new int[n+1];
