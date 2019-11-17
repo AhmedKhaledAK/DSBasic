@@ -75,4 +75,15 @@ public class DP {
         return max;
     }
 
+    // rod-cutting problem (not DP)
+
+    public static int cutRod(int [] prices, int p, int n){
+        if(n==0) return 0;
+        int q = Integer.MIN_VALUE;
+        for(int i = 1; i <=n; i++){
+            q = Integer.max(q,cutRod(prices,p,n-i) + prices[i]);
+        }
+        return q;
+    }
+
 }

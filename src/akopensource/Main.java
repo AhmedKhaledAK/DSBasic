@@ -15,15 +15,20 @@ public class Main {
 
 
 
+        // rod-cutting
+
+
+
+
         // Huffman
 
-        Huffman huffman = new Huffman(new Node[]{new Node('a',45), new Node('b',13),
+        /*Huffman huffman = new Huffman(new Node[]{new Node('a',45), new Node('b',13),
         new Node('c',12), new Node('d',16), new Node('e',9), new Node('f',5)});
 
         Node n = huffman.compress();
         System.out.println(n.getFreq());
 
-        System.out.println(n.getRight().getLeft().getLeft().getFreq());
+        System.out.println(n.getRight().getLeft().getLeft().getFreq());*/
 
 
         //LCSubstring
