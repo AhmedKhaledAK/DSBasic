@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/akopensource/DP/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/DP/DP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+            <state relative-caret-position="-738">
+              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,8 +31,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
+            <state relative-caret-position="460">
+              <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+              <folding>
+                <element signature="method#fibonacci#0;class#DP#0" />
+                <element signature="method#fibonacciNotDP#0;class#DP#0" />
+                <element signature="method#LCS#0;class#DP#0" />
+                <element signature="method#LCSNotDP#0;class#DP#0" />
+                <element signature="method#LPS#0;class#DP#0" />
+                <element signature="method#LCSubstring#0;class#DP#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -249,28 +257,7 @@
       <workItem from="1572996060689" duration="1639000" />
       <workItem from="1573294747526" duration="357000" />
       <workItem from="1573827484349" duration="5527000" />
-      <workItem from="1573993395903" duration="1209000" />
-    </task>
-    <task id="LOCAL-00136" summary="changed print format in disjoint sets">
-      <created>1560543059297</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1560543059297</updated>
-    </task>
-    <task id="LOCAL-00137" summary="union in disjoint sets testing done">
-      <created>1560543311678</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1560543311678</updated>
-    </task>
-    <task id="LOCAL-00138" summary="findSet in disjoint sets testing done">
-      <created>1560543401074</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1560543401075</updated>
+      <workItem from="1573993395903" duration="2237000" />
     </task>
     <task id="LOCAL-00139" summary="Added Edge class in graphs">
       <created>1560548552917</created>
@@ -594,11 +581,32 @@
       <option name="project" value="LOCAL" />
       <updated>1573994046903</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="tested rod-cutting (not DP) problem">
+      <created>1573994619597</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1573994619597</updated>
+    </task>
+    <task id="LOCAL-00186" summary="removed unnecessary parameter in rod-cutting problem (not DP)">
+      <created>1573994676274</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1573994676275</updated>
+    </task>
+    <task id="LOCAL-00187" summary="changed signature of cutRod method">
+      <created>1573994716689</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1573994716689</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304318000" />
+    <option name="totallyTimeSpent" value="305346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -691,9 +699,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="changed fib with dp method signature to long instead of int" />
-    <MESSAGE value="changed fib without dp method signature to long instead of int" />
-    <MESSAGE value="compared between fibonacci with dp and without dp" />
     <MESSAGE value="added longest common subsequence DP algorithm" />
     <MESSAGE value="added longest common subsequence not DP algorithm" />
     <MESSAGE value="tested LCS DP algorithm and edited LCS DP code" />
@@ -716,7 +721,10 @@
     <MESSAGE value="edited code of Huffman compressing" />
     <MESSAGE value="readme" />
     <MESSAGE value="added code for rod-cutting problem (still not DP)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added code for rod-cutting problem (still not DP)" />
+    <MESSAGE value="tested rod-cutting (not DP) problem" />
+    <MESSAGE value="removed unnecessary parameter in rod-cutting problem (not DP)" />
+    <MESSAGE value="changed signature of cutRod method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed signature of cutRod method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -1006,8 +1014,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+        <state relative-caret-position="-738">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1016,8 +1024,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
+        <state relative-caret-position="460">
+          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+          <folding>
+            <element signature="method#fibonacci#0;class#DP#0" />
+            <element signature="method#fibonacciNotDP#0;class#DP#0" />
+            <element signature="method#LCS#0;class#DP#0" />
+            <element signature="method#LCSNotDP#0;class#DP#0" />
+            <element signature="method#LPS#0;class#DP#0" />
+            <element signature="method#LCSubstring#0;class#DP#0" />
+          </folding>
         </state>
       </provider>
     </entry>

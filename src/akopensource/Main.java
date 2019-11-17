@@ -19,7 +19,9 @@ public class Main {
 
         int[] prices = new int[]{-1, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
 
-        System.out.println(DP.cutRodNotDP(prices, 6));
+        System.out.println(DP.cutRodRecursive(prices,10));
+        System.out.println(DP.cutRodNotDP(prices, 10));
+
 
 
         // Huffman
