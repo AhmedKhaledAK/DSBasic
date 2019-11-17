@@ -76,7 +76,6 @@ public class DP {
     }
 
     // rod-cutting problem (not DP)
-
     public static int cutRodNotDP(int [] prices, int n){
         if(n==0) return 0;
         int q = Integer.MIN_VALUE;
@@ -86,8 +85,7 @@ public class DP {
         return q;
     }
 
-    // top-down approach
-
+    // top-down approach for rod-cutting problem
     public static int cutRodRecursive(int [] prices, int n){
         int [] maxPrices = new int[n+1];
         for(int i = 0; i < maxPrices.length; i++){
