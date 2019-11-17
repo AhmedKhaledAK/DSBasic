@@ -14,18 +14,19 @@ public class Main {
         //TESTING
 
 
+        // LIS
+
+        System.out.println(DP.LIS(new int[]{3,4,-1,0,6,2,3,-2,4}));
+
 
         // rod-cutting
 
-        int[] prices = new int[]{-1, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
+        /*int[] prices = new int[]{-1, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
 
         System.out.println(DP.cutRod(prices, 10));
         System.out.println(DP.cutRodRecursive(prices,10));
         System.out.println(DP.cutRodNotDP(prices, 10));
-
-
-
-
+*/
         // Huffman
 
         /*Huffman huffman = new Huffman(new Node[]{new Node('a',45), new Node('b',13),
