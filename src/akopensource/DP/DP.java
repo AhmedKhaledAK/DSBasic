@@ -86,4 +86,28 @@ public class DP {
         return q;
     }
 
+    // top-down approach
+
+    public static int cutRodRecursive(int [] prices, int n){
+        int [] maxPrices = new int[n+1];
+        for(int i = 0; i < maxPrices.length; i++){
+            maxPrices[i] = Integer.MIN_VALUE;
+        }
+        return cutRodRecursive(prices,n, maxPrices);
+    }
+
+    private static int cutRodRecursive(int[] prices, int n, int[] maxPrices) {
+        if(maxPrices[n]>=0) return maxPrices[n];
+        int q =0;
+        if(n==0) q=0;
+        else {
+            q = Integer.MIN_VALUE;
+            for (int i =1; i <= n; i++){
+                q = Integer.max(q,cutRodRecursive(prices,n-i, maxPrices)+prices[i]);
+            }
+        }
+        maxPrices[n] = q;
+        return q;
+    }
+
 }
