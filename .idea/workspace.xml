@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="130" column="19" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
+            <state relative-caret-position="316">
+              <caret line="153" column="22" lean-forward="true" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
               <folding>
                 <element signature="method#fibonacci#0;class#DP#0" />
                 <element signature="method#fibonacciNotDP#0;class#DP#0" />
@@ -257,21 +257,7 @@
       <workItem from="1572996060689" duration="1639000" />
       <workItem from="1573294747526" duration="357000" />
       <workItem from="1573827484349" duration="5527000" />
-      <workItem from="1573993395903" duration="5995000" />
-    </task>
-    <task id="LOCAL-00149" summary="added connected components using Disjoint Sets">
-      <created>1560554930881</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1560554930881</updated>
-    </task>
-    <task id="LOCAL-00150" summary="more illustration in red-black trees">
-      <created>1560954981793</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1560954981794</updated>
+      <workItem from="1573993395903" duration="7816000" />
     </task>
     <task id="LOCAL-00151" summary="added the package variousalgorithms for various algorithms">
       <created>1570799423750</created>
@@ -602,11 +588,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574007380726</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="edited solution for LIS">
+      <created>1574008035523</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1574008035524</updated>
+    </task>
+    <task id="LOCAL-00199" summary="edited comment">
+      <created>1574008073844</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1574008073844</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309104000" />
+    <option name="totallyTimeSpent" value="310925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -699,8 +699,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added Huffman package to implement Huffman code" />
-    <MESSAGE value="added Huffman class" />
     <MESSAGE value="added Character class for Huffman codes" />
     <MESSAGE value="changed name of Character class to Node" />
     <MESSAGE value="added code of class Node in Huffman" />
@@ -724,7 +722,9 @@
     <MESSAGE value="added a comment" />
     <MESSAGE value="tested longest increasing subsequnce solution" />
     <MESSAGE value="edited a comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited a comment" />
+    <MESSAGE value="edited solution for LIS" />
+    <MESSAGE value="edited comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited comment" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -1024,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="130" column="19" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
+        <state relative-caret-position="316">
+          <caret line="153" column="22" lean-forward="true" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
           <folding>
             <element signature="method#fibonacci#0;class#DP#0" />
             <element signature="method#fibonacciNotDP#0;class#DP#0" />

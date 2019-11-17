@@ -140,6 +140,8 @@ public class DP {
         return max;
     }
 
+
+    // bottom-up approach for 0/1 Knapsack problem
     public static int knapsackZeroOne(int [] vals, int [] weights, int w){
         // assuming that the given arrays are sorted (on weights) in a non-decreasing order
         int [][] T = new int [vals.length+1][vals.length+1];
