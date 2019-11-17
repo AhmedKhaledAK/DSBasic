@@ -194,15 +194,22 @@ public class DP {
                     continue;
                 }
                 if(i>0 && j>=coins[i]){
-                    T[i][j] = Integer.min(T[i-1][j], T[i][j-coins[i]]+1);
-                } else if(i==0 && j>= coins[i]){
-                    T[i][j] = T[i][j-coins[i]]+1;
-                } else if(i>0 && j<coins[i]){
+                    if(j==coins[i]) T[i][j]=1;
+                    else{
+                        if(T[i][j-coins[i]]==0)T[i][j] = T[i-1][j];
+                        else if(T[i-1][j] == 0) T[i][j] = T[i][j-coins[i]]+1;
+                        else T[i][j] = Integer.min(T[i-1][j], T[i][j-coins[i]]+1);
+                    }
+                } else if(i==0 && j < coins[i]){
+                    T[i][j] = 0;
+                } else if(i ==0 && j>=coins[i]){
+                    if(j==coins[i]) T[i][j] = 1;
+                    else if(T[i][j-coins[i]]==0)T[i][j]=0;
+                    else if(T[i][j-coins[i]]!=0) T[i][j] = T[i][j-coins[i]]+1;
+                } else if(i >0 && j<coins[i]){
                     T[i][j] = T[i-1][j];
-                } else if(i == 0){ // and coins[i] < j
-                    if(T[i][j-coins[i]] == 0) T[i][j] =0;
-                    else T[i][j] = T[i][j-coins[i]]+1;
                 }
+                System.out.printf("T[%d][%d]: %d\n", i,j,T[i][j]);
             }
         }
         return T[coins.length-1][total];

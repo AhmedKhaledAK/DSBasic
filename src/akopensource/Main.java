@@ -15,9 +15,13 @@ public class Main {
 
 
 
+        // Minimum number of coins
+
+        System.out.println(DP.minNumOfCoins(12,new int[]{1,5,6,8}));
+
         // Subset sum
 
-        System.out.println(DP.isSubsetSum(6,new int[]{2,3,7,8,10}));
+       // System.out.println(DP.isSubsetSum(6,new int[]{2,3,7,8,10}));
 
         // 0/1 Knapsack
         //System.out.println(DP.knapsackZeroOne(new int[]{1,4,5,7}, new int[]{1,3,4,5}, 7));
