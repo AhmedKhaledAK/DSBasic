@@ -122,6 +122,7 @@ public class DP {
         return q;
     }
 
+    // bottom-up approach for Longest common sub-sequence problem
     public static int LIS(int [] ar){
         int [] T = new int [ar.length];
         for(int i = 0; i < ar.length; i++){

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/DP/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/DP/DP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state>
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="97" column="28" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
+            <state relative-caret-position="496">
+              <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
               <folding>
                 <element signature="method#fibonacci#0;class#DP#0" />
                 <element signature="method#fibonacciNotDP#0;class#DP#0" />
@@ -257,35 +259,7 @@
       <workItem from="1572996060689" duration="1639000" />
       <workItem from="1573294747526" duration="357000" />
       <workItem from="1573827484349" duration="5527000" />
-      <workItem from="1573993395903" duration="3493000" />
-    </task>
-    <task id="LOCAL-00142" summary="sorted edges in Kruskal's algorithm">
-      <created>1560549447861</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1560549447861</updated>
-    </task>
-    <task id="LOCAL-00143" summary="Kruskal's algorithm for MST implemented">
-      <created>1560550176519</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1560550176519</updated>
-    </task>
-    <task id="LOCAL-00144" summary="added Kruskal's algorithm">
-      <created>1560550268282</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1560550268282</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Bellman Ford algorithm (not tested yet)">
-      <created>1560551950702</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1560551950702</updated>
+      <workItem from="1573993395903" duration="5185000" />
     </task>
     <task id="LOCAL-00146" summary="Bellman Ford algorithm">
       <created>1560552480523</created>
@@ -602,11 +576,39 @@
       <option name="project" value="LOCAL" />
       <updated>1573995766170</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="added bottom-up DP solution for rod-cutting problem">
+      <created>1573997149560</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1573997149560</updated>
+    </task>
+    <task id="LOCAL-00192" summary="added a comment">
+      <created>1573997197533</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1573997197533</updated>
+    </task>
+    <task id="LOCAL-00193" summary="tested bottom-up approach for rod-cutting problem">
+      <created>1573997257306</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1573997257306</updated>
+    </task>
+    <task id="LOCAL-00194" summary="added a solution for Longest common subsequence">
+      <created>1574007212759</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1574007212759</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306602000" />
+    <option name="totallyTimeSpent" value="308294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -621,7 +623,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925585" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33045357" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33045357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985729" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -699,10 +701,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added DP algorithm for longest palindromic subsequence" />
-    <MESSAGE value="tested and edited DP algorithm for longest palindromic subsequence" />
-    <MESSAGE value="added DP algorithm for longest common substring problem" />
-    <MESSAGE value="added illustrative comments" />
     <MESSAGE value="removed unnecessary nested for loops in Longest Common Substring problem" />
     <MESSAGE value="edited a comment" />
     <MESSAGE value="added Huffman package to implement Huffman code" />
@@ -724,7 +722,11 @@
     <MESSAGE value="added a DP solution for rod-cutting problem" />
     <MESSAGE value="tested DP solution for rod-cutting problem" />
     <MESSAGE value="edited comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited comments" />
+    <MESSAGE value="added bottom-up DP solution for rod-cutting problem" />
+    <MESSAGE value="added a comment" />
+    <MESSAGE value="tested bottom-up approach for rod-cutting problem" />
+    <MESSAGE value="added a solution for Longest common subsequence" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a solution for Longest common subsequence" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -1014,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state>
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1024,8 +1026,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="97" column="28" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
+        <state relative-caret-position="496">
+          <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
           <folding>
             <element signature="method#fibonacci#0;class#DP#0" />
             <element signature="method#fibonacciNotDP#0;class#DP#0" />
