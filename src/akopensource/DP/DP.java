@@ -161,4 +161,26 @@ public class DP {
         return T[vals.length][w];
     }
 
+    public static boolean isSubsetSum(int total, int [] set){
+        boolean [][] T = new boolean[set.length][total+1];
+        for(int i =0; i < set.length; i++){
+            for(int j = 0; j <= total; j++){
+                if(j==0){
+                    T[i][j] = true;
+                    continue;
+                }
+                if(i==0 && set[i] != j){
+                    T[i][j] = false;
+                } else if(i == 0){
+                    T[i][j] = true;
+                } else if(set[i] > j){
+                    T[i][j] = T[i-1][j];
+                } else if(set[i] <= j){
+                    T[i][j] = T[i-1][j] || T[i-1][j-set[i]];
+                }
+            }
+        }
+        return T[set.length-1][total];
+    }
+
 }
