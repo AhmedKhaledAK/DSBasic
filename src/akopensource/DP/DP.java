@@ -110,7 +110,7 @@ public class DP {
 
     private static int cutRodRecursive(int[] prices, int n, int[] maxPrices) {
         if(maxPrices[n]>=0) return maxPrices[n];
-        int q =0;
+        int q;
         if(n==0) q=0;
         else {
             q = Integer.MIN_VALUE;
