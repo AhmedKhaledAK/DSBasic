@@ -184,6 +184,7 @@ public class DP {
         return T[set.length-1][total];
     }
 
+    // bottom-up approach for Minimum Number of Coins
     public static int minNumOfCoins(int total, int [] coins){
         int [][] T = new int[coins.length][total+1];
         for(int i =0; i < coins.length; i++){
