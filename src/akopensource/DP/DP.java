@@ -85,6 +85,7 @@ public class DP {
         return q;
     }
 
+    // bottom-up approach for rod-cutting problem
     public static int cutRod(int [] prices, int n){
         int [] maxPrices = new int[n+1];
         maxPrices[0] = 0;
