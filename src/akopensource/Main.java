@@ -13,10 +13,12 @@ public class Main {
     public static void main(String[] args) {
         //TESTING
 
+        // 0/1 Knapsack
+        System.out.println(DP.knapsackZeroOne(new int[]{1,4,5,7}, new int[]{1,3,4,5}, 7));
 
         // LIS
 
-        System.out.println(DP.LIS(new int[]{3,4,-1,0,6,2,3,-2,4}));
+        // System.out.println(DP.LIS(new int[]{3,4,-1,0,6,2,3,-2,4}));
 
 
         // rod-cutting
