@@ -19,7 +19,7 @@ public class Main {
 
         int[] prices = new int[]{-1, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
 
-        System.out.println(DP.cutRod(prices, prices[4], 6));
+        System.out.println(DP.cutRod(prices, 6));
 
 
         // Huffman
