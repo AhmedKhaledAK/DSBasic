@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="edited Knapsack solution">
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/Main.java" afterDir="false" />
+    <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/akopensource/DP/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/DP/DP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
@@ -30,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="143" column="50" lean-forward="true" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
+            <state relative-caret-position="802">
+              <caret line="178" column="43" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
               <folding>
                 <element signature="method#fibonacci#0;class#DP#0" />
                 <element signature="method#fibonacciNotDP#0;class#DP#0" />
@@ -98,8 +96,8 @@
         <option value="$PROJECT_DIR$/src/akopensource/huffman/Node.java" />
         <option value="$PROJECT_DIR$/src/akopensource/huffman/Huffman.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/akopensource/DP/DP.java" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/DP/DP.java" />
       </list>
     </option>
   </component>
@@ -259,21 +257,7 @@
       <workItem from="1572996060689" duration="1639000" />
       <workItem from="1573294747526" duration="357000" />
       <workItem from="1573827484349" duration="5527000" />
-      <workItem from="1573993395903" duration="8098000" />
-    </task>
-    <task id="LOCAL-00154" summary="tested the max sub-array problem algorithm, it works correctly">
-      <created>1570802737000</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1570802737000</updated>
-    </task>
-    <task id="LOCAL-00155" summary="added a method that returns the maximum subarray to the user">
-      <created>1570803426120</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1570803426120</updated>
+      <workItem from="1573993395903" duration="9309000" />
     </task>
     <task id="LOCAL-00156" summary="added Dynamic Programming package and class">
       <created>1572723772054</created>
@@ -604,11 +588,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574012750869</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="tested Knapsack solution">
+      <created>1574012820389</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1574012820389</updated>
+    </task>
+    <task id="LOCAL-00204" summary="edited cutting rod code">
+      <created>1574013021933</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1574013021933</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311207000" />
+    <option name="totallyTimeSpent" value="312418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -623,7 +621,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33045357" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33045357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985729" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -701,8 +699,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added code of class Node in Huffman" />
-    <MESSAGE value="implemented Comparable interface method in Node class of Huffman" />
     <MESSAGE value="added another constructor in Node class of Huffman" />
     <MESSAGE value="added addFreq method in Node class of Huffman" />
     <MESSAGE value="added compressing method in Huffman" />
@@ -726,7 +722,9 @@
     <MESSAGE value="added solution for 0/1 knapsack problem (DP)" />
     <MESSAGE value="added a comment" />
     <MESSAGE value="edited Knapsack solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited Knapsack solution" />
+    <MESSAGE value="tested Knapsack solution" />
+    <MESSAGE value="edited cutting rod code" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited cutting rod code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -1014,10 +1012,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="143" column="50" lean-forward="true" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
+        <state relative-caret-position="802">
+          <caret line="178" column="43" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
           <folding>
             <element signature="method#fibonacci#0;class#DP#0" />
             <element signature="method#fibonacciNotDP#0;class#DP#0" />
@@ -1025,16 +1033,6 @@
             <element signature="method#LCSNotDP#0;class#DP#0" />
             <element signature="method#LPS#0;class#DP#0" />
             <element signature="method#LCSubstring#0;class#DP#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

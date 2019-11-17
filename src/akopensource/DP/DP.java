@@ -161,6 +161,7 @@ public class DP {
         return T[vals.length][w];
     }
 
+    // bottom-up approach for Subset Sum problem
     public static boolean isSubsetSum(int total, int [] set){
         boolean [][] T = new boolean[set.length][total+1];
         for(int i =0; i < set.length; i++){
