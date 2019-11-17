@@ -128,7 +128,7 @@ public class DP {
         for(int i = 0; i < ar.length; i++){
             T[i] = 1;
         }
-        int max = Integer.MIN_VALUE;
+        int max = 1;
         for(int i =0; i < ar.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (ar[i] > ar[j] && T[i] < T[j] + 1) {
