@@ -140,4 +140,23 @@ public class DP {
         return max;
     }
 
+    public static int knapsackZeroOne(int [] vals, int [] weights, int w){
+        // assuming that the given arrays are sorted (on weights) in a non-decreasing order
+        int [][] T = new int [vals.length+1][vals.length+1];
+        for (int i = 0; i <= vals.length; i++){
+            for(int j = 0; j <= w; j++){
+                if(i==0 || j ==0) {
+                    T[i][j]=0;
+                    continue;
+                }
+                if(j < weights[i-1])
+                    T[i][j] = T[i-1][j];
+                else {
+                    T[i][j] = Integer.max(vals[i-1] + T[i-1][j-weights[i-1]], T[i-1][j]);
+                }
+            }
+        }
+        return T[vals.length][w];
+    }
+
 }
