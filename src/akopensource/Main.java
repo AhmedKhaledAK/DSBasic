@@ -13,8 +13,14 @@ public class Main {
     public static void main(String[] args) {
         //TESTING
 
+
+
+        // Subset sum
+
+        System.out.println(DP.isSubsetSum(6,new int[]{2,3,7,8,10}));
+
         // 0/1 Knapsack
-        System.out.println(DP.knapsackZeroOne(new int[]{1,4,5,7}, new int[]{1,3,4,5}, 7));
+        //System.out.println(DP.knapsackZeroOne(new int[]{1,4,5,7}, new int[]{1,3,4,5}, 7));
 
         // LIS
 
