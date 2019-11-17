@@ -172,7 +172,7 @@ public class DP {
                 }
                 if(i==0 && set[i] != j){
                     T[i][j] = false;
-                } else if(i == 0){
+                } else if(i == 0){ // and set[i]==j
                     T[i][j] = true;
                 } else if(set[i] > j){
                     T[i][j] = T[i-1][j];
@@ -182,6 +182,29 @@ public class DP {
             }
         }
         return T[set.length-1][total];
+    }
+
+    public static int minNumOfCoins(int total, int [] coins){
+        int [][] T = new int[coins.length][total+1];
+        for(int i =0; i < coins.length; i++){
+            for (int j = 0; j <= total; j++){
+                if(j == 0) {
+                    T[i][j] = 0;
+                    continue;
+                }
+                if(i>0 && j>=coins[i]){
+                    T[i][j] = Integer.min(T[i-1][j], T[i][j-coins[i]]+1);
+                } else if(i==0 && j>= coins[i]){
+                    T[i][j] = T[i][j-coins[i]]+1;
+                } else if(i>0 && j<coins[i]){
+                    T[i][j] = T[i-1][j];
+                } else if(i == 0){ // and coins[i] < j
+                    if(T[i][j-coins[i]] == 0) T[i][j] =0;
+                    else T[i][j] = T[i][j-coins[i]]+1;
+                }
+            }
+        }
+        return T[coins.length-1][total];
     }
 
 }
