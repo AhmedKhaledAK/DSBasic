@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/akopensource/DP/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/DP/DP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="108">
+              <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
+            <state relative-caret-position="226">
+              <caret line="130" column="19" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
               <folding>
                 <element signature="method#fibonacci#0;class#DP#0" />
                 <element signature="method#fibonacciNotDP#0;class#DP#0" />
@@ -259,28 +257,7 @@
       <workItem from="1572996060689" duration="1639000" />
       <workItem from="1573294747526" duration="357000" />
       <workItem from="1573827484349" duration="5527000" />
-      <workItem from="1573993395903" duration="5185000" />
-    </task>
-    <task id="LOCAL-00146" summary="Bellman Ford algorithm">
-      <created>1560552480523</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1560552480523</updated>
-    </task>
-    <task id="LOCAL-00147" summary="added Bellman Ford algorithm">
-      <created>1560552529706</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1560552529706</updated>
-    </task>
-    <task id="LOCAL-00148" summary="Connected components using Disjoint Sets">
-      <created>1560554887160</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1560554887162</updated>
+      <workItem from="1573993395903" duration="5995000" />
     </task>
     <task id="LOCAL-00149" summary="added connected components using Disjoint Sets">
       <created>1560554930881</created>
@@ -604,11 +581,32 @@
       <option name="project" value="LOCAL" />
       <updated>1574007212759</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="added a comment">
+      <created>1574007257834</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1574007257835</updated>
+    </task>
+    <task id="LOCAL-00196" summary="tested longest increasing subsequnce solution">
+      <created>1574007360287</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1574007360287</updated>
+    </task>
+    <task id="LOCAL-00197" summary="edited a comment">
+      <created>1574007380726</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1574007380726</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308294000" />
+    <option name="totallyTimeSpent" value="309104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -701,8 +699,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="removed unnecessary nested for loops in Longest Common Substring problem" />
-    <MESSAGE value="edited a comment" />
     <MESSAGE value="added Huffman package to implement Huffman code" />
     <MESSAGE value="added Huffman class" />
     <MESSAGE value="added Character class for Huffman codes" />
@@ -723,10 +719,12 @@
     <MESSAGE value="tested DP solution for rod-cutting problem" />
     <MESSAGE value="edited comments" />
     <MESSAGE value="added bottom-up DP solution for rod-cutting problem" />
-    <MESSAGE value="added a comment" />
     <MESSAGE value="tested bottom-up approach for rod-cutting problem" />
     <MESSAGE value="added a solution for Longest common subsequence" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a solution for Longest common subsequence" />
+    <MESSAGE value="added a comment" />
+    <MESSAGE value="tested longest increasing subsequnce solution" />
+    <MESSAGE value="edited a comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited a comment" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -1016,8 +1014,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="108">
+          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1026,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
+        <state relative-caret-position="226">
+          <caret line="130" column="19" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
           <folding>
             <element signature="method#fibonacci#0;class#DP#0" />
             <element signature="method#fibonacciNotDP#0;class#DP#0" />
