@@ -122,4 +122,21 @@ public class DP {
         return q;
     }
 
+    public static int LIS(int [] ar){
+        int [] T = new int [ar.length];
+        for(int i = 0; i < ar.length; i++){
+            T[i] = 1;
+        }
+        int max = Integer.MIN_VALUE;
+        for(int i =0; i < ar.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (ar[i] > ar[j] && T[i] < T[j] + 1) {
+                    T[i] = T[j] + 1;
+                    max = Integer.max(max, T[i]);
+                }
+            }
+        }
+        return max;
+    }
+
 }
