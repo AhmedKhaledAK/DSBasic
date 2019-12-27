@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/akopensource/geometry/Segment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,34 +17,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/akopensource/geometry/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="432">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="19" />
               <folding>
-                <element signature="method#fibonacci#0;class#DP#0" />
-                <element signature="method#fibonacciNotDP#0;class#DP#0" />
-                <element signature="method#LCS#0;class#DP#0" />
-                <element signature="method#LCSNotDP#0;class#DP#0" />
-                <element signature="method#LPS#0;class#DP#0" />
-                <element signature="method#LCSubstring#0;class#DP#0" />
-                <element signature="method#cutRodRecursive#1;class#DP#0" />
-                <element signature="method#LIS#0;class#DP#0" />
-                <element signature="method#knapsackZeroOne#0;class#DP#0" />
-                <element signature="method#isSubsetSum#0;class#DP#0" />
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#213#214#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/akopensource/geometry/Segment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#138#139#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#257#258#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,6 +106,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/akopensource/Main.java" />
         <option value="$PROJECT_DIR$/src/akopensource/DP/DP.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/geometry/Point.java" />
+        <option value="$PROJECT_DIR$/src/akopensource/geometry/Segment.java" />
       </list>
     </option>
   </component>
@@ -119,8 +123,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,6 +154,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="akopensource" type="462c0819:PsiDirectoryNode" />
               <item name="DP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSBasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DSBasic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="akopensource" type="462c0819:PsiDirectoryNode" />
+              <item name="geometry" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -265,20 +276,7 @@
       <workItem from="1573827484349" duration="5527000" />
       <workItem from="1573993395903" duration="15438000" />
       <workItem from="1576175089346" duration="59000" />
-    </task>
-    <task id="LOCAL-00162" summary="compared between fibonacci with dp and without dp">
-      <created>1572724658273</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1572724658273</updated>
-    </task>
-    <task id="LOCAL-00163" summary="added longest common subsequence DP algorithm">
-      <created>1572776264102</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1572776264103</updated>
+      <workItem from="1577455729968" duration="652000" />
     </task>
     <task id="LOCAL-00164" summary="added longest common subsequence not DP algorithm">
       <created>1572776731654</created>
@@ -609,17 +607,31 @@
       <option name="project" value="LOCAL" />
       <updated>1574026898842</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="added computational geometry package">
+      <created>1577455863410</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1577455863411</updated>
+    </task>
+    <task id="LOCAL-00212" summary="created Point class">
+      <created>1577456023384</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1577456023384</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318606000" />
+    <option name="totallyTimeSpent" value="319258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34532374" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34919757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -706,8 +718,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="edited code of Huffman compressing" />
-    <MESSAGE value="readme" />
     <MESSAGE value="added code for rod-cutting problem (still not DP)" />
     <MESSAGE value="tested rod-cutting (not DP) problem" />
     <MESSAGE value="removed unnecessary parameter in rod-cutting problem (not DP)" />
@@ -731,7 +741,9 @@
     <MESSAGE value="added method for minimum number of coins problem in DP" />
     <MESSAGE value="added a comment" />
     <MESSAGE value="edited and tested method of minimum number of coins in DP" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited and tested method of minimum number of coins in DP" />
+    <MESSAGE value="added computational geometry package" />
+    <MESSAGE value="created Point class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created Point class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -1044,6 +1056,38 @@
           <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/geometry/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/geometry/Segment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
           </folding>
         </state>
       </provider>
