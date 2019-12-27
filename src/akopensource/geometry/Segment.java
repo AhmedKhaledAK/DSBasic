@@ -6,8 +6,8 @@ public class Segment {
         return false;
     }
 
-    public static int getDirection(Point pi, Point pj, Point pk){
-        return 0;
+    public static double getDirection(Point pi, Point pj, Point pk){
+        return  (pk.getX() - pi.getX()) * (pj.getY() - pi.getY()) - (pj.getX() - pi.getX()) * (pk.getY() - pi.getY());
     }
 
     public static boolean onSegment(Point pi, Point pj, Point pk){
