@@ -11,6 +11,7 @@ public class Segment {
     }
 
     public static boolean onSegment(Point pi, Point pj, Point pk){
-        return false;
+        return (Double.min(pi.getX(), pj.getX()) <= pk.getX() && pk.getX() <= Double.max(pi.getX(), pj.getX()))
+                && (Double.min(pi.getY(), pj.getY()) <= pk.getY() && pk.getY() <= Double.max(pi.getY(), pj.getY()));
     }
 }
