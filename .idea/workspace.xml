@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b16356-2f51-4378-98aa-bacf7513121d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/DP/DP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/akopensource/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/akopensource/DP/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/akopensource/DP/DP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,23 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="206" column="40" selection-start-line="206" selection-start-column="40" selection-end-line="206" selection-end-column="40" />
+            <state relative-caret-position="90">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="method#fibonacci#0;class#DP#0" />
                 <element signature="method#fibonacciNotDP#0;class#DP#0" />
@@ -42,6 +30,22 @@
                 <element signature="method#LCSNotDP#0;class#DP#0" />
                 <element signature="method#LPS#0;class#DP#0" />
                 <element signature="method#LCSubstring#0;class#DP#0" />
+                <element signature="method#cutRodRecursive#1;class#DP#0" />
+                <element signature="method#LIS#0;class#DP#0" />
+                <element signature="method#knapsackZeroOne#0;class#DP#0" />
+                <element signature="method#isSubsetSum#0;class#DP#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,6 +119,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -150,7 +155,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,28 +263,8 @@
       <workItem from="1572996060689" duration="1639000" />
       <workItem from="1573294747526" duration="357000" />
       <workItem from="1573827484349" duration="5527000" />
-      <workItem from="1573993395903" duration="10982000" />
-    </task>
-    <task id="LOCAL-00159" summary="made methods public and static">
-      <created>1572724372274</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1572724372274</updated>
-    </task>
-    <task id="LOCAL-00160" summary="changed fib with dp method signature to long instead of int">
-      <created>1572724567530</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1572724567530</updated>
-    </task>
-    <task id="LOCAL-00161" summary="changed fib without dp method signature to long instead of int">
-      <created>1572724591393</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1572724591393</updated>
+      <workItem from="1573993395903" duration="15438000" />
+      <workItem from="1576175089346" duration="59000" />
     </task>
     <task id="LOCAL-00162" summary="compared between fibonacci with dp and without dp">
       <created>1572724658273</created>
@@ -604,17 +588,38 @@
       <option name="project" value="LOCAL" />
       <updated>1574018234940</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="added method for minimum number of coins problem in DP">
+      <created>1574023909092</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1574023909092</updated>
+    </task>
+    <task id="LOCAL-00209" summary="added a comment">
+      <created>1574023950327</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1574023950327</updated>
+    </task>
+    <task id="LOCAL-00210" summary="edited and tested method of minimum number of coins in DP">
+      <created>1574026898842</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1574026898842</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314091000" />
+    <option name="totallyTimeSpent" value="318606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34144992" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34532374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -623,7 +628,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33045357" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33045357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985729" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -701,8 +706,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added compressing method in Huffman" />
-    <MESSAGE value="tested Huffman compressing, works correctly" />
     <MESSAGE value="edited code of Huffman compressing" />
     <MESSAGE value="readme" />
     <MESSAGE value="added code for rod-cutting problem (still not DP)" />
@@ -724,9 +727,11 @@
     <MESSAGE value="tested Knapsack solution" />
     <MESSAGE value="edited cutting rod code" />
     <MESSAGE value="added initial code for subset sum problem in DP" />
-    <MESSAGE value="added a comment" />
     <MESSAGE value="tested subset sum problem using DP" />
-    <option name="LAST_COMMIT_MESSAGE" value="tested subset sum problem using DP" />
+    <MESSAGE value="added method for minimum number of coins problem in DP" />
+    <MESSAGE value="added a comment" />
+    <MESSAGE value="edited and tested method of minimum number of coins in DP" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited and tested method of minimum number of coins in DP" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DSBasic/src/Heap.java" />
@@ -1014,20 +1019,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/akopensource/DP/DP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="206" column="40" selection-start-line="206" selection-start-column="40" selection-end-line="206" selection-end-column="40" />
+        <state relative-caret-position="90">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="method#fibonacci#0;class#DP#0" />
             <element signature="method#fibonacciNotDP#0;class#DP#0" />
@@ -1035,6 +1030,20 @@
             <element signature="method#LCSNotDP#0;class#DP#0" />
             <element signature="method#LPS#0;class#DP#0" />
             <element signature="method#LCSubstring#0;class#DP#0" />
+            <element signature="method#cutRodRecursive#1;class#DP#0" />
+            <element signature="method#LIS#0;class#DP#0" />
+            <element signature="method#knapsackZeroOne#0;class#DP#0" />
+            <element signature="method#isSubsetSum#0;class#DP#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/akopensource/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
